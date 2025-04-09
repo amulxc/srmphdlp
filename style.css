@@ -249,3 +249,55 @@ h1{
     line-height: 1.6;
   }
   
+.circle-container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: 50px auto;
+  }
+  
+  .center-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: white;
+    padding: 10px;
+  }
+  
+  .info-box {
+    position: absolute;
+    width: 210px;
+    height: 115px;
+    background: #FFEE8F;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding-top: 15px;
+
+  }
+  
+  .info-box h4 {
+    font-weight: bold;
+    margin-top: 8px;
+  }
+
+  .info-box p {
+    /* font-weight: bold; */
+    margin-bottom: 16px;
+  }
+
+
+  .top         { top: 5%; left: 50%; transform: translate(-50%, 0); }
+  .top-right   { top: 15%; left: 82%; transform: translate(-30%, 0); }
+  .right       { top: 50%; left: 110%; transform: translate(-70%, -50%); }
+  .bottom-right{ top: 85%; left: 82%; transform: translate(-30%, -100%); }
+  .bottom      { bottom: 3%; left: 50%; transform: translate(-50%, 0); }
+  .bottom-left { top: 85%; left: 18%; transform: translate(-70%, -100%); }
+  .left        { top: 50%; left: -10%; transform: translate(-30%, -50%); }
+  .top-left    { top: 15%; left: 18%; transform: translate(-70%, 0); }
+
