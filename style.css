@@ -408,8 +408,8 @@ h1 {
 .accordion-button {
     font-weight: bold;
     color: black;
+    background-color: white;    
 }
-
 .accordion-button[aria-expanded="true"] {
     background: linear-gradient(90deg, #FBCA38, #FFA700);
 }
@@ -548,4 +548,3 @@ h1 {
     margin: 0 auto 40px;
     max-width: 300px;
   }
-  

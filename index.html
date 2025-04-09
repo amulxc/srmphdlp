@@ -18,7 +18,157 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
-
+    <style>
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+            .aff-acc {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .afflilation {
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+            }
+            
+            .afflilation img {
+                margin: 0 auto 10px;
+                max-width: 80px;
+            }
+            
+            .inn-aff {
+                padding-left: 0;
+            }
+            
+            .pb_30 {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            
+            .tp-fun-fact-item {
+                width: 100%;
+                margin-bottom: 15px;
+                height: auto;
+                min-height: 100px;
+            }
+            
+            .circle-container {
+                width: 100%;
+                height: auto;
+                padding: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 250px;
+                position: relative;
+            }
+            
+            .center-logo {
+                position: relative;
+                top: -200px;
+                left: 0;
+                transform: none;
+                margin: 0 auto 20px;
+                width: 100px;
+                height: 100px;
+            }
+            
+            .info-box {
+                position: relative;
+                width: 100%;
+                max-width: 280px;
+                margin: 10px;
+                transform: none;
+                top: auto;
+                left: auto;
+                right: auto;
+                bottom: auto;
+            }
+            
+            section {
+                padding: 30px 0;
+            }
+            
+            section.py-5.text-dark {
+                height: auto !important;
+            }
+            
+            .tp-counter-br .row {
+                margin-top: 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .why-srm-heading {
+                font-size: 24px;
+            }
+            
+            .card-img {
+                height: 200px;
+            }
+            
+            .accordion-button {
+                padding: 10px 15px;
+                font-size: 16px;
+            }
+            
+            .list-group-item {
+                padding: 10px;
+            }
+            
+            .p-top-90, .p-bottom-90 {
+                padding: 40px 0;
+            }
+            
+            .pt-100 {
+                padding-top: 50px;
+            }
+            
+            .pt-50 {
+                padding-top: 25px;
+            }
+            
+            .pt-20 {
+                padding-top: 10px;
+            }
+            
+            /* Fix carousel on mobile */
+            .carousel-single img {
+                max-width: 100%;
+                height: auto;
+            }
+            
+            /* Improve touch targets for mobile */
+            button, 
+            a, 
+            .list-group-item {
+                min-height: 44px;
+            }
+        }
+        
+        /* Small mobile devices */
+        @media (max-width: 576px) {
+            .afflilation {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 20px;
+            }
+            
+            .why-srm-heading {
+                font-size: 20px;
+            }
+            
+            .card-img {
+                height: 180px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -28,46 +178,46 @@
 
     <section class="accreditation">
         <div class="container">
-            <h1 class="text-center">Affiliations & Accreditations </h1>
+            <h1 class="text-center">Affiliations & Accreditations</h1>
             <div class="aff-acc pt-50">
-                <div class="col-lg-6 afflilation">
-                    <img src="images/image 38.png" alt="test">
+                <div class="col-lg-6 col-md-12 afflilation">
+                    <img src="images/image 38.png" alt="NAAC Accreditation" class="img-fluid">
                     <div class="inn-aff">
                         <p>SRM Institute of Science and Technology has been accredited by NAAC with the highest 'A++'
                             grade.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 afflilation">
-                    <img src="images/image 43.png" alt="test">
+                <div class="col-lg-6 col-md-12 afflilation">
+                    <img src="images/image 43.png" alt="Shanghai Ranking" class="img-fluid">
                     <div class="inn-aff">
-                        <p>SHANGAI Ranking – 2023 World ranking 1among 15 Indian Universities.</p>
+                        <p>SHANGAI Ranking – 2023 World ranking 1among 15 Indian Universities.</p>
                     </div>
                 </div>
             </div>
             <div class="aff-acc pt-20">
-                <div class="col-lg-6 afflilation">
-                    <img src="images/srm-nirf.png" alt="test" width="60">
+                <div class="col-lg-6 col-md-12 afflilation">
+                    <img src="images/srm-nirf.png" alt="NIRF Ranking" width="60" class="img-fluid">
                     <div class="inn-aff">
                         <p>SRMIST has been ranked 12th nationally under universities category by NIRF (National
                             Institutional Ranking Framework) in 2024.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 afflilation">
-                    <img src="images/image 42.png" alt="test">
+                <div class="col-lg-6 col-md-12 afflilation">
+                    <img src="images/image 42.png" alt="World Ranking" class="img-fluid">
                     <div class="inn-aff">
-                        <p>World ranking 1 among 46 Indian universities.</p>
+                        <p>World ranking 1 among 46 Indian universities.</p>
                     </div>
                 </div>
             </div>
             <div class="aff-acc pt-20">
-                <div class="col-lg-6 afflilation">
-                    <img src="images/image 39.png" alt="test">
+                <div class="col-lg-6 col-md-12 afflilation">
+                    <img src="images/image 39.png" alt="MHRD-UGC" class="img-fluid">
                     <div class="inn-aff">
                         <p>SRM IST is placed in Category 1 with 12 B status by MHRD-UGC.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 afflilation">
-                    <img src="images/image 41.png" alt="test">
+                <div class="col-lg-6 col-md-12 afflilation">
+                    <img src="images/image 41.png" alt="QS Ranking" class="img-fluid">
                     <div class="inn-aff">
                         <p>SRMIST is regularly gets ranked by world ranking agencies like QS (UK) and Times Higher
                             Education (UK).</p>
@@ -80,52 +230,50 @@
 
     <section class="pt-100">
         <div class="container">
-            <h1 class="text-center">Join the Premier Institution Ranked as the<br> #1 University in India</h1>
+            <h1 class="text-center">Join the Premier Institution Ranked as the #1 University in India</h1>
             <p class="text-center pt-20">Experience the best in placements alongside academic excellence. SRM IST,
-                Ramapuram is a place for learning,<br> discovery, innovation, expression, and discourse.</p>
+                Ramapuram is a place for learning, discovery, innovation, expression, and discourse.</p>
             <div class="row">
-                <div class="col-lg-8">
-                    <iframe width="100%" height="450"
-                        src="https://www.youtube.com/embed/YxMB6limtf0?si=teQ1uL9RkL4bgL-s" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="col-lg-8 col-md-12 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/YxMB6limtf0?si=teQ1uL9RkL4bgL-s" 
+                            title="YouTube video player" 
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-12">
                     <div class="tp-counter-br">
-                        <div class="row" style="--bs-gutter-x: 0;">
-                            <div class="col-xl-12 col-lg-4 col-md-4 col-sm-6 mb-60 pb_30">
+                        <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-1 g-3" style="--bs-gutter-x: 0;">
+                            <div class="col mb-4">
                                 <div class="tp-fun-fact-item bg-color-1 tp-fun-fact-space-1 align-items-center">
                                     <h4>39<span>K</span></h4>
-
-                                    <p>International Students </p>
+                                    <p>International Students</p>
                                 </div>
                             </div>
 
-                            <div class="col-xl-12 col-lg-4 col-md-4 col-sm-6 mb-60 pb_30">
-                                <div class="tp-fun-fact-item bg-color-3 tp-fun-fact-space-3  align-items-center">
+                            <div class="col mb-4">
+                                <div class="tp-fun-fact-item bg-color-3 tp-fun-fact-space-3 align-items-center">
                                     <h4>25<span>K</span></h4>
-
-                                    <p>Scholarships Provided </p>
+                                    <p>Scholarships Provided</p>
                                 </div>
                             </div>
 
-                            <div class="col-xl-12 col-lg-4 col-md-4 col-sm-6 mb-60 pb_30">
-                                <div class="tp-fun-fact-item bg-color-2 tp-fun-fact-space-2  align-items-center">
+                            <div class="col mb-4">
+                                <div class="tp-fun-fact-item bg-color-2 tp-fun-fact-space-2 align-items-center">
                                     <h4>1000<span>+</span></h4>
-
                                     <p>Research Publications</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section class="py-5 text-dark" style="background-color: #DCEFFF; height: 920px;">
+    <section class="py-5 text-dark" style="background-color: #DCEFFF;">
         <div class="container">
             <h2 class="text-center mb-4 fw-bold">Prerequisites</h2>
 
@@ -483,43 +631,39 @@
     
     <!--New Section -->
 
-    <section class="p-top-90 p-bottom-90" style="background-image: image(images/7.png);">
-    
+    <section class="p-top-90 p-bottom-90">
         <div class="carousel-wrapper">
           <div class="section_title text-center">
             <h1>Global Academic Collaborations</h1>
           </div>
       
           <div class="container">
-            
             <div class="row">
-              <div class="col-lg-12  ">
-                <div class="logo-carousel-four owl-carousel" role="region" aria-label="Client Logos Carousel "style="background-image: url('images/7.png'); background-size: 750px; background-position: center;background-repeat: no-repeat;">
-                  
+              <div class="col-lg-12">
+                <div class="logo-carousel-four owl-carousel" role="region" aria-label="Client Logos Carousel" style="background-image: url('images/7.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
                   <div class="carousel-single">
-                    <img src="images/1.png" loading="lazy" alt="Client 1 Logo">
+                    <img src="images/1.png" loading="lazy" alt="Client 1 Logo" class="img-fluid">
                   </div>
                   <div class="carousel-single">
-                    <img src="images/2.png" loading="lazy" alt="Client 2 Logo">
+                    <img src="images/2.png" loading="lazy" alt="Client 2 Logo" class="img-fluid">
                   </div>
                   <div class="carousel-single">
-                    <img src="images/3.png" loading="lazy" alt="Client 3 Logo">
+                    <img src="images/3.png" loading="lazy" alt="Client 3 Logo" class="img-fluid">
                   </div>
                   <div class="carousel-single">
-                    <img src="images/4.png" loading="lazy" alt="Client 4 Logo">
+                    <img src="images/4.png" loading="lazy" alt="Client 4 Logo" class="img-fluid">
                   </div>
                   <div class="carousel-single">
-                    <img src="images/5.png" loading="lazy" alt="Client 5 Logo">
+                    <img src="images/5.png" loading="lazy" alt="Client 5 Logo" class="img-fluid">
                   </div>
                   <div class="carousel-single">
-                    <img src="images/6.png" loading="lazy" alt="Client 6 Logo">
+                    <img src="images/6.png" loading="lazy" alt="Client 6 Logo" class="img-fluid">
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       </section>
     <!--New Section -->
 
@@ -529,19 +673,19 @@
         <div class="container">
             <!-- First Row -->
             <div class="row">
-                <!-- Left Column: Text Content (50%) -->
-                <div class="col-md-6 mb-4">
+                <!-- Left Column: Text Content -->
+                <div class="col-lg-6 col-md-12 mb-4">
                     <h2 class="why-srm-heading">Why SRM IST Ramapuram</h2>
                     <p class="why-srm-description">
-                        We focus on the enlightenment and enhancement of the students.<br>
+                        We focus on the enlightenment and enhancement of the students.
                         We offer various facilities for the benefits of the students to make
                         the learning environment a better place for them.
                     </p>
 
                 </div>
 
-                <!-- Right Column: Two stacked cards (25% + 25%) -->
-                <div class="col-md-3 col-sm-6 mb-4">
+                <!-- Right Column: Two stacked cards -->
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                     <div class="card bg-dark text-white border-0 mb-3">
                         <img src="/images/image2.png" class="card-img" alt="Placement">
                         <div class="card-img-overlay d-flex align-items-end p-0">
@@ -554,7 +698,7 @@
 
                 </div>
 
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                     <div class="card bg-dark text-white border-0">
                         <img src="/images/image3.png" class="card-img" alt="Chennai city">
                         <div class="card-img-overlay d-flex align-items-end p-0">
@@ -567,10 +711,10 @@
                 </div>
             </div>
 
-            <!-- Second Row: Four cards in 25% width each -->
+            <!-- Second Row: Four cards -->
             <div class="row g-4">
-                <div class="col-md-3 col-sm-6">
-                    <div class="card bg-dark text-white border-0">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card bg-dark text-white border-0 mb-3">
                         <img src="/images/image4.png" class="card-img" alt="Semester Abroad">
                         <div class="card-img-overlay d-flex align-items-end p-0">
                             <div class="w-100 gradient-overlay p-2">
@@ -581,8 +725,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="card bg-dark text-white border-0">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card bg-dark text-white border-0 mb-3">
                         <img src="/images/image5.png" class="card-img" alt="Internships">
                         <div class="card-img-overlay d-flex align-items-end p-0">
                             <div class="w-100 gradient-overlay p-2">
@@ -593,8 +737,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="card bg-dark text-white border-0">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card bg-dark text-white border-0 mb-3">
                         <img src="images/image1.png" class="card-img" alt="Innovation">
                         <div class="card-img-overlay d-flex align-items-end p-0">
                             <div class="w-100 gradient-overlay p-2">
@@ -605,8 +749,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="card bg-dark text-white border-0">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card bg-dark text-white border-0 mb-3">
                         <img src="/images/image6.png" class="card-img" alt="Hostel">
                         <div class="card-img-overlay d-flex align-items-end p-0">
                             <div class="w-100 gradient-overlay p-2">
@@ -625,43 +769,44 @@
     <!--End of Why SRM IST Ramapuram-->
 
 
-    <div class="circle-container">
+    <div class="container my-5 py-4">
+        <div class="circle-container">
+            <div class="center-logo">
+                <img src="/images/logo.png" class="img-1" alt="SRM Logo">
+            </div>
 
-        <div class="center-logo">
-            <img src="/images/logo.png" class="img-1" alt="SRM Logo">
-        </div>
-
-        <div class="info-box top">
-            <h4>#1</h4>
-            <p>SRM IST Ranked India’s No.1 University</p>
-        </div>
-        <div class="info-box top-right">
-            <h4>4</h4>
-            <p>Decades</p>
-        </div>
-        <div class="info-box right">
-            <h4>17</h4>
-            <p>Institutions</p>
-        </div>
-        <div class="info-box bottom-right">
-            <h4>40+</h4>
-            <p>Years of experience in education</p>
-        </div>
-        <div class="info-box bottom">
-            <h4>2nd</h4>
-            <p>in ARIIA</p>
-        </div>
-        <div class="info-box bottom-left">
-            <h4>A++</h4>
-            <p>NAAC Accreditation</p>
-        </div>
-        <div class="info-box left">
-            <h4>1985</h4>
-            <p>Established</p>
-        </div>
-        <div class="info-box top-left">
-            <h4>50,000+</h4>
-            <p>Students</p>
+            <div class="info-box top">
+                <h4>#1</h4>
+                <p>SRM IST Ranked India's No.1 University</p>
+            </div>
+            <div class="info-box top-right">
+                <h4>4</h4>
+                <p>Decades</p>
+            </div>
+            <div class="info-box right">
+                <h4>17</h4>
+                <p>Institutions</p>
+            </div>
+            <div class="info-box bottom-right">
+                <h4>40+</h4>
+                <p>Years of experience in education</p>
+            </div>
+            <div class="info-box bottom">
+                <h4>2nd</h4>
+                <p>in ARIIA</p>
+            </div>
+            <div class="info-box bottom-left">
+                <h4>A++</h4>
+                <p>NAAC Accreditation</p>
+            </div>
+            <div class="info-box left">
+                <h4>1985</h4>
+                <p>Established</p>
+            </div>
+            <div class="info-box top-left">
+                <h4>50,000+</h4>
+                <p>Students</p>
+            </div>
         </div>
     </div>
 
@@ -677,23 +822,27 @@
                 content.classList.add('hidden');
             }
         }
-        document.addEventListener("DOMContentLoaded", function () {
-            document.querySelectorAll('.accordion-button').forEach(button => {
-                const collapse = document.querySelector(button.getAttribute('data-bs-target'));
-                if (collapse.classList.contains('show')) {
-                    button.classList.add('gradient-bg');
-                }
-
-                collapse.addEventListener('show.bs.collapse', () => {
-                    button.classList.add('gradient-bg');
-                });
-
-                collapse.addEventListener('hide.bs.collapse', () => {
-                    button.classList.remove('gradient-bg');
-                });
-            });
-        });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          document.querySelectorAll('.accordion-button').forEach(button => {
+            const collapse = document.querySelector(button.getAttribute('data-bs-target'));
+            if (collapse && collapse.classList.contains('show')) {
+              button.classList.add('gradient-bg');
+            }
+      
+            if (collapse) {
+              collapse.addEventListener('show.bs.collapse', () => {
+                button.classList.add('gradient-bg');
+              });
+        
+              collapse.addEventListener('hide.bs.collapse', () => {
+                button.classList.remove('gradient-bg');
+              });
+            }
+          });
+        });
+      </script>      
     <script>
         $(document).ready(function () {
             $(".logo-carousel-four").owlCarousel({
@@ -703,8 +852,9 @@
                 autoplayTimeout: 3000,
                 autoplayHoverPause: true,
                 responsive: {
-                    0: { items: 2 },
-                    600: { items: 3 },
+                    0: { items: 1 },
+                    480: { items: 2 },
+                    768: { items: 3 },
                     1000: { items: 5 }
                 }
             });
