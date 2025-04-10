@@ -1,268 +1,77 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
 @import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
 
-.accreditation{
-    padding-top: 100px;
-    background-color: rgb(255, 255, 255);
-}
-body{
-    font-family: open sans;
-}
-h1{
-    font-size: 35px;
-    font-weight: 600;
-}
-.afflilation{
-    border: 1px solid #FBCA38;
-        display: flex;
-        align-items: center;
-        padding: 15px 25px 15px 15px;
-        border-radius: 10px;
-}
-.aff-acc{
-    display: flex;
-    gap:20px;
-}
-.inn-aff{
-    padding-left: 10px;
-}
-.pt-40{
-    padding-top: 40px;
-}
-.pt-50{
-    padding-top: 50px;
-}
-.pt-20{
-    padding-top: 20px;
-}
-.pt-100{
-    padding-top: 100px;
-}
-.pb-100{
-    padding-bottom: 100px;
-}
-.pb-50{
-    padding-bottom: 50px;
-}
-.pb_30{
-    margin-left: 100px;
-    margin-right: 50px;
-    padding-bottom: 28px;
-}
-.tp-fun-fact-item {
-    border: 1px solid;
-    border-radius: 5px;
-    width: 75%;
-    height: 130px;
-    padding: 10px;
-    background-color: #FBCA38;
-    
-}
-.tp-fun-fact-item h4{
-   text-align: center;
-   font-size: 40px;
-   font-weight: 700;
-   padding-top: 10px;
-}
-.tp-fun-fact-item p{
-    text-align: center;
-    padding-top: 5px;
- }
-
- .cs_accordian.active .cs_accordian_head {
-    pointer-events: none;
-}
-
-.cs_accordian .cs_accordian_head {
-    margin-bottom: 20px;
-    padding: 15px 30px;
-    position: relative;
-    cursor: pointer;
-    min-height: 70px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background: #0064b8;
-}
-.cs_accordian.active.cs_type_1 .cs_accordian_toggle {
-    background-color: var(--heading-color);
-    color: var(--white-color);
-}
-.cs_accordian.active .cs_accordian_toggle {
-    background-color: var(--white-color);
-    color: var(--heading-color);
-}
-.cs_accordian_toggle {
-    width: 45px;
-    height: 45px;
-    background-color: transparent;
-    color: var(--white-color);
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-}
-.cs_center {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-.cs_radius_50 {
-    border-radius: 50%;
-}
-.cs_accordian .cs_accordian_toggle {
-    width: 45px;
-    height: 45px;
-    background-color: transparent;
-    color: var(--white-color);
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-}
-.fa-add:before, .fa-plus:before {
-    content: "\2b";
-}
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-.fa-solid, .fas {
-    font-weight: 900;
-}
-.fa-classic, .fa-regular, .fa-solid, .far, .fas {
-    font-family: "Font Awesome 6 Free";
-}
-.fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp-solid, .fa-solid, .fab, .far, .fas {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: var(--fa-display, inline-block);
-    font-style: normal;
-    font-variant: normal;
-    line-height: 1;
-    text-rendering: auto;
-}
-
-
-.bg-gradient {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
-  }
-  
-
-  .accordion-button {
-    font-weight: bold;
-    color: black;
-  }
-
-  .accordion-button[aria-expanded="true"] {
-    background: linear-gradient(90deg, #FBCA38, #FFA700);
-  }
-
-  .gradient-bg {
-    background: linear-gradient(90deg, #FBCA38, #FFA700) !important;
-    color: black;
-    font-weight: bold;
-  }
-
-
-.gradient-overlay {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-}
-
-.card-img {
-    width: 100%;
-    height: 300px; 
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  .why-srm-heading {
-    font-size: 2.5rem;        
-    font-weight: 700;
-    color: #ffffff; 
-    margin-bottom: 1rem;
-  }
-  
-  .why-srm-description {
-    font-size: 1.125rem;    
-    font-weight: 400;        
-    color: #e0e0e0;         
-    line-height: 1.6;
-  }
-  
-.circle-container {
-    position: relative;
-    width: 600px;
+.hero-section {
     height: 600px;
-    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
   }
   
-  .center-logo {
+  .bg-blue-custom {
+    background-color: #eaf4ff;
+  }
+
+  /* .phd-outline {
+    font-size: 100px; 
+    font-weight: 700; 
+    color: transparent;
+    -webkit-text-stroke: 1px #f5b400;
+    text-stroke: 1px #f5b400;
+    font-family: 'Poppins', sans-serif; 
+    letter-spacing: 5px; 
+  } */
+  
+  .phd-section {
+    position: relative;
+    text-align: left;
+    padding-bottom: 40px; /* Space for underline */
+  }
+  
+  .phd-outline {
+    font-size: 120px;
+    font-weight: 600;
+    color: transparent;
+    -webkit-text-stroke: 1px #f5b400; /* Yellow stroke */
+    text-stroke: 1px #f5b400;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Match site font */
+    letter-spacing: 5px;
+  }
+  
+  .phd-underline {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff; /* Blue underline */
     position: absolute;
-    top: 45%;
-    left: 45%;
-    width: 150px;
-    height: 150px;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    background: white;
-    padding: 10px;
+    bottom: 0;
+    left: 0;
   }
   
-.img-1 {
-    width: 150% !important;
-    height: 150% !important;
+  .student-img-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    max-height: 600px;
+    object-fit: contain;
+    z-index: 2;
+  }
+
+  .logo-img {
+    width: 160px;
+    height: auto;
+  }
+  
+  .w-fit {
+    width: fit-content;
+  }
+
+  span.badge.bg-warning.text-dark.px-3.py-2.mb-3.w-fit {
+    font-size: 17px;
+    border-radius: unset;
 }
-
-  .info-box {
-    position: absolute;
-    width: 210px;
-    height: 115px;
-    background: #FFEE8F;
-    text-align: center;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding-top: 15px;
-
-  }
-  
-  .info-box h4 {
-    font-weight: bold;
-    margin-top: 8px;
-  }
-
-  .info-box p {
-    margin-bottom: 16px;
-  }
-
-
-  .top         { top: 5%; left: 50%; transform: translate(-50%, 0); }
-  .top-right   { top: 15%; left: 82%; transform: translate(-30%, 0); }
-  .right       { top: 50%; left: 110%; transform: translate(-70%, -50%); }
-  .bottom-right{ top: 85%; left: 82%; transform: translate(-30%, -100%); }
-  .bottom      { bottom: 3%; left: 50%; transform: translate(-50%, 0); }
-  .bottom-left { top: 85%; left: 18%; transform: translate(-70%, -100%); }
-  .left        { top: 50%; left: -10%; transform: translate(-30%, -50%); }
-  .top-left    { top: 15%; left: 18%; transform: translate(-70%, 0); }
-
-   */
-
-
-   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
-@import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
 
 .accreditation {
     padding-top: 100px;
@@ -270,7 +79,7 @@ h1{
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 h1 {
