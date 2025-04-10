@@ -123,7 +123,7 @@ h1 {
     width: 75%;
     height: 130px;
     padding: 10px;
-    background-color: #FBCA38;
+    background-color: #FFEE8F
 }
 
 .tp-fun-fact-item h4 {
@@ -394,3 +394,389 @@ h1 {
         margin-top: 20px;
         margin-bottom: 0px;
     }
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    /* General adjustments */
+    body {
+        overflow-x: hidden;
+    }
+    
+    h1 {
+        font-size: 24px !important;
+    }
+    
+    h2 {
+        font-size: 22px !important;
+    }
+    
+    section {
+        padding: 30px 0;
+    }
+    
+    /* Navbar */
+    .navbar {
+        padding: 10px 15px !important;
+        width: 100%;
+    }
+    
+    .navbar-brand {
+        width: 50%;
+    }
+    
+    .navbar-brand img {
+        max-width: 100px;
+    }
+    
+    /* Hero section */
+    .hero-section {
+        height: auto;
+        min-height: 550px;
+    }
+    
+    .col-md-6.bg-white {
+        padding: 20px !important;
+    }
+    
+    .phd-outline {
+        font-size: 80px;
+    }
+    
+    .student-img-bottom {
+        max-height: 350px;
+        bottom: 0;
+    }
+    
+    /* Affiliations section */
+    .aff-acc {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .afflilation {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .afflilation img {
+        margin: 0 auto 10px;
+        max-width: 80px;
+    }
+    
+    .inn-aff {
+        padding-left: 0;
+    }
+    
+    /* Stats boxes */
+    .pb_30 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .tp-fun-fact-item {
+        width: 100%;
+        margin-bottom: 15px;
+        height: auto;
+        min-height: 100px;
+    }
+    
+    /* Infographic circle - completely restructured for mobile */
+    .circle-container {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px auto;
+        position: relative;
+    }
+    
+    .center-logo {
+        position: static;
+        transform: none;
+        margin: 0 auto 30px;
+        width: 120px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .img-1 {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 120px;
+        object-fit: contain;
+    }
+    
+    .info-box {
+        position: static;
+        width: 100%;
+        max-width: 280px;
+        margin: 10px auto;
+        transform: none;
+        padding: 15px;
+        height: auto;
+        min-height: 90px;
+    }
+    
+    .info-box h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    
+    .info-box p {
+        margin-bottom: 0;
+    }
+    
+    /* Why SRM section */
+    section.py-5.text-dark {
+        height: auto !important;
+    }
+    
+    .tp-counter-br .row {
+        margin-top: 20px;
+    }
+    
+    .why-srm-heading {
+        font-size: 24px;
+    }
+    
+    .card-img {
+        height: 200px;
+    }
+    
+    /* Accordion section */
+    .accordion-button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    
+    .list-group-item {
+        padding: 10px;
+    }
+    
+    /* Paddings */
+    .p-top-90, .p-bottom-90 {
+        padding: 40px 0;
+    }
+    
+    .pt-100 {
+        padding-top: 50px;
+    }
+    
+    .pt-50 {
+        padding-top: 25px;
+    }
+    
+    .pt-20 {
+        padding-top: 10px;
+    }
+    
+    /* Carousel */
+    .carousel-single img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Better touch targets */
+    button, 
+    a, 
+    .list-group-item {
+        min-height: 44px;
+    }
+    
+    /* Banner section */
+    .bannlas {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .ban-text {
+        width: 100%;
+    }
+    
+    .ban-text h1 {
+        line-height: 1.4 !important;
+        font-size: 22px !important;
+    }
+    
+    /* Footer */
+    .add-pho {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    /* YouTube video container */
+    .ratio-16x9 {
+        width: 100%;
+    }
+    
+    /* Tables */
+    .table-responsive {
+        overflow-x: auto;
+    }
+    
+    .table th, .table td {
+        white-space: nowrap;
+        font-size: 14px;
+    }
+}
+
+/* Navbar mobile fixes */
+@media (max-width: 991px) {
+    .navbar-toggler {
+        display: block !important;
+        position: relative;
+        margin-left: auto;
+        z-index: 100;
+    }
+    
+    .navbar > .container-fluid {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        background: white;
+        transition: all 0.3s ease;
+        flex-direction: column;
+        z-index: 1000;
+        padding: 60px 20px 20px;
+        box-shadow: 5px 0 15px rgba(0,0,0,0.1);
+        overflow-y: auto;
+    }
+    
+    .navbar-collapse.show {
+        left: 0;
+    }
+    
+    .navbar-nav {
+        margin-left: 0 !important;
+        width: 100%;
+    }
+    
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 10px 5px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .navbar .btn {
+        margin: 15px auto 0;
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Extra small devices */
+    .afflilation {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 20px !important;
+    }
+    
+    .why-srm-heading {
+        font-size: 20px;
+    }
+    
+    .card-img {
+        height: 180px;
+    }
+    
+    .phd-outline {
+        font-size: 60px;
+    }
+    
+    .bannlas {
+        height: auto;
+        min-height: 300px;
+    }
+    
+    .btnew {
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    
+    .tp-fun-fact-item h4 {
+        font-size: 30px;
+    }
+    
+    .add-pho a {
+        font-size: 14px;
+    }
+    
+    /* Improve logo on smallest screens */
+    .navbar-brand img {
+        max-width: 80px;
+    }
+    
+    /* Circle container on very small screens */
+    .center-logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .img-1 {
+        max-width: 90px;
+    }
+    
+    .info-box {
+        max-width: 250px;
+        padding: 10px;
+    }
+}
+
+/* Key Highlights styles */
+.key-highlights {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.key-highlights .center-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.section-title {
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: #FBCA38;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Adjust for mobile */
+@media (max-width: 768px) {
+    .key-highlights {
+        padding: 40px 0;
+    }
+}

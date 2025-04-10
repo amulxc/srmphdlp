@@ -177,95 +177,106 @@
         crossorigin="anonymous"></script>
 
 
-<!-- Navbar -->
+<!-- Navbar with improved mobile responsiveness -->
 <nav class="navbar navbar-expand-lg bg-white shadow-sm px-4">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <!-- <img src="images/logo.svg" alt="SRM Logo" width="50" height="50" class="me-2"> -->
-      <img src="images/logo.svg" alt="SRM Logo" class="logo-img">
-
-      
-      <!-- <span class="fw-bold">Ramapuram SRM</span> -->
-    </a>
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
-        <li class="nav-item mx-2"><a class="nav-link" href="#">Instructions</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="#">Admission Procedure</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="#">Scholarship</a></li>
-        <li class="nav-item mx-2"><a class="nav-link" href="#">Steps to Follow</a></li>
-      </ul>
-      <button class="btn btn-warning fw-bold ms-3">Registrations Now</button>
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="images/logo.svg" alt="SRM Logo" class="logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+                <li class="nav-item mx-2"><a class="nav-link" href="#">Instructions</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="#">Admission Procedure</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="#">Scholarship</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="#">Steps to Follow</a></li>
+            </ul>
+            <button class="btn btn-warning fw-bold ms-lg-3 my-2">Registrations Now</button>
+        </div>
     </div>
-  </nav>
+</nav>
 
-  <!-- Hero Section -->
-  <section class="hero-section position-relative">
+<!-- Hero Section -->
+<section class="hero-section position-relative">
     <div class="row g-0 h-100">
-      <!-- Left Half -->
-      <div class="col-md-6 bg-white d-flex flex-column justify-content-center ps-5 py-5">
-        <span class="badge bg-warning text-dark px-3 py-2 mb-3 w-fit">Registrations Open for 2025</span>
-        <h1 class="display-5 fw-bold">Ready to Begin<br>Your PhD Journey?</h1>
-        <!-- <h1 class="phd-outline">PHD</h1> -->
-        <div class="phd-section">
-            <h1 class="phd-outline">PHD</h1>
-            <div class="phd-underline"></div>
-          </div>
-          
+        <!-- Left Half -->
+        <div class="col-md-6 bg-white d-flex flex-column justify-content-center ps-md-5 ps-3 py-5">
+            <span class="badge bg-warning text-dark px-3 py-2 mb-3 w-fit">Registrations Open for 2025</span>
+            <h1 class="display-5 fw-bold">Ready to Begin<br>Your PhD Journey?</h1>
+            <div class="phd-section">
+                <h1 class="phd-outline">PHD</h1>
+                <div class="phd-underline"></div>
+            </div>
+        </div>
 
-      </div>
-
-      <!-- Right Half -->
-      <div class="col-md-6 bg-blue-custom"></div>
+        <!-- Right Half -->
+        <div class="col-md-6 bg-blue-custom"></div>
     </div>
 
     <!-- Student Image at Bottom Center -->
     <img src="/images/hero.png" alt="Student" class="student-img-bottom">
-  </section>
+</section>
     <!--Header-->
     <section class="accreditation">
         <div class="container">
-            <h1 class="text-center">Affiliations & Accreditations</h1>
-            <div class="aff-acc pt-50">
-                <div class="col-lg-6 col-md-12 afflilation">
-                    <img src="images/image 38.png" alt="NAAC Accreditation" class="img-fluid">
-                    <div class="inn-aff">
-                        <p>SRM Institute of Science and Technology has been accredited by NAAC with the highest 'A++'
-                            grade.</p>
+            <h1 class="text-center mb-4">Affiliations & Accreditations</h1>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-3">
+                    <div class="afflilation">
+                        <img src="images/image 38.png" alt="NAAC Accreditation" class="img-fluid">
+                        <div class="inn-aff">
+                            <p>SRM Institute of Science and Technology has been accredited by NAAC with the highest 'A++'
+                                grade.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 afflilation">
-                    <img src="images/image 43.png" alt="Shanghai Ranking" class="img-fluid">
-                    <div class="inn-aff">
-                        <p>SHANGAI Ranking – 2023 World ranking 1among 15 Indian Universities.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="aff-acc pt-20">
-                <div class="col-lg-6 col-md-12 afflilation">
-                    <img src="images/srm-nirf.png" alt="NIRF Ranking" width="60" class="img-fluid">
-                    <div class="inn-aff">
-                        <p>SRMIST has been ranked 12th nationally under universities category by NIRF (National
-                            Institutional Ranking Framework) in 2024.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 afflilation">
-                    <img src="images/image 42.png" alt="World Ranking" class="img-fluid">
-                    <div class="inn-aff">
-                        <p>World ranking 1 among 46 Indian universities.</p>
+                <div class="col-lg-6 col-md-12 mb-3">
+                    <div class="afflilation">
+                        <img src="images/image 43.png" alt="Shanghai Ranking" class="img-fluid">
+                        <div class="inn-aff">
+                            <p>SHANGAI Ranking – 2023 World ranking 1among 15 Indian Universities.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="aff-acc pt-20">
-                <div class="col-lg-6 col-md-12 afflilation">
-                    <img src="images/image 39.png" alt="MHRD-UGC" class="img-fluid">
-                    <div class="inn-aff">
-                        <p>SRM IST is placed in Category 1 with 12 B status by MHRD-UGC.</p>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-3">
+                    <div class="afflilation">
+                        <img src="images/srm-nirf.png" alt="NIRF Ranking" width="60" class="img-fluid">
+                        <div class="inn-aff">
+                            <p>SRMIST has been ranked 12th nationally under universities category by NIRF (National
+                                Institutional Ranking Framework) in 2024.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 afflilation">
-                    <img src="images/image 41.png" alt="QS Ranking" class="img-fluid">
-                    <div class="inn-aff">
-                        <p>SRMIST is regularly gets ranked by world ranking agencies like QS (UK) and Times Higher
-                            Education (UK).</p>
+                <div class="col-lg-6 col-md-12 mb-3">
+                    <div class="afflilation">
+                        <img src="images/image 42.png" alt="World Ranking" class="img-fluid">
+                        <div class="inn-aff">
+                            <p>World ranking 1 among 46 Indian universities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-3">
+                    <div class="afflilation">
+                        <img src="images/image 39.png" alt="MHRD-UGC" class="img-fluid">
+                        <div class="inn-aff">
+                            <p>SRM IST is placed in Category 1 with 12 B status by MHRD-UGC.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-3">
+                    <div class="afflilation">
+                        <img src="images/image 41.png" alt="QS Ranking" class="img-fluid">
+                        <div class="inn-aff">
+                            <p>SRMIST is regularly gets ranked by world ranking agencies like QS (UK) and Times Higher
+                                Education (UK).</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -273,7 +284,7 @@
     </section>
 
 
-    <section class="pt-100">
+    <section class="pt-100 pt-md-50">
         <div class="container">
             <h1 class="text-center">Join the Premier Institution Ranked as the #1 University in India</h1>
             <p class="text-center pt-20">Experience the best in placements alongside academic excellence. SRM IST,
@@ -438,10 +449,10 @@
                             data-bs-parent="#prerequisitesAccordion">
                             <div class="accordion-body">
                                 <p>
-                                    Two years of Master’s degree or a professional degree declared equivalent to the Master’s degree by the corresponding statutory regulatory body, with at least 55% marks in aggregate or its equivalent grade ‘B’ in the UGC 7-point scale (or an equivalent grade in a point scale wherever grading system is followed) or an equivalent degree from a foreign educational Institution accredited by an Assessment and Accreditation Agency which is approved, recognized or authorized by an authority, established or incorporated under a law in its home country or any other statutory authority in that country for the purpose of assessing, accrediting or assuring quality and standards of educational institutions.
+                                    Two years of Master's degree or a professional degree declared equivalent to the Master's degree by the corresponding statutory regulatory body, with at least 55% marks in aggregate or its equivalent grade 'B' in the UGC 7-point scale (or an equivalent grade in a point scale wherever grading system is followed) or an equivalent degree from a foreign educational Institution accredited by an Assessment and Accreditation Agency which is approved, recognized or authorized by an authority, established or incorporated under a law in its home country or any other statutory authority in that country for the purpose of assessing, accrediting or assuring quality and standards of educational institutions.
                                 </p>
                                 <p>
-                                    Candidates who have cleared the M.Phil. Course work with at least 55% marks in aggregate or its equivalent grade ‘B’ in the UGC 7-point scale (or an equivalent grade in a point scale wherever grading system is followed) and successfully completed the M.Phil. Degree shall be legible to proceed to do research work leading to the Ph.D Degree in the same Institution.
+                                    Candidates who have cleared the M.Phil. Course work with at least 55% marks in aggregate or its equivalent grade 'B' in the UGC 7-point scale (or an equivalent grade in a point scale wherever grading system is followed) and successfully completed the M.Phil. Degree shall be legible to proceed to do research work leading to the Ph.D Degree in the same Institution.
                                 </p>
                                 <p>
                                     A relaxation of 5% of marks, or an equivalent relaxation of grade, may be allowed for those belonging to SC/ST/OBC (non-creamy layer)/ differently-abled.
@@ -639,21 +650,20 @@
       </section>
     <!--New Section -->
 
-    <!-- Why SRM IST Ramapuram Section -->
+    <!-- Why SRM IST Ramapuram Section with improved mobile layout -->
     <section class="py-5 text-white"
         style="background-color: #0056b3; background-image: linear-gradient(to right, rgba(0, 86, 179, 0.9), rgba(0, 86, 179, 0.9)), url('/images/bg-srm.png'); background-size: cover; background-position: center; padding-bottom: 50px !important;">
         <div class="container">
             <!-- First Row -->
             <div class="row">
                 <!-- Left Column: Text Content -->
-                <div class="col-lg-6 col-md-12 mb-4">
+                <div class="col-lg-6 col-md-12 mb-4 text-center text-lg-start">
                     <h2 class="why-srm-heading">Why SRM IST Ramapuram</h2>
                     <p class="why-srm-description">
                         We focus on the enlightenment and enhancement of the students.
                         We offer various facilities for the benefits of the students to make
                         the learning environment a better place for them.
                     </p>
-
                 </div>
 
                 <!-- Right Column: Two stacked cards -->
@@ -667,7 +677,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
@@ -741,75 +750,108 @@
     <!--End of Why SRM IST Ramapuram-->
 
 
-    <div class="container my-5 py-4">
-        <div class="circle-container">
-            <div class="center-logo">
-                <img src="images/logo.png" class="img-1" alt="SRM Logo">
-            </div>
-
-            <div class="info-box top">
-                <h4>#1</h4>
-                <p>SRM IST Ranked India's No.1 University</p>
-            </div>
-            <div class="info-box top-right">
-                <h4>4</h4>
-                <p>Decades</p>
-            </div>
-            <div class="info-box right">
-                <h4>17</h4>
-                <p>Institutions</p>
-            </div>
-            <div class="info-box bottom-right">
-                <h4>40+</h4>
-                <p>Years of experience in education</p>
-            </div>
-            <div class="info-box bottom">
-                <h4>2nd</h4>
-                <p>in ARIIA</p>
-            </div>
-            <div class="info-box bottom-left">
-                <h4>A++</h4>
-                <p>NAAC Accreditation</p>
-            </div>
-            <div class="info-box left">
-                <h4>1985</h4>
-                <p>Established</p>
-            </div>
-            <div class="info-box top-left">
-                <h4>50,000+</h4>
-                <p>Students</p>
-            </div>
-        </div>
-    </div>
-
-    <section class="bannlas">
+    <!-- Key Highlights section completely restructured for better mobile responsiveness -->
+    <section class="key-highlights py-5">
         <div class="container">
-           <div clas="row">
-            <div class="ban-text">
-                <h1 style="color: #ffff; line-height: 60px;">Join the Ranks of Tomorrow's <br>Leaders – Enroll Now at SRM</h1>
-                <a href="#" class="btnew">Registration Open - 2025</a>
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="section-title">Key Highlights</h2>
+                </div>
             </div>
             
-           </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="circle-container">
+                        <div class="center-logo">
+                            <img src="images/logo.png" alt="SRM Logo">
+                        </div>
+                        
+                        <div class="info-box top">
+                            <h4>#1</h4>
+                            <p>SRM IST Ranked India's No.1 University</p>
+                        </div>
+                        
+                        <div class="info-box top-right">
+                            <h4>4</h4>
+                            <p>Decades</p>
+                        </div>
+                        
+                        <div class="info-box right">
+                            <h4>17</h4>
+                            <p>Institutions</p>
+                        </div>
+                        
+                        <div class="info-box bottom-right">
+                            <h4>40+</h4>
+                            <p>Years of experience in education</p>
+                        </div>
+                        
+                        <div class="info-box bottom">
+                            <h4>2nd</h4>
+                            <p>in ARIIA</p>
+                        </div>
+                        
+                        <div class="info-box bottom-left">
+                            <h4>A++</h4>
+                            <p>NAAC Accreditation</p>
+                        </div>
+                        
+                        <div class="info-box left">
+                            <h4>1985</h4>
+                            <p>Established</p>
+                        </div>
+                        
+                        <div class="info-box top-left">
+                            <h4>50,000+</h4>
+                            <p>Students</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!--footer-->
-    <section clas="footer">
-        <div class="container pt-50">
+    <!-- Banner section with improved mobile layout -->
+    <section class="bannlas d-flex align-items-center">
+        <div class="container">
             <div class="row">
-                <div class="text-center">
-                    <img src="images/logo.svg">
-                </div>
-                <div class="add-pho pt-50">
-                    <a href="tel:1800 102 1525"><img src="images/ion-call.svg">1800 102 1525</a>
-                    <a href="mailto:helpdesk@srmrmp.edu.in"><img src="images/Symbol.svg">helpdesk@srmrmp.edu.in</a>
-                    <a href="#"><img src="images/location.svg">Bharathi Salai, Ramapuram, Chennai – 600 089. Tamil Nadu India</a>
+                <div class="col-12">
+                    <div class="ban-text text-center text-md-start">
+                        <h1 style="color: #ffff; line-height: 1.4;">Join the Ranks of Tomorrow's <br class="d-none d-md-block">Leaders – Enroll Now at SRM</h1>
+                        <a href="#" class="btnew d-inline-block mt-3">Registration Open - 2025</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <p class="text-center text-white">Copyright © 2025. All rights reserved.</p>
+    </section>
+
+    <!-- Footer with improved mobile layout -->
+    <section class="footer">
+        <div class="container pt-50">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="images/logo.svg" class="img-fluid" style="max-width: 160px;">
+                </div>
+                <div class="col-12">
+                    <div class="add-pho pt-50 pb-3">
+                        <a href="tel:1800 102 1525" class="d-flex align-items-center justify-content-center gap-2 mb-2">
+                            <img src="images/ion-call.svg" alt="Phone">
+                            <span>1800 102 1525</span>
+                        </a>
+                        <a href="mailto:helpdesk@srmrmp.edu.in" class="d-flex align-items-center justify-content-center gap-2 mb-2">
+                            <img src="images/Symbol.svg" alt="Email">
+                            <span>helpdesk@srmrmp.edu.in</span>
+                        </a>
+                        <a href="#" class="d-flex align-items-center justify-content-center gap-2 text-center">
+                            <img src="images/location.svg" alt="Location">
+                            <span>Bharathi Salai, Ramapuram, Chennai – 600 089. Tamil Nadu India</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright py-3">
+            <p class="text-center text-white mb-0">Copyright © 2025. All rights reserved.</p>
         </div>
     </section>
 
@@ -860,6 +902,29 @@
                     480: { items: 2 },
                     768: { items: 3 },
                     1000: { items: 5 }
+                }
+            });
+            
+            // Mobile menu handling
+            $('.navbar-toggler').on('click', function() {
+                if ($('.navbar-collapse').hasClass('show')) {
+                    $('.navbar-collapse').removeClass('show');
+                } else {
+                    $('.navbar-collapse').addClass('show');
+                }
+            });
+            
+            // Close menu when clicking outside
+            $(document).on('click', function(e) {
+                if (!$(e.target).closest('.navbar').length) {
+                    $('.navbar-collapse').removeClass('show');
+                }
+            });
+            
+            // Close menu when clicking a nav link on mobile
+            $('.navbar-nav .nav-link').on('click', function() {
+                if ($(window).width() < 992) {
+                    $('.navbar-collapse').removeClass('show');
                 }
             });
         });
