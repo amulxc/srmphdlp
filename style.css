@@ -91,7 +91,7 @@ h1 {
     border: 1px solid #FBCA38;
     display: flex;
     align-items: center;
-    padding: 15px 25px 15px 15px;
+    padding: 15px 15px 15px 15px;
     border-radius: 10px;
 }
 
@@ -118,7 +118,7 @@ h1 {
 }
 
 .tp-fun-fact-item {
-    border: 1px solid;
+    border: none;
     border-radius: 5px;
     width: 75%;
     height: 130px;
@@ -131,6 +131,7 @@ h1 {
     font-size: 40px;
     font-weight: 700;
     padding-top: 10px;
+    color: #0851A2;
 }
 
 .tp-fun-fact-item p {
@@ -218,6 +219,9 @@ h1 {
     font-weight: bold;
     color: black;
     background-color: white;    
+    padding: 12px 20px; 
+    border-radius: 5px;
+    border: 1px solid #FBCA38; 
 }
 .accordion-button[aria-expanded="true"] {
     background: linear-gradient(90deg, #FBCA38, #FFA700);
@@ -263,10 +267,10 @@ h1 {
 
 .center-logo {
     position: absolute;
-    top: 45%;
-    left: 45%;
-    width: 150px;
-    height: 150px;
+    top: 50%;
+    left: 50%;
+    width: 185px;
+    height: 185px;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     background: white;
@@ -281,7 +285,7 @@ h1 {
 .info-box {
     position: absolute;
     width: 210px;
-    height: 115px;
+    height: 120px;
     background: #FFEE8F;
     text-align: center;
     padding: 10px;
@@ -377,7 +381,7 @@ h1 {
     margin-top: 50px;
   }
   .footer{
-    background-color: #e0e0e0;
+    background-color: #EDEDED;
   }
   .add-pho{
     display: flex;
@@ -779,4 +783,98 @@ h1 {
     .key-highlights {
         padding: 40px 0;
     }
+}
+
+
+/* test */
+.accordion-item {
+    margin-bottom: 15px; /* Add space between each accordion item */
+}
+
+.accordion-button {
+    padding: 10px 15px; /* Adjust padding for better spacing */
+}
+
+.accordion-button:focus {
+    box-shadow: none; /* Remove focus box shadow for cleaner appearance */
+}
+
+.accordion-body {
+    padding: 20px; /* Add padding inside the accordion body */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #eaf4ff; /* Add background color for active items */
+}
+
+.accordion-button {
+    border-radius: 5px; /* Round the corners for a smoother look */
+}
+
+.accordion-collapse {
+    margin-top: 10px; /* Add space between the button and the body of the collapse */
+}
+
+/* test 2 */
+
+.add-pho {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #000;
+    flex-direction: row;  /* Horizontal layout for the contact info */
+    align-items: center;
+}
+
+.add-pho a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.add-pho a img {
+    width: 24px;
+    height: 24px;
+}
+
+.add-pho span {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Separator line for pipe (|) */
+.separator {
+    font-size: 20px;
+    color: #000;
+    padding: 0 10px; /* Adds some space around the separator */
+}
+
+/* Responsive handling for small screens */
+@media (max-width: 768px) {
+    .add-pho {
+        flex-direction: column; /* Stack the items vertically */
+        align-items: center;
+    }
+
+    .separator {
+        display: none; /* Hide separators on mobile view */
+    }
+
+    .add-pho a {
+        margin-bottom: 10px; /* Adds space between items on mobile */
+    }
+}
+
+.copyright {
+    background: linear-gradient(90deg, #0851A2, #031E3C); /* Applying gradient from the colors in your image */
+    padding: 20px 0;
+}
+
+.copyright p {
+    color: white; /* Ensures the text is white */
+    margin-bottom: 0;
+    text-align: center; /* Centers the text */
 }
