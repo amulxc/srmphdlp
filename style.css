@@ -320,11 +320,11 @@ h1 {
   .carousel-single img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     padding: 10px;
-    background-color: #fff;
+    /* background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); */
   }
 
   .p-top-90 {
@@ -877,4 +877,193 @@ h1 {
     color: white; /* Ensures the text is white */
     margin-bottom: 0;
     text-align: center; /* Centers the text */
+}
+
+/* Enhanced Mobile Responsiveness - Additional styles */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Better video responsiveness */
+.ratio-16x9 {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+}
+
+.ratio-16x9 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Fix for tables on mobile */
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Improved responsive images */
+img.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Fix owl carousel on mobile */
+.owl-carousel {
+    touch-action: manipulation;
+}
+
+/* Improved touch target sizes for mobile */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link,
+    .btn,
+    .accordion-button,
+    button,
+    a.btnew,
+    input[type="submit"],
+    input[type="button"] {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+    
+    /* Fix program image alignment on mobile */
+    .col-md-6 img {
+        padding-left: 0 !important;
+        height: auto !important;
+        max-width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+    
+    /* Fix footer height issue on mobile */
+    .col-12[style*="height: 75px"] {
+        height: auto !important;
+        min-height: 120px;
+    }
+    
+    /* Fix responsive card images */
+    .card-img {
+        height: auto;
+        min-height: 180px;
+    }
+    
+    /* Fix the circle container positioning for mobile */
+    .circle-container {
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+    
+    /* Improve table readability on mobile */
+    .table th, .table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    /* No JS carousel adjustments */
+    .no-js .owl-carousel, .owl-carousel.owl-loaded {
+        padding-top: 100px;
+    }
+    
+    /* Ensure contact items in footer are properly aligned */
+    .add-pho a {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .add-pho a span {
+        max-width: 280px;
+    }
+}
+
+/* Extra small devices - better readability */
+@media (max-width: 576px) {
+    .table th, .table td {
+        padding: 6px;
+        font-size: 12px;
+    }
+    
+    /* Improve the layout for the stats columns */
+    .row-cols-sm-3.row-cols-lg-1 {
+        flex-direction: column;
+    }
+    
+    .row-cols-sm-3.row-cols-lg-1 .col {
+        width: 100%;
+        margin-bottom: 15px !important;
+    }
+    
+    /* Fix image display on very small screens */
+    .student-img-bottom {
+        max-height: 300px;
+    }
+    
+    /* Accordion adjustments for better mobile view */
+    .accordion-body {
+        padding: 15px 10px;
+    }
+    
+    /* Banner text needs to be fully visible */
+    .bannlas {
+        padding: 30px 15px;
+    }
+    
+    /* Better button appearance on small screens */
+    .btnew {
+        padding: 8px 20px;
+    }
+}
+
+/* Landscape orientation fixes */
+@media (max-width: 991px) and (orientation: landscape) {
+    .hero-section {
+        min-height: 450px;
+    }
+    
+    .student-img-bottom {
+        max-height: 400px;
+    }
+    
+    /* Navbar needs to be more compact in landscape */
+    .navbar-collapse {
+        max-height: 85vh;
+        overflow-y: auto;
+    }
+}
+
+/* Tablet specific adjustments */
+@media (min-width: 577px) and (max-width: 991px) {
+    /* Circle info display for tablets */
+    .circle-container {
+        padding-bottom: 50px;
+    }
+    
+    .center-logo {
+        width: 140px;
+        height: 140px;
+    }
+    
+    /* Better spacing for feature cards */
+    .card {
+        margin-bottom: 20px;
+    }
+    
+    /* Owl carousel works better on tablets with 3 items */
+    .owl-carousel .carousel-single img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
 }
