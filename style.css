@@ -1770,3 +1770,63 @@ h1.display-5 {
         /* Ensures the text is still centered */
     }
 }
+
+
+@media (max-width: 768px) {
+    #registration-link {
+        display: none !important;
+    }
+}
+
+/* For mobile view, display the carousel horizontally */
+.logo-carousel-four {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    gap: 15px; /* Space between items */
+    padding-bottom: 10px; /* Add some space at the bottom */
+}
+
+.logo-carousel-four .carousel-single {
+    flex: 0 0 auto; /* Prevent items from shrinking */
+}
+
+/* Ensure logos are scrollable horizontally */
+.logo-carousel-four .carousel-single img {
+    max-width: 100%; /* Ensure the images fill their container */
+    height: auto;
+    object-fit: contain;
+}
+
+/* Mobile view: */
+@media (max-width: 768px) {
+    .logo-carousel-four {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto; /* Allow horizontal scrolling on mobile */
+        gap: 10px; /* Add some space between logos */
+        margin: 0; /* Remove any unnecessary margin */
+    }
+
+    .logo-carousel-four .carousel-single img {
+        width: 80%; /* Adjust width for mobile view */
+    }
+
+    /* Hide default scrollbar for a cleaner look */
+    .logo-carousel-four::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* Additional mobile handling for smaller devices */
+@media (max-width: 480px) {
+    .logo-carousel-four .carousel-single img {
+        width: 90%; /* Make images fit better on small screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .info-box {
+        padding: 12px;
+    }
+}
