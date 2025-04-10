@@ -1536,10 +1536,6 @@ img.img-fluid {
         margin-bottom: 30px;
     }
 
-    .owl-carousel .owl-stage {
-        display: flex;
-        flex-direction: column;
-    }
 
     .owl-carousel .owl-item {
         width: 100% !important;
@@ -1827,6 +1823,6 @@ h1.display-5 {
 
 @media (max-width: 576px) {
     .info-box {
-        padding: 12px;
-    }
+        padding: 12px;
+    }
 }

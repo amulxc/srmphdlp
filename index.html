@@ -18,6 +18,124 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
+    <style>
+        /* Make carousel work properly across all devices */
+        .logo-carousel-four {
+            width: 100% !important;
+        }
+        
+        /* Fix for mobile view */
+        @media (max-width: 767px) {
+            .logo-carousel-four .owl-stage-outer {
+                overflow: hidden !important;
+            }
+            
+            .logo-carousel-four .owl-stage {
+                display: flex !important;
+            }
+            
+            .logo-carousel-four .carousel-single {
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+                height: 120px !important;
+            }
+            
+            .logo-carousel-four .carousel-single img {
+                max-height: 100px !important;
+                width: auto !important;
+                max-width: 90% !important;
+            }
+            
+            /* Remove any custom styles that might break the slider */
+            .logo-carousel-four.owl-carousel {
+                display: block !important;
+            }
+        }
+
+        /* Specific mobile auto-sliding carousel styles */
+        @media (max-width: 767px) {
+            /* Base carousel styling */
+            .logo-carousel-four.owl-carousel {
+                display: block !important;
+                width: 100% !important;
+                overflow: hidden !important; /* Hide overflow */
+            }
+            
+            /* Stage container */
+            .owl-stage-outer {
+                overflow: hidden !important;
+                width: 100% !important;
+            }
+            
+            /* The sliding track */
+            .owl-stage {
+                display: flex !important;
+                transition-property: transform !important;
+                transition-timing-function: linear !important; /* Linear animation for smooth scrolling */
+            }
+            
+            /* Individual items */
+            .owl-item {
+                float: left !important;
+                flex-shrink: 0 !important;
+                width: 100% !important;
+                max-width: 250px !important; /* Control item width */
+            }
+            
+            /* Image containers */
+            .carousel-single {
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+                height: 100px !important;
+                padding: 10px !important;
+            }
+            
+            /* Images */
+            .carousel-single img {
+                max-height: 80px !important;
+                width: auto !important;
+                max-width: 90% !important;
+                object-fit: contain !important;
+                margin: 0 auto !important;
+            }
+        }
+
+        /* Hide all carousel controls and buttons completely */
+        .owl-nav, 
+        .owl-dots, 
+        .owl-nav button, 
+        .owl-dots button {
+            display: none !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+            pointer-events: none !important;
+            width: 0 !important;
+            height: 0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            position: absolute !important;
+        }
+        
+        /* Ensure stage is clean without controls */
+        .owl-stage {
+            padding: 0 !important;
+        }
+        
+        /* Further ensure no navigation buttons appear on mobile */
+        @media (max-width: 767px) {
+            .owl-carousel .owl-nav,
+            .owl-carousel .owl-dots,
+            .owl-carousel .owl-nav button,
+            .owl-carousel .owl-dots button {
+                display: none !important;
+                opacity: 0 !important;
+                visibility: hidden !important;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -872,45 +990,64 @@
         });
     </script>
     <script>
-        $(document).ready(function () {
-            $(".logo-carousel-four").owlCarousel({
-                loop: true,
-                margin: 30,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: true,
-                responsive: {
-                    0: { items: 1 },
-                    480: { items: 2 },
-                    768: { items: 3 },
-                    1000: { items: 5 }
-                }
-            });
-
-            // Mobile menu handling
-            $('.navbar-toggler').on('click', function () {
-                if ($('.navbar-collapse').hasClass('show')) {
-                    $('.navbar-collapse').removeClass('show');
-                } else {
-                    $('.navbar-collapse').addClass('show');
-                }
-            });
-
-            // Close menu when clicking outside
-            $(document).on('click', function (e) {
-                if (!$(e.target).closest('.navbar').length) {
-                    $('.navbar-collapse').removeClass('show');
-                }
-            });
-
-            // Close menu when clicking a nav link on mobile
-            $('.navbar-nav .nav-link').on('click', function () {
-                if ($(window).width() < 992) {
-                    $('.navbar-collapse').removeClass('show');
-                }
-            });
+        $(document).ready(function() {
+            // First destroy any existing carousel instance to avoid conflicts
+            $('.logo-carousel-four').trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
+            $('.logo-carousel-four').find('.owl-stage-outer').children().unwrap();
+            
+            // Initialize with mobile-focused settings and NO buttons/controls
+            setTimeout(function() {
+                $('.logo-carousel-four').owlCarousel({
+                    items: 5,
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplaySpeed: 1000,
+                    autoplayHoverPause: false,
+                    slideTransition: 'linear', 
+                    nav: false,             // Explicitly disable nav buttons
+                    dots: false,            // Explicitly disable dots
+                    touchDrag: false,       // Disable touch drag
+                    mouseDrag: false,       // Disable mouse drag
+                    freeDrag: false,        // Disable free drag
+                    pullDrag: false,        // Disable pull drag
+                    responsive: {
+                        0: {
+                            items: 1.5,
+                            autoplay: true,
+                            nav: false,     // Explicitly disable for mobile
+                            dots: false     // Explicitly disable for mobile
+                        },
+                        480: {
+                            items: 2.5,
+                            autoplay: true,
+                            nav: false,
+                            dots: false
+                        },
+                        768: {
+                            items: 3,
+                            autoplay: true,
+                            nav: false,
+                            dots: false
+                        },
+                        992: {
+                            items: 5,
+                            autoplay: true,
+                            nav: false,
+                            dots: false
+                        }
+                    }
+                });
+                
+                // Force autoplay to start
+                $('.logo-carousel-four').trigger('play.owl.autoplay', [2000]);
+                
+                // Make sure no buttons are rendered
+                $('.owl-nav, .owl-dots').remove();
+            }, 100);
         });
     </script>
+
 </body>
 
 </html>
