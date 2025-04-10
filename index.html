@@ -18,685 +18,6 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
-    <style>
-        /* Mobile responsive styles */
-        @media (max-width: 768px) {
-            .aff-acc {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .afflilation {
-                width: 100%;
-                flex-direction: column;
-                text-align: center;
-                padding: 15px;
-            }
-            
-            .afflilation img {
-                margin: 0 auto 10px;
-                max-width: 80px;
-            }
-            
-            .inn-aff {
-                padding-left: 0;
-            }
-            
-            .pb_30 {
-                margin-left: 0;
-                margin-right: 0;
-            }
-            
-            .tp-fun-fact-item {
-                width: 100%;
-                margin-bottom: 15px;
-                height: auto;
-                min-height: 100px;
-            }
-            
-            .circle-container {
-                width: 100%;
-                height: auto;
-                padding: 20px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                margin-top: 250px;
-                position: relative;
-            }
-            
-            .center-logo {
-                position: relative;
-                top: -200px;
-                left: 0;
-                transform: none;
-                margin: 0 auto 20px;
-                width: 100px;
-                height: 100px;
-            }
-            
-            .info-box {
-                position: relative;
-                width: 100%;
-                max-width: 280px;
-                margin: 10px;
-                transform: none;
-                top: auto;
-                left: auto;
-                right: auto;
-                bottom: auto;
-            }
-            
-            section {
-                padding: 30px 0;
-            }
-            
-            section.py-5.text-dark {
-                height: auto !important;
-            }
-            
-            .tp-counter-br .row {
-                margin-top: 20px;
-            }
-            
-            h1 {
-                font-size: 24px;
-            }
-            
-            .why-srm-heading {
-                font-size: 24px;
-            }
-            
-            .card-img {
-                height: 200px;
-            }
-            
-            .accordion-button {
-                padding: 10px 15px;
-                font-size: 16px;
-            }
-            
-            .list-group-item {
-                padding: 10px;
-            }
-            
-            .p-top-90, .p-bottom-90 {
-                padding: 40px 0;
-            }
-            
-            .pt-100 {
-                padding-top: 50px;
-            }
-            
-            .pt-50 {
-                padding-top: 25px;
-            }
-            
-            .pt-20 {
-                padding-top: 10px;
-            }
-            
-            /* Fix carousel on mobile */
-            .carousel-single img {
-                max-width: 100%;
-                height: auto;
-            }
-            
-            /* Improve touch targets for mobile */
-            button, 
-            a, 
-            .list-group-item {
-                min-height: 44px;
-            }
-        }
-        
-        /* Small mobile devices */
-        @media (max-width: 576px) {
-            .afflilation {
-                padding: 10px;
-            }
-            
-            h1 {
-                font-size: 20px;
-            }
-            
-            .why-srm-heading {
-                font-size: 20px;
-            }
-            
-            .card-img {
-                height: 180px;
-            }
-        }
-
-        /* Enhanced Key Highlights Mobile Layout */
-        @media (max-width: 768px) {
-            /* Updated row layout for key highlights on mobile */
-            .key-highlights {
-                padding: 30px 0;
-            }
-            
-            .circle-container {
-                width: 100%;
-                height: auto;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin: 0 auto;
-                padding: 0;
-            }
-            
-            .center-logo {
-                position: relative;
-                width: 120px;
-                height: 120px;
-                margin: 0 auto 25px;
-                order: -1;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 50%;
-                background: white;
-                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            }
-            
-            .center-logo img {
-                max-width: 90%;
-                max-height: 90%;
-            }
-            
-            /* Row layout for info boxes */
-            .info-box {
-                position: relative;
-                width: 100%;
-                max-width: 90%;
-                margin: 8px auto;
-                padding: 15px;
-                height: auto;
-                min-height: 75px;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: flex-start;
-                background-color: #FFEE8F;
-                border-radius: 8px;
-                box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-            }
-            
-            .info-box h4 {
-                font-size: 28px;
-                font-weight: 700;
-                color: #0851A2;
-                margin: 0 15px 0 0;
-                min-width: 70px;
-                text-align: center;
-            }
-            
-            .info-box p {
-                font-size: 15px;
-                margin: 0;
-                line-height: 1.3;
-                text-align: left;
-            }
-            
-            /* Reset the positioning classes */
-            .top, .top-right, .right, .bottom-right, .bottom, .bottom-left, .left, .top-left {
-                top: auto;
-                left: auto;
-                right: auto;
-                bottom: auto;
-                transform: none;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            /* Smaller screens need more compact layout */
-            .info-box {
-                max-width: 95%;
-                padding: 12px 15px;
-                min-height: 70px;
-            }
-            
-            .info-box h4 {
-                font-size: 24px;
-                min-width: 60px;
-                margin-right: 12px;
-            }
-            
-            .info-box p {
-                font-size: 14px;
-            }
-            
-            .center-logo {
-                width: 100px;
-                height: 100px;
-                margin-bottom: 20px;
-            }
-        }
-
-        /* Additional Mobile Responsiveness (759-990) */
-
-        /* Global carousel improvements */
-        @media (max-width: 768px) {
-            /* Carousel section improvements */
-            .logo-carousel-four {
-                padding-top: 0 !important;
-            }
-            
-            .owl-carousel.owl-loaded {
-                padding-top: 30px !important;
-            }
-            
-            .carousel-single {
-                text-align: center;
-            }
-            
-            .carousel-single img {
-                width: auto;
-                max-height: 80px;
-                display: inline-block;
-            }
-            
-            /* Why SRM IST cards section improvements */
-            .py-5.text-white {
-                padding: 40px 0 !important;
-            }
-            
-            .col-lg-6.col-md-12.mb-4.text-center.text-lg-start {
-                text-align: center !important;
-                margin-bottom: 30px !important;
-            }
-            
-            .why-srm-heading {
-                margin-bottom: 15px;
-            }
-            
-            .why-srm-description {
-                font-size: 16px;
-                line-height: 1.5;
-                max-width: 90%;
-                margin: 0 auto;
-            }
-            
-            /* Card improvements */
-            .card-img {
-                height: 180px;
-                object-fit: cover;
-            }
-            
-            .card.bg-dark {
-                margin-bottom: 15px !important;
-            }
-            
-            .row.g-4 {
-                --bs-gutter-x: 10px;
-                --bs-gutter-y: 10px;
-            }
-            
-            .gradient-overlay p {
-                font-size: 14px;
-                padding: 8px 5px;
-            }
-            
-            /* Footer improvements */
-            .footer .col-12[style*="height: 75px"] {
-                height: auto !important;
-                min-height: 150px;
-                padding-bottom: 15px;
-            }
-            
-            .add-pho {
-                padding-top: 15px !important;
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .add-pho a {
-                width: 100%;
-                justify-content: center;
-            }
-            
-            .add-pho a img {
-                width: 20px;
-                height: 20px;
-            }
-            
-            .add-pho a span {
-                font-size: 15px;
-            }
-            
-            .separator {
-                display: none;
-            }
-            
-            .copyright {
-                padding: 10px 0 !important;
-            }
-        }
-
-        /* Extra small screens (phones) */
-        @media (max-width: 576px) {
-            /* Carousel further improvements for very small screens */
-            .carousel-single img {
-                max-height: 60px;
-            }
-            
-            .section_title h1 {
-                font-size: 22px !important;
-            }
-            
-            /* Card adjustments for smallest screens */
-            .col-lg-3.col-md-6.col-sm-12 {
-                padding: 0 8px;
-            }
-            
-            .card-img {
-                height: 150px;
-            }
-            
-            .gradient-overlay p {
-                font-size: 12px;
-                padding: 5px 3px;
-            }
-            
-            /* Adjust footer content spacing */
-            .footer .col-12 img.img-fluid {
-                max-width: 180px;
-                margin-bottom: 10px;
-            }
-            
-            .add-pho a span {
-                font-size: 14px;
-            }
-        }
-
-        /* Better image layout in cards for medium screens (tablets) */
-        @media (min-width: 577px) and (max-width: 991px) {
-            .col-lg-3.col-md-6 {
-                padding: 0 10px;
-            }
-            
-            .card.bg-dark {
-                margin-bottom: 20px;
-            }
-            
-            .card-img {
-                height: 200px;
-            }
-            
-            /* Ensure even spacing in tablet view */
-            .row > [class*="col-"] {
-                margin-bottom: 20px;
-            }
-            
-            /* Footer spacing for tablets */
-            .footer .col-12[style*="height: 75px"] {
-                min-height: 100px;
-            }
-            
-            .add-pho {
-                padding-top: 20px !important;
-            }
-        }
-
-        /* Landscape orientation improvements for this section */
-        @media (max-width: 991px) and (orientation: landscape) {
-            .py-5.text-white {
-                padding: 30px 0 !important;
-            }
-            
-            .why-srm-heading {
-                margin-bottom: 10px;
-                font-size: 22px;
-            }
-            
-            .why-srm-description {
-                font-size: 14px;
-                line-height: 1.4;
-            }
-            
-            .row.g-4 {
-                --bs-gutter-y: 8px;
-            }
-            
-            .card-img {
-                height: 160px;
-            }
-        }
-
-        /* Additional Mobile Responsiveness (759-990) - Row Layout */
-
-        @media (max-width: 768px) {
-            /* Global Academic Collaborations Section */
-            .logo-carousel-four.owl-carousel {
-                padding-top: 0 !important;
-                margin-bottom: 30px;
-            }
-            
-            .owl-carousel .owl-stage {
-                display: flex;
-                flex-direction: column;
-            }
-            
-            .owl-carousel .owl-item {
-                width: 100% !important;
-            }
-            
-            .carousel-single {
-                width: 100%;
-                margin: 10px 0;
-                display: flex;
-                justify-content: center;
-            }
-            
-            .carousel-single img {
-                max-width: 200px;
-                height: auto;
-                margin: 0 auto;
-            }
-            
-            /* Why SRM IST Ramapuram Section */
-            /* Make cards stack in single column */
-            .py-5.text-white .row:not(:first-child) {
-                display: block !important;
-            }
-            
-            .py-5.text-white .row:first-child {
-                flex-direction: column;
-            }
-            
-            .col-lg-3.col-md-6.col-sm-12,
-            .col-lg-3.col-md-6 {
-                width: 100% !important;
-                max-width: 100%;
-                flex: 0 0 100%;
-                margin-bottom: 15px;
-            }
-            
-            .card.bg-dark {
-                width: 100%;
-                margin: 0 auto 15px;
-                max-width: 350px;
-            }
-            
-            .card-img {
-                height: 200px;
-                object-fit: cover;
-            }
-            
-            .gradient-overlay {
-                padding: 10px 5px;
-            }
-            
-            .gradient-overlay p {
-                font-size: 15px;
-            }
-            
-            /* Key Highlights Section */
-            .circle-container {
-                display: flex;
-                flex-direction: column;
-                padding: 0;
-                margin: 20px 0;
-                position: relative;
-            }
-            
-            .center-logo {
-                position: relative;
-                width: 120px;
-                height: 120px;
-                margin: 0 auto 25px;
-                top: 0;
-                left: 0;
-                transform: none;
-                order: -1;
-            }
-            
-            .info-box {
-                position: static !important;
-                width: 100%;
-                max-width: 350px;
-                height: auto;
-                min-height: 0;
-                margin: 10px auto;
-                padding: 15px;
-                transform: none !important;
-                left: auto !important;
-                right: auto !important;
-                top: auto !important;
-                bottom: auto !important;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-            }
-            
-            .info-box h4 {
-                font-size: 28px;
-                font-weight: 700;
-                margin: 0 15px 0 0;
-                min-width: 80px;
-                text-align: center;
-            }
-            
-            .info-box p {
-                margin: 0;
-                font-size: 16px;
-                text-align: left;
-            }
-            
-            /* Footer Contact Section */
-            .footer .col-12[style*="height: 75px"] {
-                height: auto !important;
-                min-height: 150px;
-            }
-            
-            .add-pho {
-                flex-direction: column;
-                gap: 15px;
-                padding-top: 10px !important;
-            }
-            
-            .add-pho a {
-                width: 100%;
-                justify-content: center;
-            }
-            
-            .separator {
-                display: none;
-            }
-            
-            /* Banner Section */
-            .bannlas {
-                height: auto;
-                min-height: 0;
-                padding: 40px 15px;
-            }
-            
-            .ban-text {
-                width: 100%;
-            }
-        }
-
-        /* Extra small screens additional adjustments */
-        @media (max-width: 576px) {
-            /* Make images and text more compact */
-            .card-img {
-                height: 180px;
-            }
-            
-            .info-box {
-                padding: 12px;
-            }
-            
-            .info-box h4 {
-                font-size: 24px;
-                min-width: 70px;
-            }
-            
-            .info-box p {
-                font-size: 14px;
-            }
-            
-            .center-logo {
-                width: 100px;
-                height: 100px;
-            }
-            
-            /* Carousel images on very small screens */
-            .carousel-single img {
-                max-width: 160px;
-            }
-        }
-
-        /* Fix for owl carousel to display as rows in mobile */
-        @media (max-width: 768px) {
-            /* Override owl carousel settings for mobile */
-            .owl-carousel {
-                display: block !important;
-            }
-            
-            .owl-carousel .owl-stage-outer {
-                overflow: visible !important;
-            }
-            
-            .owl-carousel .owl-stage {
-                transform: none !important;
-                width: 100% !important;
-            }
-            
-            .owl-carousel .owl-item {
-                display: block;
-                clear: both;
-                float: none;
-                margin: 10px auto;
-            }
-            
-            /* Hide navigation dots and arrows on mobile */
-            .owl-carousel .owl-nav,
-            .owl-carousel .owl-dots {
-                display: none;
-            }
-        }
-
-        h1.display-5 {
-    font-family: 'Open Sans', sans-serif;  /* Ensures the font is Open Sans */
-    font-size: 50px;                       /* Adjust the size as needed */
-    font-weight: 700;                      /* Makes the text bold */
-    letter-spacing: 2px;                   /* Adds some spacing between the letters */
-    line-height: 1.2;                      /* Adjusts the line height for readability */
-    color: #000;                           /* Black color */
-    text-align: left;                    /* Center-aligns the text */
-    text-transform: capitalize;            /* Capitalizes each word */
-}
-
-@media (max-width: 768px) {
-    h1.display-5 {
-        font-size: 30px;                   /* Adjust font size for mobile view */
-        text-align: center;                /* Ensures the text is still centered */
-    }
-}
-
-    </style>
 </head>
 
 <body>
@@ -705,48 +26,55 @@
         crossorigin="anonymous"></script>
 
 
-<!-- Navbar with improved mobile responsiveness -->
-<nav class="navbar navbar-expand-lg bg-white shadow-sm px-4">
-    <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="images/logo.svg" alt="SRM Logo" class="logo-img">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
-                <li class="nav-item mx-2"><a class="nav-link" href="#">Instructions</a></li>
-                <li class="nav-item mx-2"><a class="nav-link" href="#">Admission Procedure</a></li>
-                <li class="nav-item mx-2"><a class="nav-link" href="#">Scholarship</a></li>
-                <li class="nav-item mx-2"><a class="nav-link" href="#">Steps to Follow</a></li>
-            </ul>
-            <button class="btn btn-warning fw-bold ms-lg-3 my-2">Registrations Now</button>
-        </div>
-    </div>
-</nav>
+    <!-- Navbar with improved mobile responsiveness -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm px-4">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/logo.svg" alt="SRM Logo" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+                    <li class="nav-item mx-2"><a class="nav-link" href="#">Instructions</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#">Admission Procedure</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#">Scholarship</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#">Steps to Follow</a></li>
 
-<!-- Hero Section -->
-<section class="hero-section position-relative">
-    <div class="row g-0 h-100">
-        <!-- Left Half -->
-        <div class="col-md-6 bg-white d-flex flex-column justify-content-center ps-md-5 ps-3 py-5">
-            <span class="badge bg-warning text-dark px-3 py-2 mb-3 w-fit">Registrations Open for 2025</span>
-            <h1 class="display-5 fw-bold">Ready to Begin <br>Your PhD Journey?</h1>
-            <div class="phd-section">
-                <h1 class="phd-outline">PHD</h1>
-                <div class="phd-underline"></div>
+                </ul>
+                <button class="btn btn-warning fw-bold ms-lg-3 my-2" style="border: none;">Registrations Now</button>
+
             </div>
         </div>
+    </nav>
 
-        <!-- Right Half -->
-        <div class="col-md-6 bg-blue-custom"></div>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero-section position-relative">
+        <div class="row g-0 h-100">
+            <!-- Left Half -->
+            <div class="col-md-6 bg-white d-flex flex-column justify-content-center ps-md-5 ps-3 py-5">
+                <!-- <span class="badge bg-warning text-dark px-3 py-2 mb-3 w-fit">Registrations Open for 2025</span> -->
+                <a href="#" class="btnew d-inline-block  px-3 py-2 mb-3 w-fit">Registrations Open for 2025</a>
+                <h1 class="display-5 fw-bold">Ready to Begin <br>Your PhD Journey?</h1>
+                <div class="phd-section">
+                    <h1 class="phd-outline" style="
+                width: fit-content;
+                line-height: 3;
+            ">PHD</h1>
+                    <div class="phd-underline"></div>
+                </div>
+            </div>
 
-    <!-- Student Image at Bottom Center -->
-    <img src="/images/hero.png" alt="Student" class="student-img-bottom">
-</section>
+            <!-- Right Half -->
+            <div class="col-md-6 bg-blue-custom"></div>
+        </div>
+
+        <!-- Student Image at Bottom Center -->
+        <img src="/images/hero.png" alt="Student" class="student-img-bottom">
+    </section>
     <!--Header-->
     <section class="accreditation" style="padding-top: 50px;">
         <div class="container">
@@ -758,7 +86,8 @@
                     <div class="afflilation">
                         <img src="images/image 38.png" alt="NAAC Accreditation" class="img-fluid">
                         <div class="inn-aff">
-                            <p>SRM Institute of Science and Technology has been  accredited by NAAC with the highest 'A++' grade.</p>
+                            <p>SRM Institute of Science and Technology has been accredited by NAAC with the highest
+                                'A++' grade.</p>
                         </div>
                     </div>
                 </div>
@@ -766,7 +95,7 @@
                     <div class="afflilation">
                         <img src="images/image 43.png" alt="Shanghai Ranking" class="img-fluid">
                         <div class="inn-aff">
-                            <p>SHANGAI Ranking – 2023 World  ranking 1 among 15 Indian Universities.</p>
+                            <p>SHANGAI Ranking – 2023 World ranking 1 among 15 Indian Universities.</p>
                         </div>
                     </div>
                 </div>
@@ -776,7 +105,8 @@
                     <div class="afflilation">
                         <img src="images/srm-nirf.png" alt="NIRF Ranking" width="60" class="img-fluid">
                         <div class="inn-aff">
-                            <p>SRMIST has been ranked 12th nationally under  universities category by NIRF (National Institutional  Ranking Framework) in 2024.</p>
+                            <p>SRMIST has been ranked 12th nationally under universities category by NIRF (National
+                                Institutional Ranking Framework) in 2024.</p>
                         </div>
                     </div>
                 </div>
@@ -794,7 +124,7 @@
                     <div class="afflilation">
                         <img src="images/image 39.png" alt="MHRD-UGC" class="img-fluid">
                         <div class="inn-aff">
-                            <p>SRM IST is placed in Category 1 with 12 B status by  MHRD-UGC.</p>
+                            <p>SRM IST is placed in Category 1 with 12 B status by MHRD-UGC.</p>
                         </div>
                     </div>
                 </div>
@@ -802,19 +132,20 @@
                     <div class="afflilation">
                         <img src="images/image 41.png" alt="QS Ranking" class="img-fluid">
                         <div class="inn-aff">
-                            <p>SRMIST is regularly ranked by world ranking agencies like QS (UK) and Times  Higher Education (UK).</p>
+                            <p>SRMIST is regularly ranked by world ranking agencies like QS (UK) and Times Higher
+                                Education (UK).</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <section class="pt-100 pt-md-50" style="
     padding-top: 50px;
 ">
         <div class="container">
-            <h1 class="text-center">Join the Premier Institution Ranked as the  #1 University in India</h1>
+            <h1 class="text-center">Join the Premier Institution Ranked as the #1 University in India</h1>
             <p class="text-center pt-20" style="
             padding-bottom: 50px;
         ">Experience the best in placements alongside academic excellence. SRM IST,
@@ -822,9 +153,8 @@
             <div class="row">
                 <div class="col-lg-8 col-md-12 mb-4">
                     <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/YxMB6limtf0?si=teQ1uL9RkL4bgL-s" 
-                            title="YouTube video player" 
-                            frameborder="0"
+                        <iframe src="https://www.youtube.com/embed/YxMB6limtf0?si=teQ1uL9RkL4bgL-s"
+                            title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
@@ -832,7 +162,7 @@
                 <div class="col-lg-4 col-md-12">
                     <div class="tp-counter-br">
                         <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-1 g-3" style="--bs-gutter-x: 0;">
-                            <div class="col mb-4"style="
+                            <div class="col mb-4" style="
                             margin-bottom: 0px;
                         margin-top: 15px">
                                 <div class="tp-fun-fact-item bg-color-1 tp-fun-fact-space-1 align-items-center">
@@ -920,7 +250,7 @@
                                     <img src="images/image1.png" class="img-fluid rounded" alt="Program visual" style="
                                     height: 256px;
                                     padding-left: 75px;
-                                "/>
+                                " />
                                 </div>
                             </div>
                         </div>
@@ -938,7 +268,8 @@
                     <div id="collapseDates" class="accordion-collapse collapse"
                         data-bs-parent="#prerequisitesAccordion">
                         <div class="accordion-body">
-                            <p>Successful admissions are an outcome that depends on applicant meeting various timelines. Find out all the important dates for your application to programmes in SRMRMP.</p>
+                            <p>Successful admissions are an outcome that depends on applicant meeting various timelines.
+                                Find out all the important dates for your application to programmes in SRMRMP.</p>
                             <div class="table-responsive">
                                 <table class="table table-bordered">
                                     <thead class="table-primary">
@@ -972,129 +303,230 @@
                                 </table>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
 
-                    <!-- Eligibility -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingEligibility">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseEligibility" aria-expanded="false"
-                                aria-controls="collapseProgram">
-                                <i class="fas fa-user-check me-2"></i> Eligibility
-                            </button>
-                        </h2>
-                        <div id="collapseEligibility" class="accordion-collapse collapse"
-                            data-bs-parent="#prerequisitesAccordion">
-                            <div class="accordion-body">
-                                <p>
-                                    Two years of Master's degree or a professional degree declared equivalent to the Master's degree by the corresponding statutory regulatory body, with at least 55% marks in aggregate or its equivalent grade 'B' in the UGC 7-point scale (or an equivalent grade in a point scale wherever grading system is followed) or an equivalent degree from a foreign educational Institution accredited by an Assessment and Accreditation Agency which is approved, recognized or authorized by an authority, established or incorporated under a law in its home country or any other statutory authority in that country for the purpose of assessing, accrediting or assuring quality and standards of educational institutions.
-                                </p>
-                                <p>
-                                    Candidates who have cleared the M.Phil. Course work with at least 55% marks in aggregate or its equivalent grade 'B' in the UGC 7-point scale (or an equivalent grade in a point scale wherever grading system is followed) and successfully completed the M.Phil. Degree shall be legible to proceed to do research work leading to the Ph.D Degree in the same Institution.
-                                </p>
-                                <p>
-                                    A relaxation of 5% of marks, or an equivalent relaxation of grade, may be allowed for those belonging to SC/ST/OBC (non-creamy layer)/ differently-abled.
-                                </p>
-                            </div>
-                            
+                <!-- Eligibility -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEligibility">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEligibility" aria-expanded="false" aria-controls="collapseProgram">
+                            <i class="fas fa-user-check me-2"></i> Eligibility
+                        </button>
+                    </h2>
+                    <div id="collapseEligibility" class="accordion-collapse collapse"
+                        data-bs-parent="#prerequisitesAccordion">
+                        <div class="accordion-body">
+                            <p>
+                                Two years of Master's degree or a professional degree declared equivalent to the
+                                Master's degree by the corresponding statutory regulatory body, with at least 55% marks
+                                in aggregate or its equivalent grade 'B' in the UGC 7-point scale (or an equivalent
+                                grade in a point scale wherever grading system is followed) or an equivalent degree from
+                                a foreign educational Institution accredited by an Assessment and Accreditation Agency
+                                which is approved, recognized or authorized by an authority, established or incorporated
+                                under a law in its home country or any other statutory authority in that country for the
+                                purpose of assessing, accrediting or assuring quality and standards of educational
+                                institutions.
+                            </p>
+                            <p>
+                                Candidates who have cleared the M.Phil. Course work with at least 55% marks in aggregate
+                                or its equivalent grade 'B' in the UGC 7-point scale (or an equivalent grade in a point
+                                scale wherever grading system is followed) and successfully completed the M.Phil. Degree
+                                shall be legible to proceed to do research work leading to the Ph.D Degree in the same
+                                Institution.
+                            </p>
+                            <p>
+                                A relaxation of 5% of marks, or an equivalent relaxation of grade, may be allowed for
+                                those belonging to SC/ST/OBC (non-creamy layer)/ differently-abled.
+                            </p>
                         </div>
+
                     </div>
+                </div>
 
-                        <!-- Fee Structure -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFee">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFee">
-                                    <i class="fas fa-dollar-sign me-2"></i> Fee Structure
-                                </button>
-                            </h2>
-                            <div id="collapseFee" class="accordion-collapse collapse"
-                                data-bs-parent="#prerequisitesAccordion">
-                                <div class="accordion-body">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered table-hover align-middle">
-                                            <thead class="table-primary text-center">
-                                                <tr>
-                                                    <th>Branch With Specialization</th>
-                                                    <th>Duration (Min)</th>
-                                                    <th>Duration (Max)</th>
-                                                    <th>Initial Fees</th>
-                                                    <th>Subsequent Fees</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr><td>Science & Medical - Full Time</td><td>3</td><td>5</td><td>15000</td><td>10000</td></tr>
-                                                <tr><td>Humanities - Tamil - Full Time</td><td>3</td><td>5</td><td>15000</td><td>10000</td></tr>
-                                                <tr><td>Humanities - Others - Full Time</td><td>3</td><td>5</td><td>15000</td><td>10000</td></tr>
-                                                <tr><td>Science & Medical - Part Time - External</td><td>3</td><td>6</td><td>15000</td><td>10000</td></tr>
-                                                <tr><td>Science & Medical - Part Time - External</td><td>3</td><td>6</td><td>15000</td><td>10000</td></tr>
-                                                <tr><td>Engineering & Technology - Part Time - External</td><td>3</td><td>6</td><td>30000</td><td>15000</td></tr>
-                                                <tr><td>Humanities - Tamil - Part Time - Internal</td><td>3</td><td>6</td><td>3000</td><td>2000</td></tr>
-                                                <tr><td>Science & Medical - Scholar from Industry - Part Time - External</td><td>3</td><td>6</td><td>35000</td><td>20000</td></tr>
-                                                <tr><td>Engineering & Technology - Scholar from Industry - Part Time - External</td><td>3</td><td>6</td><td>50000</td><td>25000</td></tr>
-                                                <tr><td>Humanities - Tamil - Part Time - External</td><td>3</td><td>6</td><td>5000</td><td>3000</td></tr>
-                                                <tr><td>Science & Medical - Part Time - Internal</td><td>3</td><td>6</td><td>6000</td><td>3000</td></tr>
-                                                <tr><td>Humanities - Others - Part Time - Internal</td><td>3</td><td>6</td><td>5000</td><td>3000</td></tr>
-                                                <tr><td>Humanities - Others - Part Time - External</td><td>3</td><td>6</td><td>10000</td><td>6000</td></tr>
-                                                <tr><td>Engineering & Technology - Part Time - Internal</td><td>3</td><td>6</td><td>12000</td><td>6000</td></tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                
-                                
+                <!-- Fee Structure -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFee">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFee">
+                            <i class="fas fa-dollar-sign me-2"></i> Fee Structure
+                        </button>
+                    </h2>
+                    <div id="collapseFee" class="accordion-collapse collapse" data-bs-parent="#prerequisitesAccordion">
+                        <div class="accordion-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover align-middle">
+                                    <thead class="table-primary text-center">
+                                        <tr>
+                                            <th>Branch With Specialization</th>
+                                            <th>Duration (Min)</th>
+                                            <th>Duration (Max)</th>
+                                            <th>Initial Fees</th>
+                                            <th>Subsequent Fees</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Science & Medical - Full Time</td>
+                                            <td>3</td>
+                                            <td>5</td>
+                                            <td>15000</td>
+                                            <td>10000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Humanities - Tamil - Full Time</td>
+                                            <td>3</td>
+                                            <td>5</td>
+                                            <td>15000</td>
+                                            <td>10000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Humanities - Others - Full Time</td>
+                                            <td>3</td>
+                                            <td>5</td>
+                                            <td>15000</td>
+                                            <td>10000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Science & Medical - Part Time - External</td>
+                                            <td>3</td>
+                                            <td>6</td>
+                                            <td>15000</td>
+                                            <td>10000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Science & Medical - Part Time - External</td>
+                                            <td>3</td>
+                                            <td>6</td>
+                                            <td>15000</td>
+                                            <td>10000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Engineering & Technology - Part Time - External</td>
+                                            <td>3</td>
+                                            <td>6</td>
+                                            <td>30000</td>
+                                            <td>15000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Humanities - Tamil - Part Time - Internal</td>
+                                            <td>3</td>
+                                            <td>6</td>
+                                            <td>3000</td>
+                                            <td>2000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Science & Medical - Scholar from Industry - Part Time - External</td>
+                                            <td>3</td>
+                                            <td>6</td>
+                                            <td>35000</td>
+                                            <td>20000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Engineering & Technology - Scholar from Industry - Part Time - External
+                                            </td>
+                                            <td>3</td>
+                                            <td>6</td>
+                                            <td>50000</td>
+                                            <td>25000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Humanities - Tamil - Part Time - External</td>
+                                            <td>3</td>
+                                            <td>6</td>
+                                            <td>5000</td>
+                                            <td>3000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Science & Medical - Part Time - Internal</td>
+                                            <td>3</td>
+                                            <td>6</td>
+                                            <td>6000</td>
+                                            <td>3000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Humanities - Others - Part Time - Internal</td>
+                                            <td>3</td>
+                                            <td>6</td>
+                                            <td>5000</td>
+                                            <td>3000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Humanities - Others - Part Time - External</td>
+                                            <td>3</td>
+                                            <td>6</td>
+                                            <td>10000</td>
+                                            <td>6000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Engineering & Technology - Part Time - Internal</td>
+                                            <td>3</td>
+                                            <td>6</td>
+                                            <td>12000</td>
+                                            <td>6000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
 
-                            <!-- How to Apply -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingApply">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseApply">
-                                        <i class="fas fa-info-circle me-2"></i> How to Apply
-                                    </button>
-                                </h2>
-                                <div id="collapseApply" class="accordion-collapse collapse"
-                                    data-bs-parent="#prerequisitesAccordion">
-                                    <div class="accordion-body">
-                                        <div class="row g-4">
-                                            <div class="col-12">
-                                                <h5 class="fw-bold">APPLY ONLINE WITH E-PAYMENT</h5>
-                                                <div class="card">
-                                                    <div class="card-header bg-info-subtle fw-semibold">
-                                                        INSTRUCTIONS
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <ul class="mb-0">
-                                                            <li>(i) All fields marked with * in the application form are mandatory to be filled.</li>
-                                                            <li>(ii) Please keep the following self-attested scanned documents ready before filling the application form:
-                                                                <ul>
-                                                                    <li>Passport sized (dimension 200 x 230 pixels preferred) photograph</li>
-                                                                    <li>Signature (dimension 140 x 60 pixels preferred)</li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>After successful submission of the application form, an application number will be generated. Save that number for future reference and communications.</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
+
+                    </div>
+                </div>
+
+                <!-- How to Apply -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingApply">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseApply">
+                            <i class="fas fa-info-circle me-2"></i> How to Apply
+                        </button>
+                    </h2>
+                    <div id="collapseApply" class="accordion-collapse collapse"
+                        data-bs-parent="#prerequisitesAccordion">
+                        <div class="accordion-body">
+                            <div class="row g-4">
+                                <div class="col-12">
+                                    <h5 class="fw-bold">APPLY ONLINE WITH E-PAYMENT</h5>
+                                    <div class="card">
+                                        <div class="card-header bg-info-subtle fw-semibold">
+                                            INSTRUCTIONS
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="mb-0">
+                                                <li>(i) All fields marked with * in the application form are mandatory
+                                                    to be filled.</li>
+                                                <li>(ii) Please keep the following self-attested scanned documents ready
+                                                    before filling the application form:
+                                                    <ul>
+                                                        <li>Passport sized (dimension 200 x 230 pixels preferred)
+                                                            photograph</li>
+                                                        <li>Signature (dimension 140 x 60 pixels preferred)</li>
+                                                    </ul>
+                                                </li>
+                                                <li>After successful submission of the application form, an application
+                                                    number will be generated. Save that number for future reference and
+                                                    communications.</li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    
                                 </div>
                             </div>
+                        </div>
 
-                                <!-- Stipend -->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingStipend">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseStipend">
-                                            <i class="fas fa-money-bill-wave me-2"></i> Stipend
-                                        </button>
-                                    </h2>
-                                    <div id="collapseStipend" class="accordion-collapse collapse"
+                    </div>
+                </div>
+
+                <!-- Stipend -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingStipend">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseStipend">
+                            <i class="fas fa-money-bill-wave me-2"></i> Stipend
+                        </button>
+                    </h2>
+                    <div id="collapseStipend" class="accordion-collapse collapse"
                         data-bs-parent="#prerequisitesAccordion">
                         <div class="accordion-body">
                             <div class="accordion-body">
@@ -1112,48 +544,49 @@
                         </div>
                     </div>
 
-                                </div>
-                                <!-- Accordion Ends -->
-                            </div>
+                </div>
+                <!-- Accordion Ends -->
+            </div>
     </section>
 
-    
+
     <!--New Section -->
 
     <section class="p-top-90 p-bottom-90">
         <div class="carousel-wrapper">
-          <div class="section_title text-center">
-            <h1>Global Academic Collaborations</h1>
-          </div>
-      
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="logo-carousel-four owl-carousel" role="region" aria-label="Client Logos Carousel" style="background-image: url('images/7.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
-                  <div class="carousel-single">
-                    <img src="images/mass.jpg" loading="lazy" alt="Client 1 Logo" class="img-fluid">
-                  </div>
-                  <div class="carousel-single">
-                    <img src="images/nus.jpg" loading="lazy" alt="Client 2 Logo" class="img-fluid">
-                  </div>
-                  <div class="carousel-single">
-                    <img src="images/bir.jpeg" loading="lazy" alt="Client 3 Logo" class="img-fluid">
-                  </div>
-                  <div class="carousel-single">
-                    <img src="images/tsing.jpg" loading="lazy" alt="Client 4 Logo" class="img-fluid">
-                  </div>
-                  <div class="carousel-single">
-                    <img src="images/illi.png" loading="lazy" alt="Client 5 Logo" class="img-fluid">
-                  </div>
-                  <div class="carousel-single">
-                    <img src="images/tai.png" loading="lazy" alt="Client 6 Logo" class="img-fluid">
-                  </div>
-                </div>
-              </div>
+            <div class="section_title text-center">
+                <h1>Global Academic Collaborations</h1>
             </div>
-          </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="logo-carousel-four owl-carousel" role="region" aria-label="Client Logos Carousel"
+                            style="background-image: url('images/7.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+                            <div class="carousel-single">
+                                <img src="images/mass.jpg" loading="lazy" alt="Client 1 Logo" class="img-fluid">
+                            </div>
+                            <div class="carousel-single">
+                                <img src="images/nus.jpg" loading="lazy" alt="Client 2 Logo" class="img-fluid">
+                            </div>
+                            <div class="carousel-single">
+                                <img src="images/bir.jpeg" loading="lazy" alt="Client 3 Logo" class="img-fluid">
+                            </div>
+                            <div class="carousel-single">
+                                <img src="images/tsing.jpg" loading="lazy" alt="Client 4 Logo" class="img-fluid">
+                            </div>
+                            <div class="carousel-single">
+                                <img src="images/illi.png" loading="lazy" alt="Client 5 Logo" class="img-fluid">
+                            </div>
+                            <div class="carousel-single">
+                                <img src="images/tai.png" loading="lazy" alt="Client 6 Logo" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
     <!--New Section -->
 
     <!-- Why SRM IST Ramapuram Section with improved mobile layout -->
@@ -1255,7 +688,7 @@
         </div>
     </section>
 
-    
+
 
     <!--End of Why SRM IST Ramapuram-->
 
@@ -1263,49 +696,49 @@
     <!-- Key Highlights section completely restructured for better mobile responsiveness -->
     <section class="key-highlights py-5" style="background-color: white;padding-bottom: 40px !important">
         <div class="container">
-        
+
             <div class="row">
                 <div class="col-12">
                     <div class="circle-container">
                         <div class="center-logo">
                             <img src="images/logo.png" alt="SRM Logo">
                         </div>
-                        
+
                         <div class="info-box top">
                             <h4>#1</h4>
                             <p>SRM IST Ranked India's No.1 University</p>
                         </div>
-                        
+
                         <div class="info-box top-right">
                             <h4>4</h4>
                             <p>Decades</p>
                         </div>
-                        
+
                         <div class="info-box right">
                             <h4>17</h4>
                             <p>Institutions</p>
                         </div>
-                        
+
                         <div class="info-box bottom-right">
                             <h4>40+</h4>
                             <p>Years of experience in education</p>
                         </div>
-                        
+
                         <div class="info-box bottom">
                             <h4>2nd</h4>
                             <p>in ARIIA</p>
                         </div>
-                        
+
                         <div class="info-box bottom-left">
                             <h4>A++</h4>
                             <p>NAAC Accreditation</p>
                         </div>
-                        
+
                         <div class="info-box left">
                             <h4>1985</h4>
                             <p>Established</p>
                         </div>
-                        
+
                         <div class="info-box top-left">
                             <h4>50,000+</h4>
                             <p>Students</p>
@@ -1322,7 +755,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="ban-text text-center text-md-start">
-                        <h1 style="color: #ffff; line-height: 1.4;">Join the Ranks of Tomorrow's <br class="d-none d-md-block">Leaders – Enroll Now at SRM</h1>
+                        <h1 style="color: #ffff; line-height: 1.4;">Join the Ranks of Tomorrow's <br
+                                class="d-none d-md-block">Leaders – Enroll Now at SRM</h1>
                         <a href="#" class="btnew d-inline-block mt-3">Registration Open - 2025</a>
                     </div>
                 </div>
@@ -1361,33 +795,36 @@
                     padding-top: 25px;
                 ">
                         <!-- Phone Link -->
-                        <a href="tel:1800 102 1525" class="d-flex align-items-center justify-content-center gap-2 mb-2 contact-item">
+                        <a href="tel:1800 102 1525"
+                            class="d-flex align-items-center justify-content-center gap-2 mb-2 contact-item">
                             <img src="images/ion-call.svg" alt="Phone">
                             <span>1800 102 1525</span>
                         </a>
-                        
+
                         <!-- Separator (|) -->
                         <span class="separator">|</span>
-                        
+
                         <!-- Email Link -->
-                        <a href="mailto:helpdesk@srmrmp.edu.in" class="d-flex align-items-center justify-content-center gap-2 mb-2 contact-item">
+                        <a href="mailto:helpdesk@srmrmp.edu.in"
+                            class="d-flex align-items-center justify-content-center gap-2 mb-2 contact-item">
                             <img src="images/Symbol.svg" alt="Email">
                             <span>helpdesk@srmrmp.edu.in</span>
                         </a>
-                        
+
                         <!-- Separator (|) -->
                         <span class="separator">|</span>
-                        
+
                         <!-- Location Link -->
-                        <a href="https://maps.app.goo.gl/NyAxj1oZZUHSWmpC9" class="d-flex align-items-center justify-content-center gap-2 text-center contact-item">
+                        <a href="https://maps.app.goo.gl/NyAxj1oZZUHSWmpC9"
+                            class="d-flex align-items-center justify-content-center gap-2 text-center contact-item">
                             <img src="images/location.svg" alt="Location">
                             <span>Bharathi Salai, Ramapuram, Chennai – 600 089. Tamil Nadu India</span>
                         </a>
                     </div>
                 </div>
-                
-                
-                
+
+
+
             </div>
         </div>
         <div class="copyright py-3" style="
@@ -1414,24 +851,24 @@
     </script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-          document.querySelectorAll('.accordion-button').forEach(button => {
-            const collapse = document.querySelector(button.getAttribute('data-bs-target'));
-            if (collapse && collapse.classList.contains('show')) {
-              button.classList.add('gradient-bg');
-            }
-      
-            if (collapse) {
-              collapse.addEventListener('show.bs.collapse', () => {
-                button.classList.add('gradient-bg');
-              });
-        
-              collapse.addEventListener('hide.bs.collapse', () => {
-                button.classList.remove('gradient-bg');
-              });
-            }
-          });
+            document.querySelectorAll('.accordion-button').forEach(button => {
+                const collapse = document.querySelector(button.getAttribute('data-bs-target'));
+                if (collapse && collapse.classList.contains('show')) {
+                    button.classList.add('gradient-bg');
+                }
+
+                if (collapse) {
+                    collapse.addEventListener('show.bs.collapse', () => {
+                        button.classList.add('gradient-bg');
+                    });
+
+                    collapse.addEventListener('hide.bs.collapse', () => {
+                        button.classList.remove('gradient-bg');
+                    });
+                }
+            });
         });
-      </script>      
+    </script>
     <script>
         $(document).ready(function () {
             $(".logo-carousel-four").owlCarousel({
@@ -1447,25 +884,25 @@
                     1000: { items: 5 }
                 }
             });
-            
+
             // Mobile menu handling
-            $('.navbar-toggler').on('click', function() {
+            $('.navbar-toggler').on('click', function () {
                 if ($('.navbar-collapse').hasClass('show')) {
                     $('.navbar-collapse').removeClass('show');
                 } else {
                     $('.navbar-collapse').addClass('show');
                 }
             });
-            
+
             // Close menu when clicking outside
-            $(document).on('click', function(e) {
+            $(document).on('click', function (e) {
                 if (!$(e.target).closest('.navbar').length) {
                     $('.navbar-collapse').removeClass('show');
                 }
             });
-            
+
             // Close menu when clicking a nav link on mobile
-            $('.navbar-nav .nav-link').on('click', function() {
+            $('.navbar-nav .nav-link').on('click', function () {
                 if ($(window).width() < 992) {
                     $('.navbar-collapse').removeClass('show');
                 }
