@@ -548,3 +548,40 @@ h1 {
     margin: 0 auto 40px;
     max-width: 300px;
   }
+  .bannlas{
+    background-image: url('images/banner.png');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+  .ban-text{
+    width: 50%;
+    align-items: center;
+  }
+  .btnew{
+    padding: 10px 30px 10px 30px;
+    background: rgb(251,202,56);
+    background: linear-gradient(101deg, rgba(251,202,56,1) 0%, rgba(255,167,0,1) 65%);
+    color: #000;
+    text-decoration: none;
+    margin-top: 50px;
+  }
+  .footer{
+    background-color: #e0e0e0;
+  }
+  .add-pho{
+    display: flex;
+        justify-content: center;
+        gap: 30px;
+
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+    }
+    .copyright{
+        background-color: #0064b8;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
