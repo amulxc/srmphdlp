@@ -8,6 +8,10 @@
     overflow: hidden;
 }
 
+#img-bg{
+    height: 100%;
+}
+
 .bg-blue-custom {
     background-color: #eaf4ff;
 }
