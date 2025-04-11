@@ -21,6 +21,17 @@
     font-family: 'Poppins', sans-serif; 
     letter-spacing: 5px; 
   } */
+
+  .gradient-btn {
+    background: linear-gradient(to right, #FBCA38, #FFA700);
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    border: none;
+    border-radius: 0;
+  }
+
   
   .phd-section {
     position: relative;
@@ -777,14 +788,6 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
 }
-
-/* Adjust for mobile */
-@media (max-width: 768px) {
-    .key-highlights {
-        padding: 40px 0;
-    }
-}
-
 
 /* test */
 .accordion-item {
@@ -1708,37 +1711,6 @@ img.img-fluid {
     }
 }
 
-/* Fix for owl carousel to display as rows in mobile */
-@media (max-width: 768px) {
-
-    /* Override owl carousel settings for mobile */
-    .owl-carousel {
-        display: block !important;
-    }
-
-    .owl-carousel .owl-stage-outer {
-        overflow: visible !important;
-    }
-
-    .owl-carousel .owl-stage {
-        transform: none !important;
-        width: 100% !important;
-    }
-
-    .owl-carousel .owl-item {
-        display: block;
-        clear: both;
-        float: none;
-        margin: 10px auto;
-    }
-
-    /* Hide navigation dots and arrows on mobile */
-    .owl-carousel .owl-nav,
-    .owl-carousel .owl-dots {
-        display: none;
-    }
-}
-
 h1.display-5 {
     font-family: 'Open Sans', sans-serif;
     /* Ensures the font is Open Sans */
@@ -1771,6 +1743,12 @@ h1.display-5 {
 @media (max-width: 768px) {
     #registration-link {
         display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #phd-header {
+        text-align: center;
     }
 }
 
@@ -1826,3 +1804,55 @@ h1.display-5 {
         padding: 12px;
     }
 }
+
+
+.section_title {
+    margin-bottom: 40px;
+  }
+
+  .carousel-single img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .p-top-90 {
+    padding-top: 90px;
+  }
+
+  .p-bottom-90 {
+    padding-bottom: 90px;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  .no-js .owl-carousel, .owl-carousel.owl-loaded{
+    padding-top: 200px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  .header-image {
+    display: block;
+    margin: 0 auto 40px;
+    max-width: 300px;
+  }
+  
+
+  .logo-carousel-four {
+    width: 100%;
+    overflow: hidden;
+  }
