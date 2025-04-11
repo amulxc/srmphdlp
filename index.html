@@ -21,29 +21,29 @@
         .logo-carousel-four {
             width: 100% !important;
         }
-        
+
         @media (max-width: 767px) {
             .logo-carousel-four .owl-stage-outer {
                 overflow: hidden !important;
             }
-            
+
             .logo-carousel-four .owl-stage {
                 display: flex !important;
             }
-            
+
             .logo-carousel-four .carousel-single {
                 display: flex !important;
                 justify-content: center !important;
                 align-items: center !important;
                 height: 120px !important;
             }
-            
+
             .logo-carousel-four .carousel-single img {
                 max-height: 100px !important;
                 width: auto !important;
                 max-width: 90% !important;
             }
-            
+
             .logo-carousel-four.owl-carousel {
                 display: block !important;
             }
@@ -53,27 +53,27 @@
             .logo-carousel-four.owl-carousel {
                 display: block !important;
                 width: 100% !important;
-                overflow: hidden !important; 
+                overflow: hidden !important;
             }
-            
+
             .owl-stage-outer {
                 overflow: hidden !important;
                 width: 100% !important;
             }
-            
+
             .owl-stage {
                 display: flex !important;
                 transition-property: transform !important;
                 transition-timing-function: linear !important;
             }
-            
+
             .owl-item {
                 float: left !important;
                 flex-shrink: 0 !important;
                 width: 100% !important;
                 max-width: 250px !important;
             }
-            
+
             .carousel-single {
                 display: flex !important;
                 justify-content: center !important;
@@ -81,7 +81,7 @@
                 height: 100px !important;
                 padding: 10px !important;
             }
-            
+
             .carousel-single img {
                 max-height: 80px !important;
                 width: auto !important;
@@ -91,9 +91,9 @@
             }
         }
 
-        .owl-nav, 
-        .owl-dots, 
-        .owl-nav button, 
+        .owl-nav,
+        .owl-dots,
+        .owl-nav button,
         .owl-dots button {
             display: none !important;
             opacity: 0 !important;
@@ -105,12 +105,14 @@
             padding: 0 !important;
             position: absolute !important;
         }
-        
+
         .owl-stage {
             padding: 0 !important;
+            height: 200px !important;
         }
-        
+
         @media (max-width: 767px) {
+
             .owl-carousel .owl-nav,
             .owl-carousel .owl-dots,
             .owl-carousel .owl-nav button,
@@ -130,7 +132,7 @@
         crossorigin="anonymous"></script>
 
 
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm px-4">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm px-4" style="background-color: none;">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="images/logo.svg" alt="SRM Logo" class="logo-img">
@@ -148,24 +150,25 @@
                     <li class="nav-item mx-2"><a class="nav-link" href="#">Steps to Follow</a></li>
 
                 </ul>
-              <button class="gradient-btn">Registrations Open for 2025 </button>
+                <button class="gradient-btn">Registrations Open for 2025 </button>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section position-relative">
+    <section class="hero-section position-relative" style="
+    background: #DCEFFF;
+">
         <div class="row g-0 h-100">
             <!-- Left Half -->
             <div class="col-md-6 bg-white d-flex flex-column justify-content-center ps-md-5 ps-3 py-5">
-                <a href="#" class="btnew d-inline-block px-3 py-2 mb-3 w-fit" style="display: block;"  id="registration-link">Registrations Open for 2025</a>
+                <a href="#" class="btnew d-inline-block px-3 py-2 mb-3 w-fit" style="display: block;font-weight: 500"
+                    id="registration-link">Registrations Open for 2025</a>
 
                 <h1 class="custom-display-5">Ready to Begin <br>Your PhD Journey?</h1>
+
                 <div class="phd-section">
-                    <h1 class="phd-outline" style="
-                width: fit-content;
-                line-height: 3;
-            "  id="phd-header">PHD</h1>
+                    <h1 class="phd-outline" style="width: fit-content; line-height: 3;" id="phd-header">PHD</h1>
                     <div class="phd-underline"></div>
                 </div>
             </div>
@@ -180,63 +183,53 @@
     <!--Header-->
     <section class="accreditation" style="padding-top: 50px;">
         <div class="container">
-            <h1 class="text-center mb-4" style="
-            margin-bottom: 70px !important;
-        ">Affiliations & Accreditations</h1>
-            <div class="row">
-                <div class="col-lg-6 col-md-12 mb-3">
-                    <div class="afflilation">
-                        <img src="images/image 38.png" alt="NAAC Accreditation" class="img-fluid">
-                        <div class="inn-aff">
-                            <p>SRM Institute of Science and Technology has been accredited by NAAC with the highest
-                                'A++' grade.</p>
-                        </div>
+            <h1 class="text-center mb-4" style="margin-bottom: 70px !important;">
+                Affiliations & Accreditations
+            </h1>
+
+            <div class="grid-container">
+                <div class="afflilation">
+                    <img src="images/image 38.png" alt="NAAC Accreditation" class="img-fluid">
+                    <div class="inn-aff">
+                        <p>SRM Institute of Science and Technology has been accredited by NAAC with the highest 'A++'
+                            grade.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 mb-3">
-                    <div class="afflilation">
-                        <img src="images/image 43.png" alt="Shanghai Ranking" class="img-fluid">
-                        <div class="inn-aff">
-                            <p>SHANGAI Ranking – 2023 World ranking 1 among 15 Indian Universities.</p>
-                        </div>
+
+                <div class="afflilation">
+                    <img src="images/image 43.png" alt="Shanghai Ranking" class="img-fluid">
+                    <div class="inn-aff">
+                        <p>SHANGAI Ranking – 2023 World ranking 1 among 15 Indian Universities.</p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-12 mb-3">
-                    <div class="afflilation">
-                        <img src="images/srm-nirf.png" alt="NIRF Ranking" width="60" class="img-fluid">
-                        <div class="inn-aff">
-                            <p>SRMIST has been ranked 12th nationally under universities category by NIRF (National
-                                Institutional Ranking Framework) in 2024.</p>
-                        </div>
+
+                <div class="afflilation">
+                    <img src="images/srm-nirf.png" alt="NIRF Ranking" width="60" class="img-fluid">
+                    <div class="inn-aff">
+                        <p>SRMIST has been ranked 12th nationally under universities category by NIRF (National
+                            Institutional Ranking Framework) in 2024.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 mb-3">
-                    <div class="afflilation">
-                        <img src="images/image 42.png" alt="World Ranking" class="img-fluid">
-                        <div class="inn-aff">
-                            <p>World ranking 1 among 46 Indian universities.</p>
-                        </div>
+
+                <div class="afflilation">
+                    <img src="images/image 42.png" alt="World Ranking" class="img-fluid">
+                    <div class="inn-aff">
+                        <p>World ranking 1 among 46 Indian universities.</p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-12 mb-3">
-                    <div class="afflilation">
-                        <img src="images/image 39.png" alt="MHRD-UGC" class="img-fluid">
-                        <div class="inn-aff">
-                            <p>SRM IST is placed in Category 1 with 12 B status by MHRD-UGC.</p>
-                        </div>
+
+                <div class="afflilation">
+                    <img src="images/image 39.png" alt="MHRD-UGC" class="img-fluid">
+                    <div class="inn-aff">
+                        <p>SRM IST is placed in Category 1 with 12 B status by MHRD-UGC.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 mb-3">
-                    <div class="afflilation">
-                        <img src="images/image 41.png" alt="QS Ranking" class="img-fluid">
-                        <div class="inn-aff">
-                            <p>SRMIST is regularly ranked by world ranking agencies like QS (UK) and Times Higher
-                                Education (UK).</p>
-                        </div>
+
+                <div class="afflilation">
+                    <img src="images/image 41.png" alt="QS Ranking" class="img-fluid">
+                    <div class="inn-aff">
+                        <p>SRMIST is regularly ranked by world ranking agencies like QS (UK) and Times Higher Education
+                            (UK).</p>
                     </div>
                 </div>
             </div>
@@ -254,7 +247,7 @@
                 Ramapuram is a place for learning, discovery, innovation, expression, and discourse.</p>
             <div class="row">
                 <div class="col-lg-8 col-md-12 mb-4">
-                    <div class="ratio ratio-16x9">
+                    <div class="ratio ratio-16x9" style="border-radius: 6px;">
                         <iframe src="https://www.youtube.com/embed/YxMB6limtf0?si=teQ1uL9RkL4bgL-s"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -266,9 +259,9 @@
                         <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-1 g-3" style="--bs-gutter-x: 0;">
                             <div class="col mb-4" style="
                             margin-bottom: 0px;
-                        margin-top: 15px"
-                        >
-                                <div class="tp-fun-fact-item bg-color-1 tp-fun-fact-space-1 align-items-center" style="box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1;">
+                        margin-top: 15px">
+                                <div class="tp-fun-fact-item bg-color-1 tp-fun-fact-space-1 align-items-center"
+                                    style="box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1;">
                                     <h4>39<span>K+</span></h4>
                                     <p>International Students</p>
                                 </div>
@@ -277,7 +270,8 @@
                             <div class="col mb-4" style="
                             margin-bottom: 0px;
                         margin-top: -7px">
-                                <div class="tp-fun-fact-item bg-color-3 tp-fun-fact-space-3 align-items-center" style="box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1;">
+                                <div class="tp-fun-fact-item bg-color-3 tp-fun-fact-space-3 align-items-center"
+                                    style="box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1;">
                                     <h4>25<span>K+</span></h4>
                                     <p>Scholarships Provided</p>
                                 </div>
@@ -286,7 +280,8 @@
                             <div class="col mb-4" style="
                             margin-bottom: 0px;
                         margin-top: -7px">
-                                <div class="tp-fun-fact-item bg-color-2 tp-fun-fact-space-2 align-items-center" style="box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1;">
+                                <div class="tp-fun-fact-item bg-color-2 tp-fun-fact-space-2 align-items-center"
+                                    style="box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1;">
                                     <h4>1000<span>+</span></h4>
                                     <p>Research Publications</p>
                                 </div>
@@ -646,48 +641,49 @@
                             </div>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
     </section>
-    
-  <section class="p-top-90 p-bottom-90" style="background-image: image(images/7.png);">
-    
-    <div class="carousel-wrapper">
-      <div class="section_title text-center">
-        <h1>Global Academic Collaborations</h1>
-      </div>
-  
-      <div class="container">
-        
-        <div class="row">
-          <div class="col-lg-12  ">
-            <div class="logo-carousel-four owl-carousel" role="region" aria-label="Client Logos Carousel "style="background-image: url('images/7.png'); background-size: 600px; background-position: center;background-repeat: no-repeat;">
-              
-              <div class="carousel-single">
-                <img src="images/mass.jpg" loading="lazy" alt="Client 1 Logo">
-              </div>
-              <div class="carousel-single">
-                <img src="images/nus.jpg" loading="lazy" alt="Client 2 Logo">
-              </div>
-              <div class="carousel-single">
-                <img src="images/bir.jpeg" loading="lazy" alt="Client 3 Logo">
-              </div>
-              <div class="carousel-single">
-                <img src="images/tsing.jpg" loading="lazy" alt="Client 4 Logo">
-              </div>
-              <div class="carousel-single">
-                <img src="images/illi.png" loading="lazy" alt="Client 5 Logo">
-              </div>
-              <div class="carousel-single">
-                <img src="images/tai.png" loading="lazy" alt="Client 6 Logo">
-              </div>
+
+    <section class="p-top-90" style="background-image: image(images/7.png);">
+
+        <div class="carousel-wrapper">
+            <div class="section_title text-center">
+                <h1>Global Academic Collaborations</h1>
             </div>
-          </div>
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12  ">
+                        <div class="logo-carousel-four owl-carousel" role="region" aria-label="Client Logos Carousel "
+                            style="background-image: url('images/7.png'); background-size: 600px; background-position: center;background-repeat: no-repeat;">
+
+                            <div class="carousel-single">
+                                <img src="images/mass.jpg" loading="lazy" alt="Client 1 Logo">
+                            </div>
+                            <div class="carousel-single">
+                                <img src="images/nus.jpg" loading="lazy" alt="Client 2 Logo">
+                            </div>
+                            <div class="carousel-single">
+                                <img src="images/bir.jpeg" loading="lazy" alt="Client 3 Logo">
+                            </div>
+                            <div class="carousel-single">
+                                <img src="images/tsing.jpg" loading="lazy" alt="Client 4 Logo">
+                            </div>
+                            <div class="carousel-single">
+                                <img src="images/illi.png" loading="lazy" alt="Client 5 Logo">
+                            </div>
+                            <div class="carousel-single">
+                                <img src="images/tai.png" loading="lazy" alt="Client 6 Logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  </section>
+        </div>
+    </section>
     <!--New Section -->
 
     <!-- Why SRM IST Ramapuram Section with improved mobile layout -->
@@ -715,21 +711,21 @@
                     <div class="card bg-dark text-white border-0 mb-3">
                         <img src="images/image2.png" class="card-img" alt="Placement">
                         <div class="card-img-overlay d-flex align-items-end p-0">
-                            <div class="w-100 gradient-overlay p-2">
+                            <div class="w-100 gradient-overlay p-2" id="card-image">
                                 <p class="card-text fw-semibold m-0" style="text-align: center;">Placement in the
-                                    Fortune 500 companies</p>
+                                    Fortune <br> 500 companies</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                    <div class="card bg-dark text-white border-0">
-                        <img src="images/image3.png" class="card-img" alt="Chennai city">
+                    <div class="card bg-dark text-white border-0" id="img-bg">
+                        <img src="images/image3.png" class="card-img" alt="Chennai city"  id="img-data">
                         <div class="card-img-overlay d-flex align-items-end p-0">
                             <div class="w-100 gradient-overlay p-2">
-                                <p class="card-text fw-semibold m-0" style="text-align: center;">Safely located within
-                                    Chennai city</p>
+                                <p class="card-text fw-semibold m-0" style="text-align: center;">Safely located
+                                    within<br>Chennai city</p>
                             </div>
                         </div>
                     </div>
@@ -744,7 +740,8 @@
                         <div class="card-img-overlay d-flex align-items-end p-0">
                             <div class="w-100 gradient-overlay p-2">
                                 <p class="card-text fw-semibold m-0" style="text-align: center;">Semester Abroad Program
-                                    in 9+ countries</p>
+                                    <br>in 9+ countries
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -755,8 +752,8 @@
                         <img src="images/image5.png" class="card-img" alt="Internships">
                         <div class="card-img-overlay d-flex align-items-end p-0">
                             <div class="w-100 gradient-overlay p-2">
-                                <p class="card-text fw-semibold m-0" style="text-align: center;">International
-                                    Internships</p>
+                                <p class="card-text fw-semibold m-0" style="text-align: center;">
+                                    International<br>Internships</p>
                             </div>
                         </div>
                     </div>
@@ -766,9 +763,9 @@
                     <div class="card bg-dark text-white border-0 mb-3">
                         <img src="images/image1.png" class="card-img" alt="Innovation">
                         <div class="card-img-overlay d-flex align-items-end p-0">
-                            <div class="w-100 gradient-overlay p-2">
-                                <p class="card-text fw-semibold m-0" style="text-align: center;">Support for Innovation
-                                    & Start-ups</p>
+                            <div class="w-100 gradient-overlay p-2"  id="card-image">
+                                <p class="card-text fw-semibold m-0" style="text-align: center;">Support for
+                                    Innovation<br>& Start-ups</p>
                             </div>
                         </div>
                     </div>
@@ -778,9 +775,10 @@
                     <div class="card bg-dark text-white border-0 mb-3">
                         <img src="images/image6.png" class="card-img" alt="Hostel">
                         <div class="card-img-overlay d-flex align-items-end p-0">
-                            <div class="w-100 gradient-overlay p-2">
-                                <p class="card-text fw-semibold m-0" style="text-align: center;">Fully Equipped Hostel
-                                    Facilities</p>
+                            <div class="w-100 gradient-overlay p-2"  id="card-image">
+                                <p class="card-text fw-semibold m-0" style="text-align: center;">Fully Equipped
+                                    <br>Facilities
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -801,7 +799,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="circle-container">
-                        <div class="center-logo">
+                        <div class="center-logo d-none d-lg-block">
                             <img src="images/logo.png" alt="SRM Logo">
                         </div>
 
@@ -823,6 +821,10 @@
                         <div class="info-box bottom-right">
                             <h4>40+</h4>
                             <p>Years of experience in education</p>
+                        </div>
+
+                        <div class="center-logo1">
+                            <img src="images/logo.png" alt="SRM Logo">
                         </div>
 
                         <div class="info-box bottom">
@@ -872,12 +874,8 @@
                 <div class="col-12 text-center">
                     <img src="images/logo.svg" class="img-fluid" style="max-width: 250px;">
                 </div>
-                <div class="col-12" style="
-                height: 75px;
-            ">
-                    <div class="add-pho pt-50 pb-3" style="
-                    padding-top: 25px;
-                ">
+                <div class="col-12" style="height: 75px;">
+                    <div class="add-pho pt-50 pb-3 text-md-center text-start" style="padding-top: 25px;">
                         <!-- Phone Link -->
                         <a href="tel:1800 102 1525"
                             class="d-flex align-items-center justify-content-center gap-2 mb-2 contact-item">
@@ -954,37 +952,37 @@
         });
     </script>
     <!-- Carousel Initialization -->
-  <script>
-    $(document).ready(function(){
-      $(".logo-carousel-four").owlCarousel({
-        loop: true,
-        margin: 30,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        responsiveClass: true,
-        responsive: {
-          0: { items: 2 },
-          600: { items: 3 },
-          1000: { items: 5 }
-        }
-      });
-    });
+    <script>
+        $(document).ready(function () {
+            $(".logo-carousel-four").owlCarousel({
+                loop: true,
+                margin: 30,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                responsive: {
+                    0: { items: 2 },
+                    600: { items: 3 },
+                    1000: { items: 5 }
+                }
+            });
+        });
 
-    $(document).ready(function(){
-  $(".logo-carousel-four").owlCarousel({
-    loop: true,
-    margin: 30,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    responsiveClass: true,
-    items: 2 
-  });
-});
+        $(document).ready(function () {
+            $(".logo-carousel-four").owlCarousel({
+                loop: true,
+                margin: 30,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                items: 2
+            });
+        });
 
-  </script>
-  
+    </script>
+
 </body>
 
 </html>

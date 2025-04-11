@@ -6,13 +6,13 @@
     height: 600px;
     position: relative;
     overflow: hidden;
-  }
-  
-  .bg-blue-custom {
-    background-color: #eaf4ff;
-  }
+}
 
-  .gradient-btn {
+.bg-blue-custom {
+    background-color: #eaf4ff;
+}
+
+.gradient-btn {
     background: linear-gradient(to right, #FBCA38, #FFA700);
     color: black;
     padding: 10px;
@@ -20,23 +20,23 @@
     font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     border: none;
     border-radius: 0;
-  }
+    font-weight: 600;
+}
 
-  
-  .phd-section {
+
+.phd-section1 {
     position: relative;
     text-align: left;
-    padding-bottom: 40px; /* Space for underline */
-  }
-  
-  .phd-outline {
+}
+
+/* .phd-outline {
     font-size: 120px;
     font-weight: 600;
     color: transparent;
-    -webkit-text-stroke: 1px #f5b400; /* Yellow stroke */
+    -webkit-text-stroke: 1px #f5b400; 
     text-stroke: 1px #f5b400;
     margin: 0;
-    font-family: 'Poppins', sans-serif; /* Match site font */
+    font-family: 'Poppins', sans-serif; 
     letter-spacing: 5px;
   }
   @media (max-width: 600px) {
@@ -45,27 +45,172 @@
       margin: 0 auto;
       letter-spacing: 0.5px;
     }
-  }
+  } */
 
-  .custom-display-5 {
-    font-size: 2.5rem;       /* Similar to Bootstrap 5's display-5 */
-    font-weight: 700;        /* Bold */
+/* Desktop version (leave as is if already done) */
+.phd-outline {
+    font-size: 120px;
+    font-weight: 600;
+    color: transparent;
+    -webkit-text-stroke: 1px #f5b400;
+    text-stroke: 1px #f5b400;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 5px;
+}
+
+@media (max-width: 768px) {
+    #card-image{
+        position: absolute;
+        bottom: 70px;   
+    }
+}
+
+@media (max-width: 768px) {
+    #img-data{
+        width: 100%;
+        height: 100% !important;
+        object-fit: cover;  
+    }
+    #img-bg{
+        background: #ff000000 !important;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #phd-header{
+        transform: rotate(270deg) !important;
+        position: absolute;
+        top: 5vh;
+        font-size: 9vh !important;
+        left: -5vh;
+        font-weight: bold;    
+    }
+    h1.text-center.mb-4 {
+        font-size: 24px !important;
+    }
+    .card.bg-dark.text-white.border-0.mb-3{
+        background: #ff000000 !important;
+    }   
+    .w-100.gradient-overlay.p-2 {
+        position: absolute;
+        bottom: 20px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    br {
+      display: none;
+    }
+    
+  }
+  
+
+@media (max-width: 768px) {
+    .card {
+      height: 321px !important;
+      min-height: 300px; /* or whatever size works best */
+      background: transparent;
+    }
+  
+    .card-img {
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .card-img-overlay {
+        background: none;
+      padding: 0 !important;
+    }
+  
+    .gradient-overlay {
+      background: none;
+    }
+  
+    .card-text {
+
+  color: white;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 0 0 6px 6px;
+  width: 100%;
+    }
+  }
+  
+
+
+/* Mobile view style */
+@media (max-width: 768px) {
+    .phd-outline {
+        display: none;
+        /* hide desktop layout on mobile */
+    }
+
+    .phd-section {
+        position: relative;
+        text-align: left;
+        padding-bottom: 40px;
+        padding-right: 34vh;
+    }
+}
+
+#phd-header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: left;
+    justify-content: left;
+    gap: 1px;
+    /* margin: auto; */
+}
+
+.phd-letter {
+    font-size: 60px;
+    font-weight: 600;
+    color: transparent;
+    -webkit-text-stroke: 1px #f5b400;
+    text-stroke: 1px #f5b400;
+    font-family: 'Poppins', sans-serif;
+    transform: rotate(270deg);
+    display: block;
+}
+
+
+.custom-display-5 {
+    font-size: 2.5rem;
+    font-weight: 700;
     line-height: 1.2;
     margin-bottom: 0.5rem;
-    font-family: 'Poppins', sans-serif; /* Optional, match your design */
-  }
-  
-  
-  .phd-underline {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 768px) {
+    h1.custom-display-5 {
+        font-size: 35px !important;
+        background: #DCEFFF;
+    }
+}
+
+
+.phd-underline {
     width: 100%;
     height: 3px;
-    background-color: #ffffff; /* Blue underline */
+    background-color: #ffffff;
+    /* Blue underline */
     position: absolute;
     bottom: 0;
     left: 0;
-  }
-  
-  .student-img-bottom {
+}
+
+@media (max-width: 768px) {
+    .phd-underline {
+        display: none;
+    }
+}
+
+
+.student-img-bottom {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -74,18 +219,18 @@
     max-height: 600px;
     object-fit: contain;
     z-index: 2;
-  }
+}
 
-  .logo-img {
+.logo-img {
     width: 160px;
     height: auto;
-  }
-  
-  .w-fit {
-    width: fit-content;
-  }
+}
 
-  span.badge.bg-warning.text-dark.px-3.py-2.mb-3.w-fit {
+.w-fit {
+    width: fit-content;
+}
+
+span.badge.bg-warning.text-dark.px-3.py-2.mb-3.w-fit {
     font-size: 17px;
     border-radius: unset;
 }
@@ -104,7 +249,7 @@ h1 {
     font-weight: 600;
 }
 
-.afflilation {
+/* .afflilation {
     border: 1px solid #FBCA38;
     display: flex;
     align-items: center;
@@ -119,14 +264,73 @@ h1 {
 
 .inn-aff {
     padding-left: 10px;
+} */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 3 columns */
+    gap: 30px;
 }
 
-.pt-40 { padding-top: 40px; }
-.pt-50 { padding-top: 50px; }
-.pt-20 { padding-top: 20px; }
-.pt-100 { padding-top: 100px; }
-.pb-100 { padding-bottom: 100px; }
-.pb-50 { padding-bottom: 50px; }
+@media (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* 1 column on small screens */
+    }
+}
+
+.afflilation {
+    border: 1px solid #f5b400;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid #FBCA38;
+    background: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+
+.inn-aff p {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
 
 .pb_30 {
     margin-left: 100px;
@@ -202,23 +406,39 @@ h1 {
     border-radius: 50%;
 }
 
-.fa-add:before, .fa-plus:before {
+.fa-add:before,
+.fa-plus:before {
     content: "\2b";
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
     box-sizing: border-box;
 }
 
-.fa-solid, .fas {
+.fa-solid,
+.fas {
     font-weight: 900;
 }
 
-.fa-classic, .fa-regular, .fa-solid, .far, .fas {
+.fa-classic,
+.fa-regular,
+.fa-solid,
+.far,
+.fas {
     font-family: "Font Awesome 6 Free";
 }
 
-.fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp-solid, .fa-solid, .fab, .far, .fas {
+.fa,
+.fa-brands,
+.fa-classic,
+.fa-regular,
+.fa-sharp-solid,
+.fa-solid,
+.fab,
+.far,
+.fas {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     display: var(--fa-display, inline-block);
@@ -235,11 +455,12 @@ h1 {
 .accordion-button {
     font-weight: bold;
     color: black;
-    background-color: white;    
-    padding: 12px 20px; 
+    background-color: white;
+    padding: 12px 20px;
     border-radius: 5px;
-    border: 1px solid #FBCA38; 
+    border: 1px solid #FBCA38;
 }
+
 .accordion-button[aria-expanded="true"] {
     background: linear-gradient(90deg, #FBCA38, #FFA700);
 }
@@ -307,7 +528,7 @@ h1 {
     text-align: center;
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding-top: 15px;
 }
 
@@ -321,187 +542,277 @@ h1 {
 }
 
 /* Circular Info Box Positioning */
-.top          { top: 5%; left: 50%; transform: translate(-50%, 0);box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1; }
-.top-right    { top: 15%; left: 82%; transform: translate(-30%, 0); box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1;}
-.right        { top: 50%; left: 110%; transform: translate(-70%, -50%);box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1; }
-.bottom-right { top: 85%; left: 82%; transform: translate(-30%, -100%); box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1;}
-.bottom       { bottom: 3%; left: 50%; transform: translate(-50%, 0);box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1; }
-.bottom-left  { top: 85%; left: 18%; transform: translate(-70%, -100%); box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1;}
-.left         { top: 50%; left: -10%; transform: translate(-30%, -50%); box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1;}
-.top-left     { top: 15%; left: 18%; transform: translate(-70%, 0); box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1;}
+.top {
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: 4px 4px 11px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid #D1D1D1;
+}
+
+.top-right {
+    top: 15%;
+    left: 82%;
+    transform: translate(-30%, 0);
+    box-shadow: 4px 4px 11px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid #D1D1D1;
+}
+
+.right {
+    top: 50%;
+    left: 110%;
+    transform: translate(-70%, -50%);
+    box-shadow: 4px 4px 11px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid #D1D1D1;
+}
+
+.bottom-right {
+    top: 85%;
+    left: 82%;
+    transform: translate(-30%, -100%);
+    box-shadow: 4px 4px 11px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid #D1D1D1;
+}
+
+.bottom {
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: 4px 4px 11px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid #D1D1D1;
+}
+
+.bottom-left {
+    top: 85%;
+    left: 18%;
+    transform: translate(-70%, -100%);
+    box-shadow: 4px 4px 11px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid #D1D1D1;
+}
+
+.left {
+    top: 50%;
+    left: -10%;
+    transform: translate(-30%, -50%);
+    box-shadow: 4px 4px 11px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid #D1D1D1;
+}
+
+.top-left {
+    top: 15%;
+    left: 18%;
+    transform: translate(-70%, 0);
+    box-shadow: 4px 4px 11px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid #D1D1D1;
+}
 
 .section_title {
     margin-bottom: 40px;
-  }
+}
 
-  .carousel-single img {
+.carousel-single img {
     max-width: 100%;
     height: auto;
     padding: 10px;
     /* background-color: #fff;
     border-radius: 10px;*/
     /* box-shadow: 0 2px 6px rgba(0,0,0,0.1);  */
-  }
+}
 
-  .p-top-90 {
+.p-top-90 {
     padding-top: 90px;
-  }
+}
 
-  .p-bottom-90 {
+.p-bottom-90 {
     padding-bottom: 90px;
-  }
+}
 
-  .text-center {
+.text-center {
     text-align: center;
-  }
+}
 
-  .container {
+.container {
     max-width: 1140px;
     margin: 0 auto;
-  }
-  .no-js .owl-carousel, .owl-carousel.owl-loaded{
+}
+
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
     padding-top: 200px;
-  }
-  
-  .row {
+}
+
+.row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .col-lg-12 {
-    width: 100%;
-  }
+}
 
-  .header-image {
+.col-lg-12 {
+    width: 100%;
+}
+
+.header-image {
     display: block;
     margin: 0 auto 40px;
     max-width: 300px;
-  }
-  .bannlas{
+}
+
+.bannlas {
     background-image: url('images/banner.png');
     height: 400px;
     background-size: cover;
     display: flex;
     align-items: center;
-  }
-  .ban-text{
+}
+
+.ban-text {
     width: 50%;
     align-items: center;
-  }
-  .btnew{
+}
+
+.btnew {
     padding: 10px 30px 10px 30px;
-    background: rgb(251,202,56);
-    background: linear-gradient(101deg, rgba(251,202,56,1) 0%, rgba(255,167,0,1) 65%);
+    background: rgb(251, 202, 56);
+    background: linear-gradient(101deg, rgba(251, 202, 56, 1) 0%, rgba(255, 167, 0, 1) 65%);
     color: #000;
     text-decoration: none;
     margin-top: 50px;
-  }
-  .footer{
-    background-color: #EDEDED;
-  }
-  .add-pho{
-    display: flex;
-        justify-content: center;
-        gap: 30px;
+}
 
-        a{
-            text-decoration: none;
-            color: #000;
-        }
+.footer {
+    background-color: #EDEDED;
+}
+
+.add-pho {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    a {
+        text-decoration: none;
+        color: #000;
     }
-    .copyright{
-        background-color: #0064b8;
-        margin-top: 20px;
-        margin-bottom: 0px;
+}
+
+.copyright {
+    background-color: #0064b8;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+    .add-pho {
+        text-align: left !important;
+        align-items: flex-start !important;
     }
+
+    .contact-item {
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        text-align: left;
+        flex-direction: row !important;
+    }
+
+    .contact-item span {
+        text-align: left;
+    }
+
+    .separator {
+        display: none;
+        /* optional: hide separators on mobile */
+    }
+}
+
+
 
 /* Mobile responsive styles */
 @media (max-width: 768px) {
+
     /* General adjustments */
     body {
         overflow-x: hidden;
     }
-    
+
     h1 {
         font-size: 24px !important;
     }
-    
+
     h2 {
         font-size: 22px !important;
     }
-    
+
     section {
         padding: 30px 0;
     }
-    
+
     /* Navbar */
     .navbar {
         padding: 10px 15px !important;
         width: 100%;
     }
-    
+
     .navbar-brand {
         width: 50%;
     }
-    
+
     .navbar-brand img {
         max-width: 100px;
     }
-    
+
     /* Hero section */
     .hero-section {
         height: auto;
         min-height: 550px;
     }
-    
+
     .col-md-6.bg-white {
         padding: 20px !important;
     }
-    
+
     .phd-outline {
         font-size: 80px;
     }
-    
+
     .student-img-bottom {
         max-height: 350px;
         bottom: 0;
     }
-    
+
     /* Affiliations section */
     .aff-acc {
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .afflilation {
         width: 100%;
         flex-direction: column;
         text-align: center;
         padding: 15px;
     }
-    
+
     .afflilation img {
         margin: 0 auto 10px;
         max-width: 80px;
     }
-    
+
     .inn-aff {
         padding-left: 0;
     }
-    
+
     /* Stats boxes */
     .pb_30 {
         margin-left: 0;
         margin-right: 0;
     }
-    
+
     .tp-fun-fact-item {
         width: 100%;
         margin-bottom: 15px;
         height: auto;
         min-height: 100px;
     }
-    
+
     /* Infographic circle - completely restructured for mobile */
     .circle-container {
         width: 100%;
@@ -513,7 +824,7 @@ h1 {
         margin: 10px auto;
         position: relative;
     }
-    
+
     .center-logo {
         position: static;
         transform: none;
@@ -524,14 +835,14 @@ h1 {
         align-items: center;
         justify-content: center;
     }
-    
+
     .img-1 {
         width: 100% !important;
         height: auto !important;
         max-width: 120px;
         object-fit: contain;
     }
-    
+
     .info-box {
         position: static;
         width: 100%;
@@ -542,107 +853,130 @@ h1 {
         height: auto;
         min-height: 90px;
     }
-    
+
     .info-box h4 {
         margin-top: 0;
         margin-bottom: 5px;
     }
-    
+
     .info-box p {
         margin-bottom: 0;
     }
-    
+
     /* Why SRM section */
     section.py-5.text-dark {
         height: auto !important;
     }
-    
+
     .tp-counter-br .row {
         margin-top: 20px;
     }
-    
+
     .why-srm-heading {
         font-size: 24px;
     }
-    
+
     .card-img {
         height: 200px;
     }
-    
+
     /* Accordion section */
     .accordion-button {
         padding: 10px 15px;
         font-size: 16px;
     }
-    
+
     .list-group-item {
         padding: 10px;
     }
-    
+
     /* Paddings */
-    .p-top-90, .p-bottom-90 {
+    .p-top-90,
+    .p-bottom-90 {
         padding: 40px 0;
     }
-    
+
     .pt-100 {
         padding-top: 50px;
     }
-    
+
     .pt-50 {
         padding-top: 25px;
     }
-    
+
     .pt-20 {
         padding-top: 10px;
     }
-    
+
     /* Carousel */
     .carousel-single img {
         max-width: 100%;
         height: auto;
-        
+
     }
-    
+
     /* Better touch targets */
-    button, 
-    a, 
+    button,
+    a,
     .list-group-item {
         min-height: 44px;
     }
-    
+
     /* Banner section */
     .bannlas {
         text-align: center;
         padding: 20px;
     }
-    
+
     .ban-text {
         width: 100%;
     }
-    
+
     .ban-text h1 {
         line-height: 1.4 !important;
         font-size: 22px !important;
     }
-    
+
     /* Footer */
     .add-pho {
         flex-direction: column;
         gap: 15px;
         align-items: center;
     }
-    
+
+    @media (max-width: 768px) {
+    .col-md-6.bg-white.d-flex.flex-column.justify-content-center.ps-md-5.ps-3.py-5 {
+        background-color: #DCEFFF !important;
+    }
+
+    }
+
+    @media (max-width: 768px) {
+    .ban-text.text-center.text-md-start {
+        text-align: left !important;
+    }
+}
+
+    @media (max-width: 768px) {
+        a.d-flex.align-items-center.justify-content-center.gap-2.mb-2.contact-item,a.d-flex.align-items-center.justify-content-center.gap-2.text-center.contact-item {
+            justify-content: left !important;
+            text-align: left !important;
+            padding-left: 5px;
+        }
+    }
+
     /* YouTube video container */
     .ratio-16x9 {
         width: 100%;
     }
-    
+
     /* Tables */
     .table-responsive {
         overflow-x: auto;
     }
-    
-    .table th, .table td {
+
+    .table th,
+    .table td {
         white-space: nowrap;
         font-size: 14px;
     }
@@ -656,13 +990,13 @@ h1 {
         margin-left: auto;
         z-index: 100;
     }
-    
-    .navbar > .container-fluid {
+
+    .navbar>.container-fluid {
         padding: 10px;
         display: flex;
         align-items: center;
     }
-    
+
     .navbar-collapse {
         position: fixed;
         top: 0;
@@ -674,28 +1008,28 @@ h1 {
         flex-direction: column;
         z-index: 1000;
         padding: 60px 20px 20px;
-        box-shadow: 5px 0 15px rgba(0,0,0,0.1);
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
         overflow-y: auto;
     }
-    
+
     .navbar-collapse.show {
         left: 0;
     }
-    
+
     .navbar-nav {
         margin-left: 0 !important;
         width: 100%;
     }
-    
+
     .navbar-nav .nav-item {
         margin: 10px 0;
     }
-    
+
     .navbar-nav .nav-link {
         padding: 10px 5px;
         border-bottom: 1px solid #f0f0f0;
     }
-    
+
     .navbar .btn {
         margin: 15px auto 0;
         display: block;
@@ -704,61 +1038,62 @@ h1 {
 }
 
 @media (max-width: 576px) {
+
     /* Extra small devices */
     .afflilation {
         padding: 10px;
     }
-    
+
     h1 {
         font-size: 20px !important;
     }
-    
+
     .why-srm-heading {
         font-size: 20px;
     }
-    
+
     .card-img {
         height: 180px;
     }
-    
+
     .phd-outline {
         font-size: 60px;
     }
-    
+
     .bannlas {
         height: auto;
         min-height: 300px;
     }
-    
+
     .btnew {
         display: inline-block;
         margin-top: 20px;
         font-size: 14px;
     }
-    
+
     .tp-fun-fact-item h4 {
         font-size: 30px;
     }
-    
+
     .add-pho a {
         font-size: 14px;
     }
-    
+
     /* Improve logo on smallest screens */
     .navbar-brand img {
         max-width: 80px;
     }
-    
+
     /* Circle container on very small screens */
     .center-logo {
         width: 100px;
         height: 100px;
     }
-    
+
     .img-1 {
         max-width: 90px;
     }
-    
+
     .info-box {
         max-width: 250px;
         padding: 10px;
@@ -797,31 +1132,38 @@ h1 {
 
 /* test */
 .accordion-item {
-    margin-bottom: 15px; /* Add space between each accordion item */
+    margin-bottom: 15px;
+    /* Add space between each accordion item */
 }
 
 .accordion-button {
-    padding: 10px 15px; /* Adjust padding for better spacing */
+    padding: 10px 15px;
+    /* Adjust padding for better spacing */
 }
 
 .accordion-button:focus {
-    box-shadow: none; /* Remove focus box shadow for cleaner appearance */
+    box-shadow: none;
+    /* Remove focus box shadow for cleaner appearance */
 }
 
 .accordion-body {
-    padding: 20px; /* Add padding inside the accordion body */
+    padding: 20px;
+    /* Add padding inside the accordion body */
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #eaf4ff; /* Add background color for active items */
+    background-color: #eaf4ff;
+    /* Add background color for active items */
 }
 
 .accordion-button {
-    border-radius: 5px; /* Round the corners for a smoother look */
+    border-radius: 5px;
+    /* Round the corners for a smoother look */
 }
 
 .accordion-collapse {
-    margin-top: 10px; /* Add space between the button and the body of the collapse */
+    margin-top: 10px;
+    /* Add space between the button and the body of the collapse */
 }
 
 /* test 2 */
@@ -832,7 +1174,8 @@ h1 {
     gap: 10px;
     font-size: 16px;
     color: #000;
-    flex-direction: row;  /* Horizontal layout for the contact info */
+    flex-direction: row;
+    /* Horizontal layout for the contact info */
     align-items: center;
 }
 
@@ -858,38 +1201,46 @@ h1 {
 .separator {
     font-size: 20px;
     color: #000;
-    padding: 0 10px; /* Adds some space around the separator */
+    padding: 0 10px;
+    /* Adds some space around the separator */
 }
 
 /* Responsive handling for small screens */
 @media (max-width: 768px) {
     .add-pho {
-        flex-direction: column; /* Stack the items vertically */
+        flex-direction: column;
+        /* Stack the items vertically */
         align-items: center;
     }
 
     .separator {
-        display: none; /* Hide separators on mobile view */
+        display: none;
+        /* Hide separators on mobile view */
     }
 
     .add-pho a {
-        margin-bottom: 10px; /* Adds space between items on mobile */
+        margin-bottom: 10px;
+        /* Adds space between items on mobile */
     }
 }
 
 .copyright {
-    background: linear-gradient(90deg, #0851A2, #031E3C); /* Applying gradient from the colors in your image */
+    background: linear-gradient(90deg, #0851A2, #031E3C);
+    /* Applying gradient from the colors in your image */
     padding: 20px 0;
 }
 
 .copyright p {
-    color: white; /* Ensures the text is white */
+    color: white;
+    /* Ensures the text is white */
     margin-bottom: 0;
-    text-align: center; /* Centers the text */
+    text-align: center;
+    /* Centers the text */
 }
 
 /* Enhanced Mobile Responsiveness - Additional styles */
-html, body {
+html,
+body {
     overflow-x: hidden;
     width: 100%;
     -webkit-box-sizing: border-box;
@@ -902,7 +1253,8 @@ html, body {
     position: relative;
     width: 100%;
     height: 0;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
     overflow: hidden;
 }
 
@@ -936,6 +1288,7 @@ img.img-fluid {
 
 /* Improved touch target sizes for mobile */
 @media (max-width: 768px) {
+
     .navbar-nav .nav-link,
     .btn,
     .accordion-button,
@@ -947,7 +1300,7 @@ img.img-fluid {
         display: flex;
         align-items: center;
     }
-    
+
     /* Fix program image alignment on mobile */
     .col-md-6 img {
         padding-left: 0 !important;
@@ -956,43 +1309,45 @@ img.img-fluid {
         margin: 20px auto;
         display: block;
     }
-    
+
     /* Fix footer height issue on mobile */
     .col-12[style*="height: 75px"] {
         height: auto !important;
         min-height: 120px;
     }
-    
+
     /* Fix responsive card images */
     .card-img {
         height: auto;
         min-height: 180px;
     }
-    
+
     /* Fix the circle container positioning for mobile */
     .circle-container {
         margin: 0 auto;
         padding-top: 50px;
     }
-    
+
     /* Improve table readability on mobile */
-    .table th, .table td {
+    .table th,
+    .table td {
         padding: 8px;
         font-size: 14px;
     }
-    
+
     /* No JS carousel adjustments */
-    .no-js .owl-carousel, .owl-carousel.owl-loaded {
+    .no-js .owl-carousel,
+    .owl-carousel.owl-loaded {
         padding-top: 100px;
     }
-    
+
     /* Ensure contact items in footer are properly aligned */
     .add-pho a {
         justify-content: center;
         text-align: center;
         width: 100%;
     }
-    
+
     .add-pho a span {
         max-width: 280px;
     }
@@ -1000,36 +1355,38 @@ img.img-fluid {
 
 /* Extra small devices - better readability */
 @media (max-width: 576px) {
-    .table th, .table td {
+
+    .table th,
+    .table td {
         padding: 6px;
         font-size: 12px;
     }
-    
+
     /* Improve the layout for the stats columns */
     .row-cols-sm-3.row-cols-lg-1 {
         flex-direction: column;
     }
-    
+
     .row-cols-sm-3.row-cols-lg-1 .col {
         width: 100%;
         margin-bottom: 15px !important;
     }
-    
+
     /* Fix image display on very small screens */
     .student-img-bottom {
         max-height: 300px;
     }
-    
+
     /* Accordion adjustments for better mobile view */
     .accordion-body {
         padding: 15px 10px;
     }
-    
+
     /* Banner text needs to be fully visible */
     .bannlas {
         padding: 30px 15px;
     }
-    
+
     /* Better button appearance on small screens */
     .btnew {
         padding: 8px 20px;
@@ -1041,11 +1398,11 @@ img.img-fluid {
     .hero-section {
         min-height: 450px;
     }
-    
+
     .student-img-bottom {
         max-height: 400px;
     }
-    
+
     /* Navbar needs to be more compact in landscape */
     .navbar-collapse {
         max-height: 85vh;
@@ -1055,21 +1412,22 @@ img.img-fluid {
 
 /* Tablet specific adjustments */
 @media (min-width: 577px) and (max-width: 991px) {
+
     /* Circle info display for tablets */
     .circle-container {
         padding-bottom: 50px;
     }
-    
+
     .center-logo {
         width: 140px;
         height: 140px;
     }
-    
+
     /* Better spacing for feature cards */
     .card {
         margin-bottom: 20px;
     }
-    
+
     /* Owl carousel works better on tablets with 3 items */
     .owl-carousel .carousel-single img {
         max-width: 90%;
@@ -1078,8 +1436,8 @@ img.img-fluid {
 }
 
 
- /* Mobile responsive styles */
- @media (max-width: 768px) {
+/* Mobile responsive styles */
+@media (max-width: 768px) {
     .aff-acc {
         flex-direction: column;
         gap: 15px;
@@ -1634,7 +1992,7 @@ img.img-fluid {
         top: auto !important;
         bottom: auto !important;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
     }
 
@@ -1711,6 +2069,7 @@ img.img-fluid {
         height: 100px;
     }
 
+
     /* Carousel images on very small screens */
     .carousel-single img {
         max-width: 160px;
@@ -1736,12 +2095,26 @@ h1.display-5 {
     /* Capitalizes each word */
 }
 
+.center-logo1{
+    display: none;   
+}
+
 @media (max-width: 768px) {
     h1.display-5 {
         font-size: 30px;
         /* Adjust font size for mobile view */
         text-align: center;
         /* Ensures the text is still centered */
+    }
+    .center-logo1{
+        display: block;
+        width: 100px;
+        height: 100px;
+        img{
+           object-fit: contain;
+           width: 100%;
+           padding: 10px;
+        }
     }
 }
 
@@ -1762,18 +2135,23 @@ h1.display-5 {
 .logo-carousel-four {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto; /* Allow horizontal scrolling */
-    gap: 15px; /* Space between items */
-    padding-bottom: 10px; /* Add some space at the bottom */
+    overflow-x: auto;
+    /* Allow horizontal scrolling */
+    gap: 15px;
+    /* Space between items */
+    padding-bottom: 10px;
+    /* Add some space at the bottom */
 }
 
 .logo-carousel-four .carousel-single {
-    flex: 0 0 auto; /* Prevent items from shrinking */
+    flex: 0 0 auto;
+    /* Prevent items from shrinking */
 }
 
 /* Ensure logos are scrollable horizontally */
 .logo-carousel-four .carousel-single img {
-    max-width: 100%; /* Ensure the images fill their container */
+    max-width: 100%;
+    /* Ensure the images fill their container */
     height: auto;
     object-fit: contain;
 }
@@ -1783,13 +2161,17 @@ h1.display-5 {
     .logo-carousel-four {
         display: flex;
         flex-wrap: nowrap;
-        overflow-x: auto; /* Allow horizontal scrolling on mobile */
-        gap: 10px; /* Add some space between logos */
-        margin: 0; /* Remove any unnecessary margin */
+        overflow-x: auto;
+        /* Allow horizontal scrolling on mobile */
+        gap: 10px;
+        /* Add some space between logos */
+        margin: 0;
+        /* Remove any unnecessary margin */
     }
 
     .logo-carousel-four .carousel-single img {
-        width: 80%; /* Adjust width for mobile view */
+        width: 80%;
+        /* Adjust width for mobile view */
     }
 
     /* Hide default scrollbar for a cleaner look */
@@ -1801,64 +2183,68 @@ h1.display-5 {
 /* Additional mobile handling for smaller devices */
 @media (max-width: 480px) {
     .logo-carousel-four .carousel-single img {
-        width: 90%; /* Make images fit better on small screens */
+        width: 90%;
+        /* Make images fit better on small screens */
     }
 }
 
 @media (max-width: 576px) {
     .info-box {
-        padding: 12px;
-    }
+        padding: 12px;
+    }
 }
 
 
 .section_title {
     margin-bottom: 40px;
-  }
+}
 
-  .carousel-single img {
+.carousel-single img {
     max-width: 100%;
     height: auto;
     padding: 10px;
-  }
+}
 
-  .p-top-90 {
+.p-top-90 {
     padding-top: 90px;
-  }
+}
 
-  .p-bottom-90 {
+.p-bottom-90 {
     padding-bottom: 90px;
-  }
+}
 
-  .text-center {
+.text-center {
     text-align: center;
-  }
+}
 
-  .container {
+.container {
     max-width: 1140px;
     margin: 0 auto;
-  }
-  .no-js .owl-carousel, .owl-carousel.owl-loaded{
+}
+
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
     padding-top: 200px;
-  }
-  
-  .row {
+}
+
+.row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .col-lg-12 {
-    width: 100%;
-  }
+}
 
-  .header-image {
+.col-lg-12 {
+    width: 100%;
+}
+
+.header-image {
     display: block;
     margin: 0 auto 40px;
     max-width: 300px;
-  }
-  
+}
 
-  .logo-carousel-four {
+
+.logo-carousel-four {
     width: 100%;
     overflow: hidden;
-  }
+}
