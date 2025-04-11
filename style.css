@@ -12,20 +12,10 @@
     background-color: #eaf4ff;
   }
 
-  /* .phd-outline {
-    font-size: 100px; 
-    font-weight: 700; 
-    color: transparent;
-    -webkit-text-stroke: 1px #f5b400;
-    text-stroke: 1px #f5b400;
-    font-family: 'Poppins', sans-serif; 
-    letter-spacing: 5px; 
-  } */
-
   .gradient-btn {
     background: linear-gradient(to right, #FBCA38, #FFA700);
     color: black;
-    padding: 5px;
+    padding: 10px;
     font-size: 16px;
     font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     border: none;
@@ -49,6 +39,22 @@
     font-family: 'Poppins', sans-serif; /* Match site font */
     letter-spacing: 5px;
   }
+  @media (max-width: 600px) {
+    .phd-outline {
+      text-align: center;
+      margin: 0 auto;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .custom-display-5 {
+    font-size: 2.5rem;       /* Similar to Bootstrap 5's display-5 */
+    font-weight: 700;        /* Bold */
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif; /* Optional, match your design */
+  }
+  
   
   .phd-underline {
     width: 100%;
@@ -315,14 +321,14 @@ h1 {
 }
 
 /* Circular Info Box Positioning */
-.top          { top: 5%; left: 50%; transform: translate(-50%, 0); }
-.top-right    { top: 15%; left: 82%; transform: translate(-30%, 0); }
-.right        { top: 50%; left: 110%; transform: translate(-70%, -50%); }
-.bottom-right { top: 85%; left: 82%; transform: translate(-30%, -100%); }
-.bottom       { bottom: 3%; left: 50%; transform: translate(-50%, 0); }
-.bottom-left  { top: 85%; left: 18%; transform: translate(-70%, -100%); }
-.left         { top: 50%; left: -10%; transform: translate(-30%, -50%); }
-.top-left     { top: 15%; left: 18%; transform: translate(-70%, 0); }
+.top          { top: 5%; left: 50%; transform: translate(-50%, 0);box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1; }
+.top-right    { top: 15%; left: 82%; transform: translate(-30%, 0); box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1;}
+.right        { top: 50%; left: 110%; transform: translate(-70%, -50%);box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1; }
+.bottom-right { top: 85%; left: 82%; transform: translate(-30%, -100%); box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1;}
+.bottom       { bottom: 3%; left: 50%; transform: translate(-50%, 0);box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1; }
+.bottom-left  { top: 85%; left: 18%; transform: translate(-70%, -100%); box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1;}
+.left         { top: 50%; left: -10%; transform: translate(-30%, -50%); box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1;}
+.top-left     { top: 15%; left: 18%; transform: translate(-70%, 0); box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1;}
 
 .section_title {
     margin-bottom: 40px;
@@ -331,11 +337,10 @@ h1 {
   .carousel-single img {
     max-width: 100%;
     height: auto;
-    /* border: 1px solid #ddd; */
     padding: 10px;
     /* background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1); */
+    border-radius: 10px;*/
+    /* box-shadow: 0 2px 6px rgba(0,0,0,0.1);  */
   }
 
   .p-top-90 {
@@ -595,6 +600,7 @@ h1 {
     .carousel-single img {
         max-width: 100%;
         height: auto;
+        
     }
     
     /* Better touch targets */
