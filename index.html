@@ -20,74 +20,61 @@
     <style>
         .logo-carousel-four {
             width: 100% !important;
+            padding: 20px 0;
+        }
+
+        .carousel-single {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            height: 120px !important;
+            padding: 15px !important;
+        }
+        .logo-carousel-four.owl-carousel.owl-loaded.owl-drag {
+            height: 90vh !important;
+        }
+
+        .carousel-single img {
+            max-height: 100px !important;
+            width: auto !important;
+            max-width: 90% !important;
+            object-fit: contain !important;
+            transition: transform 0.3s ease;
+            margin: 0 auto !important;
+        }
+
+        .carousel-single:hover img {
+            transform: scale(1.05);
         }
 
         @media (max-width: 767px) {
-            .logo-carousel-four .owl-stage-outer {
-                overflow: hidden !important;
-            }
-
-            .logo-carousel-four .owl-stage {
-                display: flex !important;
-            }
-
-            .logo-carousel-four .carousel-single {
-                display: flex !important;
-                justify-content: center !important;
-                align-items: center !important;
-                height: 120px !important;
-            }
-
-            .logo-carousel-four .carousel-single img {
-                max-height: 100px !important;
-                width: auto !important;
-                max-width: 90% !important;
-            }
-
-            .logo-carousel-four.owl-carousel {
-                display: block !important;
-            }
-        }
-
-        @media (max-width: 767px) {
-            .logo-carousel-four.owl-carousel {
-                display: block !important;
-                width: 100% !important;
-                overflow: hidden !important;
-            }
-
-            .owl-stage-outer {
-                overflow: hidden !important;
-                width: 100% !important;
-            }
-
-            .owl-stage {
-                display: flex !important;
-                transition-property: transform !important;
-                transition-timing-function: linear !important;
-            }
-
-            .owl-item {
-                float: left !important;
-                flex-shrink: 0 !important;
-                width: 100% !important;
-                max-width: 250px !important;
+            .logo-carousel-four {
+                padding: 15px 0;
             }
 
             .carousel-single {
-                display: flex !important;
-                justify-content: center !important;
-                align-items: center !important;
                 height: 100px !important;
-                padding: 10px !important;
+                padding: 12px !important;
+                margin: 8px !important;
             }
 
             .carousel-single img {
                 max-height: 80px !important;
-                width: auto !important;
-                max-width: 90% !important;
-                object-fit: contain !important;
-                margin: 0 auto !important;
+                max-width: 85% !important;
+            }
+
+            .owl-stage {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                gap: 16px !important;
+            }
+
+            .owl-item {
+                display: flex !important;
+                justify-content: center !important;
+                width: calc(50% - 16px) !important;
+                margin: 0 !important;
             }
         }
 
@@ -96,30 +83,21 @@
         .owl-nav button,
         .owl-dots button {
             display: none !important;
-            opacity: 0 !important;
-            visibility: hidden !important;
-            pointer-events: none !important;
-            width: 0 !important;
-            height: 0 !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            position: absolute !important;
         }
 
         .owl-stage {
             padding: 0 !important;
-            height: 200px !important;
+            height: auto !important;
+            min-height: 120px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
         }
 
         @media (max-width: 767px) {
-
-            .owl-carousel .owl-nav,
-            .owl-carousel .owl-dots,
-            .owl-carousel .owl-nav button,
-            .owl-carousel .owl-dots button {
-                display: none !important;
-                opacity: 0 !important;
-                visibility: hidden !important;
+            .owl-stage {
+                min-height: 100px !important;
+                padding: 0 8px !important;
             }
         }
     </style>
@@ -708,10 +686,10 @@
 
                 <!-- Right Column: Two stacked cards -->
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                    <div class="card bg-dark text-white border-0 mb-3">
-                        <img src="images/image2.png" class="card-img" alt="Placement">
+                    <div class="card bg-dark text-white border-0" style="margin-bottom: 0 !important; overflow: hidden;">
+                        <img src="images/image2.png" class="card-img" alt="Placement" id="card-image-0">
                         <div class="card-img-overlay d-flex align-items-end p-0">
-                            <div class="w-100 gradient-overlay p-2" id="card-image">
+                            <div class="w-100 gradient-overlay p-2" id="card-heading-0" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
                                 <p class="card-text fw-semibold m-0" style="text-align: center;">Placement in the
                                     Fortune <br> 500 companies</p>
                             </div>
@@ -721,9 +699,9 @@
 
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                     <div class="card bg-dark text-white border-0" id="img-bg">
-                        <img src="images/image3.png" class="card-img" alt="Chennai city"  id="img-data">
+                        <img src="images/image3.png" class="card-img" alt="Chennai city" id="card-image-0" style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="card-img-overlay d-flex align-items-end p-0">
-                            <div class="w-100 gradient-overlay p-2">
+                            <div class="w-100 gradient-overlay p-2" id="card-heading-0">
                                 <p class="card-text fw-semibold m-0" style="text-align: center;">Safely located
                                     within<br>Chennai city</p>
                             </div>
@@ -736,9 +714,9 @@
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="card bg-dark text-white border-0 mb-3">
-                        <img src="images/image4.png" class="card-img" alt="Semester Abroad">
+                        <img src="images/image4.png" class="card-img" alt="Semester Abroad" id="card-image-0" style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="card-img-overlay d-flex align-items-end p-0">
-                            <div class="w-100 gradient-overlay p-2">
+                            <div class="w-100 gradient-overlay p-2" id="card-heading-0">
                                 <p class="card-text fw-semibold m-0" style="text-align: center;">Semester Abroad Program
                                     <br>in 9+ countries
                                 </p>
@@ -749,9 +727,9 @@
 
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="card bg-dark text-white border-0 mb-3">
-                        <img src="images/image5.png" class="card-img" alt="Internships">
+                        <img src="images/image5.png" class="card-img" alt="Internships" id="card-image-0" style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="card-img-overlay d-flex align-items-end p-0">
-                            <div class="w-100 gradient-overlay p-2">
+                            <div class="w-100 gradient-overlay p-2" id="card-heading-0">
                                 <p class="card-text fw-semibold m-0" style="text-align: center;">
                                     International<br>Internships</p>
                             </div>
@@ -761,9 +739,9 @@
 
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="card bg-dark text-white border-0 mb-3">
-                        <img src="images/image1.png" class="card-img" alt="Innovation">
+                        <img src="images/image1.png" class="card-img" alt="Innovation" id="card-image-0" style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="card-img-overlay d-flex align-items-end p-0">
-                            <div class="w-100 gradient-overlay p-2"  id="card-image">
+                            <div class="w-100 gradient-overlay p-2" id="card-heading-0">
                                 <p class="card-text fw-semibold m-0" style="text-align: center;">Support for
                                     Innovation<br>& Start-ups</p>
                             </div>
@@ -772,10 +750,10 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card bg-dark text-white border-0 mb-3">
-                        <img src="images/image6.png" class="card-img" alt="Hostel">
+                    <div class="card bg-dark text-white border-0" style="margin-bottom: 0 !important; overflow: hidden;">
+                        <img src="images/image6.png" class="card-img" alt="Hostel" id="card-image-0" style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="card-img-overlay d-flex align-items-end p-0">
-                            <div class="w-100 gradient-overlay p-2"  id="card-image">
+                            <div class="w-100 gradient-overlay p-2" id="card-heading-0" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
                                 <p class="card-text fw-semibold m-0" style="text-align: center;">Fully Equipped
                                     <br>Facilities
                                 </p>
@@ -956,31 +934,46 @@
         $(document).ready(function () {
             $(".logo-carousel-four").owlCarousel({
                 loop: true,
-                margin: 30,
+                margin: 16,
                 autoplay: true,
-                autoplayTimeout: 3000,
+                autoplayTimeout: 2000,
                 autoplayHoverPause: true,
+                smartSpeed: 1000,
                 responsiveClass: true,
+                nav: false,
+                dots: false,
+                mouseDrag: true,
+                touchDrag: true,
+                pullDrag: true,
                 responsive: {
-                    0: { items: 2 },
-                    600: { items: 3 },
-                    1000: { items: 5 }
+                    0: {
+                        items: 2,
+                        margin: 16,
+                        autoplayTimeout: 2000
+                    },
+                    480: {
+                        items: 2,
+                        margin: 16,
+                        autoplayTimeout: 2000
+                    },
+                    768: {
+                        items: 3,
+                        margin: 20,
+                        autoplayTimeout: 2000
+                    },
+                    992: {
+                        items: 4,
+                        margin: 25,
+                        autoplayTimeout: 2000
+                    },
+                    1200: {
+                        items: 5,
+                        margin: 30,
+                        autoplayTimeout: 2000
+                    }
                 }
             });
         });
-
-        $(document).ready(function () {
-            $(".logo-carousel-four").owlCarousel({
-                loop: true,
-                margin: 30,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: true,
-                responsiveClass: true,
-                items: 2
-            });
-        });
-
     </script>
 
 </body>
