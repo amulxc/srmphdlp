@@ -13,7 +13,8 @@
 }
 
 .bg-blue-custom {
-    background-color: #eaf4ff;
+    background: #ffffff;
+background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(234, 244, 255, 1) 50%);
 }
 
 .gradient-btn {
@@ -192,7 +193,7 @@
 @media (max-width: 768px) {
     h1.custom-display-5 {
         font-size: 35px !important;
-        background: #DCEFFF;
+        /* background: #DCEFFF; */
     }
 }
 
@@ -949,9 +950,7 @@ h1 {
     }
 
     @media (max-width: 768px) {
-    .col-md-6.bg-white.d-flex.flex-column.justify-content-center.ps-md-5.ps-3.py-5 {
-        background-color: #DCEFFF !important;
-    }
+    
 
     }
 

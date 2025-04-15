@@ -119,10 +119,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
-                    <li class="nav-item mx-2"><a class="nav-link" href="#">Instructions</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link" href="#">Admission Procedure</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link" href="#">Scholarship</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link" href="#">Steps to Follow</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#prerequisites">Prerequisites</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#why-srm">Why SRM</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#collapseEligibility" id="eligibilityLink">Eligibility</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#collapseApply" id="applyLink">How to apply</a></li>
 
                 </ul>
                 <button class="gradient-btn">Registrations Open for 2025 </button>
@@ -131,12 +131,10 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section position-relative" style="
-    background: #DCEFFF;
-">
-        <div class="row g-0 h-100">
+    <section class="hero-section position-relative bg-blue-custom">
+        <div class="row g-0 h-100 container">
             <!-- Left Half -->
-            <div class="col-md-6 bg-white d-flex flex-column justify-content-center ps-md-5 ps-3 py-5">
+            <div class="col-md-6  d-flex flex-column justify-content-center ps-md-5 ps-3 py-5">
                 <a href="#" class="btnew d-inline-block px-3 py-2 mb-3 w-fit" style="display: block;font-weight: 500"
                     id="registration-link">Registrations Open for 2025</a>
 
@@ -149,7 +147,7 @@
             </div>
 
             <!-- Right Half -->
-            <div class="col-md-6 bg-blue-custom"></div>
+            <div class="col-md-6 "></div>
         </div>
 
         <!-- Student Image at Bottom Center -->
@@ -270,7 +268,7 @@
 
     <section class="py-5 text-dark" style="background-color: #DCEFFF;margin-top: 50px;">
         <div class="container">
-            <h2 class="text-center mb-4 fw-bold">Prerequisites</h2>
+            <h2 class="text-center mb-4 fw-bold" id="prerequisites">Prerequisites</h2>
 
             <!-- Accordion Starts -->
             <div class="accordion" id="prerequisitesAccordion">
@@ -673,7 +671,7 @@
                 flex-direction: column;
                 justify-content: center;
             ">
-                    <h2 class="why-srm-heading">Why SRM IST Ramapuram</h2>
+                    <h2 class="why-srm-heading" id="why-srm">Why SRM IST Ramapuram</h2>
                     <p class="why-srm-description">
                         We focus on the enlightenment and enhancement of the students.
                         We offer various facilities for the benefits of the students to make
@@ -972,6 +970,45 @@
             });
         });
     </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+  function scrollWithOffset(element, offset = 100) {
+    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({
+      top: elementPosition - offset,
+      behavior: 'smooth'
+    });
+  }
+  const eligibilityLink = document.getElementById("eligibilityLink");
+  const eligibilitySection = document.getElementById("collapseEligibility");
+
+  if (eligibilityLink && eligibilitySection) {
+    const collapseEligibility = new bootstrap.Collapse(eligibilitySection, { toggle: false });
+
+    eligibilityLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      collapseEligibility.show();
+      scrollWithOffset(eligibilitySection, 400);
+    });
+  }
+
+  const applyLink = document.getElementById("applyLink");
+  const applySection = document.getElementById("collapseApply");
+
+  if (applyLink && applySection) {
+    const collapseApply = new bootstrap.Collapse(applySection, { toggle: false });
+
+    applyLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      collapseApply.show();
+      scrollWithOffset(applySection, 400); 
+    });
+  }
+});
+
+  </script>
+  
+
 
 </body>
 
