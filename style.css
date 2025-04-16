@@ -986,7 +986,7 @@ h1 {
 }
 
 /* Navbar mobile fixes */
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
     .navbar-toggler {
         display: block !important;
         position: relative;
@@ -1038,7 +1038,7 @@ h1 {
         display: block;
         width: 100%;
     }
-}
+} */
 
 @media (max-width: 576px) {
 
@@ -1384,6 +1384,21 @@ img.img-fluid {
     .accordion-body {
         padding: 15px 10px;
     }
+    .accordion-body,
+  .card,
+  .card-body,
+  ul,
+  li {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+
+  }
+
+  .accordion-body {
+    overflow-x: auto;
+    /* height: 450px !important; */
+  }
 
     /* Banner text needs to be fully visible */
     .bannlas {
@@ -1436,6 +1451,8 @@ img.img-fluid {
         max-width: 90%;
         margin: 0 auto;
     }
+
+    
 }
 
 
