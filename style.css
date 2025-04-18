@@ -2281,3 +2281,144 @@ h1.display-5 {
     width: 100%;
     overflow: hidden;
 }
+
+<style>
+        .logo-carousel-four {
+            width: 100% !important;
+            padding: 20px 0;
+        }
+
+        .carousel-single {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            height: 120px !important;
+            padding: 15px !important;
+        }
+
+        .carousel-single img {
+            max-height: 100px !important;
+            width: auto !important;
+            max-width: 90% !important;
+            object-fit: contain !important;
+            transition: transform 0.3s ease;
+            margin: 0 auto !important;
+        }
+
+        .carousel-single:hover img {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 767px) {
+            .logo-carousel-four {
+                padding: 15px 0;
+            }
+
+            .carousel-single {
+                height: 100px !important;
+                padding: 12px !important;
+                margin: 8px !important;
+            }
+
+            .carousel-single img {
+                max-height: 80px !important;
+                max-width: 85% !important;
+            }
+
+            .owl-stage {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                gap: 16px !important;
+            }
+
+            .owl-item {
+                display: flex !important;
+                justify-content: center !important;
+                width: calc(50% - 16px) !important;
+                margin: 0 !important;
+            }
+        }
+
+        .owl-nav,
+        .owl-dots,
+        .owl-nav button,
+        .owl-dots button {
+            display: none !important;
+        }
+
+        .owl-stage {
+            padding: 0 !important;
+            height: auto !important;
+            min-height: 120px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+
+        @media (max-width: 767px) {
+            .owl-stage {
+                min-height: 100px !important;
+                padding: 0 8px !important;
+            }
+        }
+        
+        
+        .logo-img {
+      height: 40px;
+    }
+
+    @media (max-width: 991px) {
+      .navbar-toggler {
+        display: block !important;
+        position: relative;
+        margin-left: auto;
+        z-index: 100;
+      }
+
+      .navbar > .container-fluid {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        background: white;
+        transition: all 0.3s ease;
+        flex-direction: column;
+        z-index: 1000;
+        padding: 60px 20px 20px;
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
+      }
+
+      .navbar-collapse.show {
+        left: 0;
+      }
+
+      .navbar-nav {
+        margin-left: 0 !important;
+        width: 100%;
+      }
+
+      .navbar-nav .nav-item {
+        margin: 10px 0;
+      }
+
+      .navbar-nav .nav-link {
+        padding: 10px 5px;
+        border-bottom: 1px solid #f0f0f0;
+      }
+
+      .navbar .gradient-btn {
+        margin: 15px auto 0;
+        display: block;
+        width: 100%;
+      }
+    }
+    </style>

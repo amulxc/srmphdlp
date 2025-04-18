@@ -17,147 +17,6 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
-    <style>
-        .logo-carousel-four {
-            width: 100% !important;
-            padding: 20px 0;
-        }
-
-        .carousel-single {
-            display: flex !important;
-            justify-content: center !important;
-            align-items: center !important;
-            height: 120px !important;
-            padding: 15px !important;
-        }
-
-        .carousel-single img {
-            max-height: 100px !important;
-            width: auto !important;
-            max-width: 90% !important;
-            object-fit: contain !important;
-            transition: transform 0.3s ease;
-            margin: 0 auto !important;
-        }
-
-        .carousel-single:hover img {
-            transform: scale(1.05);
-        }
-
-        @media (max-width: 767px) {
-            .logo-carousel-four {
-                padding: 15px 0;
-            }
-
-            .carousel-single {
-                height: 100px !important;
-                padding: 12px !important;
-                margin: 8px !important;
-            }
-
-            .carousel-single img {
-                max-height: 80px !important;
-                max-width: 85% !important;
-            }
-
-            .owl-stage {
-                display: flex !important;
-                align-items: center !important;
-                justify-content: center !important;
-                gap: 16px !important;
-            }
-
-            .owl-item {
-                display: flex !important;
-                justify-content: center !important;
-                width: calc(50% - 16px) !important;
-                margin: 0 !important;
-            }
-        }
-
-        .owl-nav,
-        .owl-dots,
-        .owl-nav button,
-        .owl-dots button {
-            display: none !important;
-        }
-
-        .owl-stage {
-            padding: 0 !important;
-            height: auto !important;
-            min-height: 120px !important;
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-        }
-
-        @media (max-width: 767px) {
-            .owl-stage {
-                min-height: 100px !important;
-                padding: 0 8px !important;
-            }
-        }
-        
-        
-        .logo-img {
-      height: 40px;
-    }
-
-    @media (max-width: 991px) {
-      .navbar-toggler {
-        display: block !important;
-        position: relative;
-        margin-left: auto;
-        z-index: 100;
-      }
-
-      .navbar > .container-fluid {
-        padding: 10px;
-        display: flex;
-        align-items: center;
-      }
-
-      .navbar-collapse {
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 80%;
-        height: 100vh;
-        background: white;
-        transition: all 0.3s ease;
-        flex-direction: column;
-        z-index: 1000;
-        padding: 60px 20px 20px;
-        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
-        overflow-y: auto;
-      }
-
-      .navbar-collapse.show {
-        left: 0;
-      }
-
-      .navbar-nav {
-        margin-left: 0 !important;
-        width: 100%;
-      }
-
-      .navbar-nav .nav-item {
-        margin: 10px 0;
-      }
-
-      .navbar-nav .nav-link {
-        padding: 10px 5px;
-        border-bottom: 1px solid #f0f0f0;
-      }
-
-      .navbar .gradient-btn {
-        margin: 15px auto 0;
-        display: block;
-        width: 100%;
-      }
-    }
-    </style>
-
 </head>
 
 <body>
@@ -188,7 +47,6 @@
     <!-- Hero Section -->
     <section class="hero-section position-relative bg-blue-custom">
         <div class="row g-0 h-100 container">
-            <!-- Left Half -->
             <div class="col-md-6  d-flex flex-column justify-content-center ps-md-5 ps-3 py-5">
                 <a href="#" class="btnew d-inline-block px-3 py-2 mb-3 w-fit" style="display: block;font-weight: 500"
                     id="registration-link">Registrations Open for 2025</a>
@@ -200,15 +58,13 @@
                     <div class="phd-underline"></div>
                 </div>
             </div>
-
-            <!-- Right Half -->
             <div class="col-md-6 "></div>
         </div>
-
-        <!-- Student Image at Bottom Center -->
-        <img src="/images/hero.png" alt="Student" class="student-img-bottom">
+        <img src="/images/hero.jpeg" alt="Student" class="student-img-bottom">
     </section>
-    <!--Header-->
+
+
+    <!-- Affiliations & Accreditations-->
     <section class="accreditation" style="padding-top: 50px;">
         <div class="container">
             <h1 class="text-center mb-4" style="margin-bottom: 70px !important;">
@@ -264,14 +120,12 @@
         </div>
     </section>
 
-    <section class="pt-100 pt-md-50" style="
-    padding-top: 50px;
-">
+
+    <!--Premier Institution Ranking-->
+    <section class="pt-100 pt-md-50" style="padding-top: 50px;">
         <div class="container">
             <h1 class="text-center">Join the Premier Institution Ranked as the #1 University in India</h1>
-            <p class="text-center pt-20" style="
-            padding-bottom: 50px;
-        ">Experience the best in placements alongside academic excellence. SRM IST,
+            <p class="text-center pt-20" style="padding-bottom: 50px;">Experience the best in placements alongside academic excellence. SRM IST,
                 Ramapuram is a place for learning, discovery, innovation, expression, and discourse.</p>
             <div class="row">
                 <div class="col-lg-8 col-md-12 mb-4">
@@ -320,15 +174,13 @@
             </div>
         </div>
     </section>
+    
+    <!--Prerequisites-->
 
     <section class="py-5 text-dark" style="background-color: #DCEFFF;margin-top: 50px;">
         <div class="container">
             <h2 class="text-center mb-4 fw-bold" id="prerequisites">Prerequisites</h2>
-
-            <!-- Accordion Starts -->
             <div class="accordion" id="prerequisitesAccordion">
-
-                <!-- Program Offered -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingProgram">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -373,7 +225,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
-                                    <img src="images/image1.png" class="img-fluid rounded" alt="Program visual" style="
+                                    <img src="images/image1.jpeg" class="img-fluid rounded" alt="Program visual" style="
                                     height: 256px;
                                     padding-left: 75px;
                                 " />
@@ -673,6 +525,8 @@
             </div>
     </section>
 
+
+    <!--Global Academic Collaborations-->
     <section class="p-top-90" style="background-image: image(images/7.png);">
 
         <div class="carousel-wrapper">
@@ -712,20 +566,14 @@
         </div>
         </div>
     </section>
-    <!--New Section -->
 
-    <!-- Why SRM IST Ramapuram Section with improved mobile layout -->
+
+    <!--Why SRM -->
     <section class="py-5 text-white"
         style="background-color: #0056b3; background-image: linear-gradient(to right, rgba(0, 86, 179, 0.9), rgba(0, 86, 179, 0.9)), url('/images/bg-srm.png'); background-size: cover; background-position: center; padding-bottom: 50px !important;">
         <div class="container">
-            <!-- First Row -->
             <div class="row">
-                <!-- Left Column: Text Content -->
-                <div class="col-lg-6 col-md-12 mb-4 text-center text-lg-start" style="
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            ">
+                <div class="col-lg-6 col-md-12 mb-4 text-center text-lg-start" style="display: flex; flex-direction: column; justify-content: center;">
                     <h2 class="why-srm-heading" id="why-srm">Why SRM IST Ramapuram</h2>
                     <p class="why-srm-description">
                         We focus on the enlightenment and enhancement of the students.
@@ -734,10 +582,9 @@
                     </p>
                 </div>
 
-                <!-- Right Column: Two stacked cards -->
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                     <div class="card bg-dark text-white border-0" style="margin-bottom: 0 !important; overflow: hidden;">
-                        <img src="images/image2.png" class="card-img" alt="Placement" id="card-image-0">
+                        <img src="images/image2.jpeg" class="card-img" alt="Placement" id="card-image-0">
                         <div class="card-img-overlay d-flex align-items-end p-0">
                             <div class="w-100 gradient-overlay p-2" id="card-heading-0" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
                                 <p class="card-text fw-semibold m-0" style="text-align: center;">Placement in the
@@ -749,7 +596,7 @@
 
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                     <div class="card bg-dark text-white border-0" id="img-bg">
-                        <img src="images/image3.png" class="card-img" alt="Chennai city" id="card-image-0" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/image3.jpeg" class="card-img" alt="Chennai city" id="card-image-0" style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="card-img-overlay d-flex align-items-end p-0">
                             <div class="w-100 gradient-overlay p-2" id="card-heading-0">
                                 <p class="card-text fw-semibold m-0" style="text-align: center;">Safely located
@@ -760,11 +607,10 @@
                 </div>
             </div>
 
-            <!-- Second Row: Four cards -->
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="card bg-dark text-white border-0 mb-3" id="img-bg">
-                        <img src="images/image4.png" class="card-img" alt="Semester Abroad" id="card-image-0" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/image4.jpeg" class="card-img" alt="Semester Abroad" id="card-image-0" style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="card-img-overlay d-flex align-items-end p-0">
                             <div class="w-100 gradient-overlay p-2" id="card-heading-0">
                                 <p class="card-text fw-semibold m-0" style="text-align: center;">Semester Abroad Program
@@ -777,7 +623,7 @@
 
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="card bg-dark text-white border-0 mb-3" id="img-bg">
-                        <img src="images/image5.png" class="card-img" alt="Internships" id="card-image-0" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/image5.jpeg" class="card-img" alt="Internships" id="card-image-0" style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="card-img-overlay d-flex align-items-end p-0">
                             <div class="w-100 gradient-overlay p-2" id="card-heading-0">
                                 <p class="card-text fw-semibold m-0" style="text-align: center;">
@@ -789,7 +635,7 @@
 
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="card bg-dark text-white border-0 mb-3" id="img-bg">
-                        <img src="images/image1.png" class="card-img" alt="Innovation" id="card-image-0" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/image1.jpeg" class="card-img" alt="Innovation" id="card-image-0" style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="card-img-overlay d-flex align-items-end p-0">
                             <div class="w-100 gradient-overlay p-2" id="card-heading-0">
                                 <p class="card-text fw-semibold m-0" style="text-align: center;">Support for
@@ -801,7 +647,7 @@
 
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="card bg-dark text-white border-0" style="margin-bottom: 0 !important; overflow: hidden;" id="img-bg">
-                        <img src="images/image6.png" class="card-img" alt="Hostel" id="card-image-0" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/image6.jpeg" class="card-img" alt="Hostel" id="card-image-0" style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="card-img-overlay d-flex align-items-end p-0">
                             <div class="w-100 gradient-overlay p-2" id="card-heading-0" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
                                 <p class="card-text fw-semibold m-0" style="text-align: center;">Fully Equipped
@@ -815,12 +661,7 @@
         </div>
     </section>
 
-
-
-    <!--End of Why SRM IST Ramapuram-->
-
-
-    <!-- Key Highlights section completely restructured for better mobile responsiveness -->
+    <!--Circle-->
     <section class="key-highlights py-5" style="background-color: white;padding-bottom: 40px !important">
         <div class="container">
 
@@ -880,7 +721,7 @@
         </div>
     </section>
 
-    <!-- Banner section with improved mobile layout -->
+    <!-- Enroll -->
     <section class="bannlas d-flex align-items-center">
         <div class="container">
             <div class="row">
@@ -937,10 +778,7 @@
 
             </div>
         </div>
-        <div class="copyright py-3" style="
-        padding-top:  5px !important;
-        padding-bottom: 5px !important;
-    ">
+        <div class="copyright py-3" style="padding-top:  5px !important;padding-bottom: 5px !important;">
             <p class="text-center text-white mb-0">Copyright © 2025. All rights reserved.</p>
         </div>
     </section>
