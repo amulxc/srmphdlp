@@ -214,6 +214,7 @@ body {
     padding: 15px;
     background-color: #ffffff;
     border-color: #ddd;
+    display: block;
     cursor: pointer;
 }
 
@@ -274,7 +275,7 @@ body {
 .collaborations-section {
     padding: 50px;
     background-color: #0056b3;
-    background-image:linear-gradient(to right, rgba(0, 86, 179, 0.9), rgba(0, 86, 179, 0.9)),url('/images/bg-srm.png');
+    background-image:linear-gradient(to right, rgba(0, 86, 179, 0.9), rgba(0, 86, 179, 0.9)),url('../images/bg-srm.png');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -425,7 +426,7 @@ body {
 }
 /* Footer Styles */
 .cta-banner {
-    background-image: url('images/banner.png');
+    background-image: url('../images/banner.png');
     background-size: cover;
     background-position: center;
     padding: 80px 0;
@@ -635,6 +636,21 @@ body {
         display: inline-block;
         margin-top: 15px;
     }
+}
+
+/* Explicit overrides to force priority over Bootstrap 3 defaults */
+.container { max-width: 1140px !important; }
+.row { display: flex !important; }
+.col-lg-12 { width: 100% !important; }
+.table-responsive { overflow-x: auto !important; }
+.img-fluid { max-width: 100% !important; height: auto !important; }
+.btn, .navbar-nav .nav-link, .accordion-button { min-height: 44px !important; }
+.col-md-6 img {
+  padding-left: 0 !important;
+  height: auto !important;
+  max-width: 100% !important;
+  margin: 20px auto !important;
+  display: block !important;
 }
 
 
