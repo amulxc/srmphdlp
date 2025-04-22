@@ -1,234 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SRM Ph.d Landing Page</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-p0rM3ZK7kTR3a8Eqcf7KLl3lnVb9TbzKysrzFdW7rc4LCg9Vqz3E3F9bXr9J9a/yKymKeGMg0Fqqvq+NYuVkYg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-
+    <title>SRM PhD Admissions 2025</title>
+    <!-- Bootstrap 3 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- OwlCarousel CSS for logo carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm px-4">
-        <div class="container-fluid">
-          <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="images/logo.svg" alt="SRM Logo" class="logo-img" />
-          </a>
-          <button class="navbar-toggler" type="button">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
-              <li class="nav-item mx-2"><a class="nav-link" href="#prerequisites">Prerequisites</a></li>
-              <li class="nav-item mx-2"><a class="nav-link" href="#why-srm">Why SRM</a></li>
-              <li class="nav-item mx-2"><a class="nav-link" href="#collapseEligibility" id="eligibilityLink">Eligibility</a></li>
-              <li class="nav-item mx-2"><a class="nav-link" href="#collapseApply" id="applyLink">How to apply</a></li>
-            </ul>
-            <button class="btn gradient-btn">Registrations Open for 2025</button>
-          </div>
-        </div>
-      </nav>
-
-    <!-- Hero Section -->
-    <section class="hero-section position-relative bg-blue-custom">
-        <div class="row g-0 h-100 container">
-            <div class="col-md-6  d-flex flex-column justify-content-center ps-md-5 ps-3 py-5">
-                <a href="#" class="btnew d-inline-block px-3 py-2 mb-3 w-fit" style="display: block;font-weight: 500"
-                    id="registration-link">Registrations Open for 2025</a>
-
-                <h1 class="custom-display-5">Ready to Begin <br>Your PhD Journey?</h1>
-
-                <div class="phd-section">
-                    <h1 class="phd-outline" style="width: fit-content; line-height: 3;" id="phd-header">PHD</h1>
-                    <div class="phd-underline"></div>
-                </div>
-            </div>
-            <div class="col-md-6 "></div>
-        </div>
-        <img src="/images/hero.jpeg" alt="Student" class="student-img-bottom">
-    </section>
-
-
-    <!-- Affiliations & Accreditations-->
-    <section class="accreditation" style="padding-top: 50px;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
         <div class="container">
-            <h1 class="text-center mb-4" style="margin-bottom: 70px !important;">
-                Affiliations & Accreditations
-            </h1>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.svg" alt="SRM Logo">
+                </a>
+            </div>
 
-            <div class="grid-container">
-                <div class="afflilation">
-                    <img src="images/image 38.png" alt="NAAC Accreditation" class="img-fluid">
-                    <div class="inn-aff">
-                        <p>SRM Institute of Science and Technology has been accredited by NAAC with the highest 'A++'
-                            grade.</p>
-                    </div>
-                </div>
-
-                <div class="afflilation">
-                    <img src="images/image 43.png" alt="Shanghai Ranking" class="img-fluid">
-                    <div class="inn-aff">
-                        <p>SHANGHAI Ranking – 2023 World ranking 1 among 15 Indian Universities.</p>
-                    </div>
-                </div>
-
-                <div class="afflilation">
-                    <img src="images/srm-nirf.png" alt="NIRF Ranking" width="60" class="img-fluid">
-                    <div class="inn-aff">
-                        <p>SRMIST has been ranked 12th nationally under universities category by NIRF (National
-                            Institutional Ranking Framework) in 2024.</p>
-                    </div>
-                </div>
-
-                <div class="afflilation">
-                    <img src="images/image 42.png" alt="World Ranking" class="img-fluid">
-                    <div class="inn-aff">
-                        <p>World ranking 1 among 46 Indian universities.</p>
-                    </div>
-                </div>
-
-                <div class="afflilation">
-                    <img src="images/image 39.png" alt="MHRD-UGC" class="img-fluid">
-                    <div class="inn-aff">
-                        <p>SRM IST is placed in Category 1 with 12 B status by MHRD-UGC.</p>
-                    </div>
-                </div>
-
-                <div class="afflilation">
-                    <img src="images/image 41.png" alt="QS Ranking" class="img-fluid">
-                    <div class="inn-aff">
-                        <p>SRMIST is regularly ranked by world ranking agencies like QS (UK) and Times Higher Education
-                            (UK).</p>
-                    </div>
-                </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#prerequisites">Prerequisites</a></li>
+                    <li><a href="#why-srm">Why SRM</a></li>
+                    <li><a href="#collapseEligibility" id="eligibilityLink">Eligibility</a></li>
+                    <li><a href="#collapseApply" id="applyLink">How to apply</a></li>
+                    <li><a href="#" class="btn registration-btn">Registrations Open for 2025</a></li>
+                </ul>
             </div>
         </div>
-    </section>
+    </nav>
 
-
-    <!--Premier Institution Ranking-->
-    <section class="pt-100 pt-md-50" style="padding-top: 50px;">
+    <!-- Main Banner -->
+    <div class="banner" style="background-color: #f8f9fa; padding: 50px 0; position: relative;">
         <div class="container">
-            <h1 class="text-center">Join the Premier Institution Ranked as the #1 University in India</h1>
-            <p class="text-center pt-20" style="padding-bottom: 50px;">Experience the best in placements alongside academic excellence. SRM IST,
-                Ramapuram is a place for learning, discovery, innovation, expression, and discourse.</p>
             <div class="row">
-                <div class="col-lg-8 col-md-12 mb-4">
-                    <div class="ratio ratio-16x9" style="border-radius: 6px;">
-                        <iframe src="https://www.youtube.com/embed/YxMB6limtf0?si=teQ1uL9RkL4bgL-s"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <!-- Left Text Section -->
+                <div class="col-md-6 hero-section">
+                    <div class="registration-label" style="background: linear-gradient(to right, #f9b233, #f7931e); color: black; padding: 10px 20px; display: inline-block; font-weight: bold; border-radius: 4px;">
+                        Registrations Open for 2025
+                    </div>
+                    <h1 id="phd-header-text">
+                        Ready to Begin <br> Your PhD Journey?
+                    </h1>
+                    <div id="phd-header" style="font-size: 80px; font-weight: bold; color: transparent; -webkit-text-stroke: 1px #f9b233; letter-spacing: 10px;">
+                        PHD
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="tp-counter-br">
-                        <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-1 g-3" style="--bs-gutter-x: 0;">
-                            <div class="col mb-4" style="
-                            margin-bottom: 0px;
-                        margin-top: 15px">
-                                <div class="tp-fun-fact-item bg-color-1 tp-fun-fact-space-1 align-items-center"
-                                    style="box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1;">
-                                    <h4>39<span>K+</span></h4>
-                                    <p>International Students</p>
-                                </div>
-                            </div>
+                <!-- Right Form Section -->
+                <div class="col-md-6"></div>
+                <div class="hero-image">
+                    <img src="images/hero-preview.png" alt="PhD Student" class="img-responsive" id="hero-image">
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
-                            <div class="col mb-4" style="
-                            margin-bottom: 0px;
-                        margin-top: -7px">
-                                <div class="tp-fun-fact-item bg-color-3 tp-fun-fact-space-3 align-items-center"
-                                    style="box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1;">
-                                    <h4>25<span>K+</span></h4>
-                                    <p>Scholarships Provided</p>
-                                </div>
-                            </div>
-
-                            <div class="col mb-4" style="
-                            margin-bottom: 0px;
-                        margin-top: -7px">
-                                <div class="tp-fun-fact-item bg-color-2 tp-fun-fact-space-2 align-items-center"
-                                    style="box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.1);border: 1px solid #D1D1D1;">
-                                    <h4>1000<span>+</span></h4>
-                                    <p>Research Publications</p>
-                                </div>
-                            </div>
-                        </div>
+    <!-- Affiliations & Accreditations Section -->
+    <div class="container">
+        <h2 class="section-title">Affiliations & Accreditations</h2>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="affiliation-box">
+                    <img src="images/image 38.png" alt="NAAC Logo" class="affiliation-logo">
+                    <div class="affiliation-text">
+                        SRM Institute of Science and Technology has been accredited by NAAC with the highest 'A++' grade.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="affiliation-box">
+                    <img src="images/image 43.png" alt="Shanghai Ranking Logo" class="affiliation-logo">
+                    <div class="affiliation-text">
+                        SHANGHAI Ranking – 2023 World ranking 1 among 15 Indian Universities.
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    
-    <!--Prerequisites-->
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="affiliation-box">
+                    <img src="images/srm-nirf.png" alt="NIRF Logo" class="affiliation-logo">
+                    <div class="affiliation-text">
+                        SRMIST has been ranked 12th nationally under universities category by NIRF (National Institutional Ranking Framework) in 2024.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="affiliation-box">
+                    <img src="images/image 42.png" alt="QS World University Rankings Logo" class="affiliation-logo">
+                    <div class="affiliation-text">
+                        World ranking 1 among 46 Indian universities.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="affiliation-box">
+                    <img src="images/image 39.png" alt="MHRD Logo" class="affiliation-logo">
+                    <div class="affiliation-text">
+                        SRM IST is placed in Category 1 with 12 B status by MHRD-UGC.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="affiliation-box">
+                    <img src="images/image 41.png" alt="THE World University Rankings Logo" class="affiliation-logo">
+                    <div class="affiliation-text">
+                        SRMIST is regularly ranked by world ranking agencies like QS (UK) and Times Higher Education (UK).
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
 
-    <section class="py-5 text-dark" style="background-color: #DCEFFF;margin-top: 50px;">
+    <!-- Premier Institution Section -->
+    <div class="premier-section">
         <div class="container">
-            <h2 class="text-center mb-4 fw-bold" id="prerequisites">Prerequisites</h2>
-            <div class="accordion" id="prerequisitesAccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingProgram">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseProgram" aria-expanded="false" aria-controls="collapseProgram">
-                            <i class="fas fa-graduation-cap me-2"></i> Program Offered
-                        </button>
-                    </h2>
-                    <div id="collapseProgram" class="accordion-collapse collapse show"
-                        data-bs-parent="#prerequisitesAccordion">
-                        <div class="accordion-body">
-                            <div class="row g-4">
+            <h2 class="premier-title">Join the Premier Institution Ranked as the #1 University in India</h2>
+            <p class="premier-subtitle">Experience the best in placements alongside academic excellence. SRM IST, Ramapuram is a place for learning, discovery, innovation, expression, and discourse.</p>
+            
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/YxMB6limtf0?si=teQ1uL9RkL4bgL-s" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stats-box">
+                        <div class="stats-number">39K+</div>
+                        <div class="stats-text">International Students</div>
+                    </div>
+                    <div class="stats-box">
+                        <div class="stats-number">25K+</div>
+                        <div class="stats-text">Scholarships Provided</div>
+                    </div>
+                    <div class="stats-box">
+                        <div class="stats-number">1000+</div>
+                        <div class="stats-text">Research Publications</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Prerequisites Section -->
+    <section class="prerequisites-section" id="prerequisites" style="background-color: #DCEFFF; padding-top: 50px; padding-bottom: 50px; margin-top: 50px;">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 30px; font-weight: bold;">Prerequisites</h2>
+            <div class="panel-group" id="prerequisitesAccordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="headingProgram">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#prerequisitesAccordion" href="#collapseProgram">
+                                <i class="glyphicon glyphicon-education"></i> Program Offered
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseProgram" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <div class="row">
                                 <div class="col-md-6">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <ul class="list-group">
+                                        <li class="list-group-item" style="display: flex; justify-content: space-between; align-items: center;">
                                             <div>
-                                                <div class="fw-semibold text-primary">Engineering & Technology</div>
+                                                <div style="font-weight: 600; color: #0066cc;">Engineering & Technology</div>
                                                 <small class="text-muted">Duration: Part-time/Full-time</small>
                                             </div>
-                                            <i class="fas fa-arrow-right text-muted"></i>
+                                            <i class="glyphicon glyphicon-arrow-right" style="color: #777;"></i>
                                         </li>
-                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <li class="list-group-item" style="display: flex; justify-content: space-between; align-items: center;">
                                             <div>
-                                                <div class="fw-semibold text-primary">Science & Humanities</div>
+                                                <div style="font-weight: 600; color: #0066cc;">Science & Humanities</div>
                                                 <small class="text-muted">Duration: Part-time/Full-time</small>
                                             </div>
-                                            <i class="fas fa-arrow-right text-muted"></i>
+                                            <i class="glyphicon glyphicon-arrow-right" style="color: #777;"></i>
                                         </li>
-                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <li class="list-group-item" style="display: flex; justify-content: space-between; align-items: center;">
                                             <div>
-                                                <div class="fw-semibold text-primary">Management</div>
+                                                <div style="font-weight: 600; color: #0066cc;">Management</div>
                                                 <small class="text-muted">Duration: Part-time/Full-time</small>
                                             </div>
-                                            <i class="fas fa-arrow-right text-muted"></i>
+                                            <i class="glyphicon glyphicon-arrow-right" style="color: #777;"></i>
                                         </li>
-                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <li class="list-group-item" style="display: flex; justify-content: space-between; align-items: center;">
                                             <div>
-                                                <div class="fw-semibold text-primary">Medical & Health Science</div>
+                                                <div style="font-weight: 600; color: #0066cc;">Medical & Health Science</div>
                                                 <small class="text-muted">Duration: Part-time/Full-time</small>
                                             </div>
-                                            <i class="fas fa-arrow-right text-muted"></i>
+                                            <i class="glyphicon glyphicon-arrow-right" style="color: #777;"></i>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
-                                    <img src="images/image1.jpeg" class="img-fluid rounded" alt="Program visual" style="
-                                    height: 256px;
-                                    padding-left: 75px;
-                                " />
+                                    <img src="images/image1.jpeg" class="img-responsive img-rounded" alt="Program visual" style="height: 256px; padding-left: 0;">
                                 </div>
                             </div>
                         </div>
@@ -236,21 +215,21 @@
                 </div>
 
                 <!-- Important Dates -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingDates">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseDates" aria-expanded="false" aria-controls="collapseProgram">
-                            <i class="fas fa-calendar-alt me-2"></i> Important Dates
-                        </button>
-                    </h2>
-                    <div id="collapseDates" class="accordion-collapse collapse"
-                        data-bs-parent="#prerequisitesAccordion">
-                        <div class="accordion-body">
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="headingDates">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#prerequisitesAccordion" href="#collapseDates">
+                                <i class="glyphicon glyphicon-calendar"></i> Important Dates
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseDates" class="panel-collapse collapse">
+                        <div class="panel-body">
                             <p>Successful admissions are an outcome that depends on applicant meeting various timelines.
                                 Find out all the important dates for your application to programmes in SRMRMP.</p>
                             <div class="table-responsive">
                                 <table class="table table-bordered">
-                                    <thead class="table-primary">
+                                    <thead style="background-color: #d9edf7;">
                                         <tr>
                                             <th>Process</th>
                                             <th>Date</th>
@@ -281,21 +260,20 @@
                                 </table>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
                 <!-- Eligibility -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingEligibility">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseEligibility" aria-expanded="false" aria-controls="collapseProgram">
-                            <i class="fas fa-user-check me-2"></i> Eligibility
-                        </button>
-                    </h2>
-                    <div id="collapseEligibility" class="accordion-collapse collapse"
-                        data-bs-parent="#prerequisitesAccordion">
-                        <div class="accordion-body">
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="headingEligibility">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#prerequisitesAccordion" href="#collapseEligibility">
+                                <i class="glyphicon glyphicon-user"></i> Eligibility
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseEligibility" class="panel-collapse collapse">
+                        <div class="panel-body">
                             <p>
                                 Two years of Master's degree or a professional degree declared equivalent to the
                                 Master's degree by the corresponding statutory regulatory body, with at least 55% marks
@@ -319,23 +297,23 @@
                                 those belonging to SC/ST/OBC (non-creamy layer)/ differently-abled.
                             </p>
                         </div>
-
                     </div>
                 </div>
 
                 <!-- Fee Structure -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFee">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFee">
-                            <i class="fas fa-dollar-sign me-2"></i> Fee Structure
-                        </button>
-                    </h2>
-                    <div id="collapseFee" class="accordion-collapse collapse" data-bs-parent="#prerequisitesAccordion">
-                        <div class="accordion-body">
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="headingFee">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#prerequisitesAccordion" href="#collapseFee">
+                                <i class="glyphicon glyphicon-usd"></i> Fee Structure
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFee" class="panel-collapse collapse">
+                        <div class="panel-body">
                             <div class="table-responsive">
-                                <table class="table table-bordered table-hover align-middle">
-                                    <thead class="table-primary text-center">
+                                <table class="table table-bordered table-hover">
+                                    <thead style="background-color: #d9edf7; text-align: center;">
                                         <tr>
                                             <th>Branch With Specialization</th>
                                             <th>Duration (Min)</th>
@@ -448,31 +426,29 @@
                                 </table>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
 
                 <!-- How to Apply -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingApply">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseApply">
-                            <i class="fas fa-info-circle me-2"></i> How to Apply
-                        </button>
-                    </h2>
-                    <div id="collapseApply" class="accordion-collapse collapse"
-                        data-bs-parent="#prerequisitesAccordion">
-                        <div class="accordion-body">
-                            <div class="row g-4">
-                                <div class="col-12">
-                                    <h5 class="fw-bold">APPLY ONLINE WITH E-PAYMENT</h5>
-                                    <div class="card" style="height: 473px !important;">
-                                        <div class="card-header bg-info-subtle fw-semibold">
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="headingApply">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#prerequisitesAccordion" href="#collapseApply">
+                                <i class="glyphicon glyphicon-info-sign"></i> How to Apply
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseApply" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h5 style="font-weight: bold;">APPLY ONLINE WITH E-PAYMENT</h5>
+                                    <div class="panel panel-info">
+                                        <div class="panel-heading" style="font-weight: 600;">
                                             INSTRUCTIONS
                                         </div>
-                                        <div class="card-body" >
-                                            <ul class="mb-0">
+                                        <div class="panel-body">
+                                            <ul style="margin-bottom: 0;">
                                                 <li>(i) All fields marked with * in the application form are mandatory
                                                     to be filled.</li>
                                                 <li>(ii) Please keep the following self-attested scanned documents ready
@@ -492,167 +468,65 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
                 <!-- Stipend -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingStipend">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseStipend">
-                            <i class="fas fa-money-bill-wave me-2"></i> Stipend
-                        </button>
-                    </h2>
-                    <div id="collapseStipend" class="accordion-collapse collapse"
-                        data-bs-parent="#prerequisitesAccordion">
-                        <div class="accordion-body">
-                            <div class="accordion-body">
-                                <p>
-                                    All full time PhD scholars who are selected for provisional registration during the
-                                    admission year 2021 onwards will be paid Rs. 25,000/- per month for a maximum period
-                                    of 3 years. Candidates who have qualified in UGC-NET (including JRF)/UGC-CSIR NET
-                                    (including JRF)/GATE/GPAT will be paid Rs. 31,000/- per month for a maximum period
-                                    of 3 years. The eligibility for availing stipend every year, subsequent to the
-                                    provisional registration, will be based on the progress made in research during the
-                                    previous year, as part of PhD.
-                                </p>
-
-                            </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="headingStipend">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#prerequisitesAccordion" href="#collapseStipend">
+                                <i class="glyphicon glyphicon-credit-card"></i> Stipend
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseStipend" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>
+                                All full time PhD scholars who are selected for provisional registration during the
+                                admission year 2021 onwards will be paid Rs. 25,000/- per month for a maximum period
+                                of 3 years. Candidates who have qualified in UGC-NET (including JRF)/UGC-CSIR NET
+                                (including JRF)/GATE/GPAT will be paid Rs. 31,000/- per month for a maximum period
+                                of 3 years. The eligibility for availing stipend every year, subsequent to the
+                                provisional registration, will be based on the progress made in research during the
+                                previous year, as part of PhD.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
-
-    <!--Global Academic Collaborations-->
-    <section class="p-top-90" style="background-image: image(images/7.png);">
-
+    <!-- Global Academic Collaborations -->
+    <section style="padding-top: 90px; padding-bottom: 90px; background-image: image(images/7.png);">
         <div class="carousel-wrapper">
             <div class="section_title text-center">
                 <h1>Global Academic Collaborations</h1>
             </div>
 
             <div class="container">
-
                 <div class="row">
-                    <div class="col-lg-12  ">
-                        <div class="logo-carousel-four owl-carousel" role="region" aria-label="Client Logos Carousel "
-                            style="background-image: url('images/7.png'); background-size: 600px; background-position: center;background-repeat: no-repeat;">
+                    <div class="col-md-12">
+                        <div class="logo-carousel-four owl-carousel" role="region" aria-label="Client Logos Carousel"style="background-image: url('images/7.png');background-size: 50%;background-position: center;background-repeat: no-repeat;height: 225px;">
 
                             <div class="carousel-single">
-                                <img src="images/mass.jpg" loading="lazy" alt="Client 1 Logo">
+                                <img src="images/mass.jpg" alt="Client 1 Logo">
                             </div>
                             <div class="carousel-single">
-                                <img src="images/nus.jpg" loading="lazy" alt="Client 2 Logo">
+                                <img src="images/nus.jpg" alt="Client 2 Logo">
                             </div>
                             <div class="carousel-single">
-                                <img src="images/bir.jpeg" loading="lazy" alt="Client 3 Logo">
+                                <img src="images/bir.jpeg" alt="Client 3 Logo">
                             </div>
                             <div class="carousel-single">
-                                <img src="images/tsing.jpg" loading="lazy" alt="Client 4 Logo">
+                                <img src="images/tsing.jpg" alt="Client 4 Logo">
                             </div>
                             <div class="carousel-single">
-                                <img src="images/illi.png" loading="lazy" alt="Client 5 Logo">
+                                <img src="images/illi.png" alt="Client 5 Logo">
                             </div>
                             <div class="carousel-single">
-                                <img src="images/tai.png" loading="lazy" alt="Client 6 Logo">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-
-    <!--Why SRM -->
-    <section class="py-5 text-white"
-        style="background-color: #0056b3; background-image: linear-gradient(to right, rgba(0, 86, 179, 0.9), rgba(0, 86, 179, 0.9)), url('/images/bg-srm.png'); background-size: cover; background-position: center; padding-bottom: 50px !important;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 mb-4 text-center text-lg-start" style="display: flex; flex-direction: column; justify-content: center;">
-                    <h2 class="why-srm-heading" id="why-srm">Why SRM IST Ramapuram</h2>
-                    <p class="why-srm-description">
-                        We focus on the enlightenment and enhancement of the students.
-                        We offer various facilities for the benefits of the students to make
-                        the learning environment a better place for them.
-                    </p>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                    <div class="card bg-dark text-white border-0" style="margin-bottom: 0 !important; overflow: hidden;">
-                        <img src="images/image2.jpeg" class="card-img" alt="Placement" id="card-image-0">
-                        <div class="card-img-overlay d-flex align-items-end p-0">
-                            <div class="w-100 gradient-overlay p-2" id="card-heading-0" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
-                                <p class="card-text fw-semibold m-0" style="text-align: center;">Placement in the
-                                    Fortune <br> 500 companies</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                    <div class="card bg-dark text-white border-0" id="img-bg">
-                        <img src="images/image3.jpeg" class="card-img" alt="Chennai city" id="card-image-0" style="width: 100%; height: 100%; object-fit: cover;">
-                        <div class="card-img-overlay d-flex align-items-end p-0">
-                            <div class="w-100 gradient-overlay p-2" id="card-heading-0">
-                                <p class="card-text fw-semibold m-0" style="text-align: center;">Safely located
-                                    within<br>Chennai city</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card bg-dark text-white border-0 mb-3" id="img-bg">
-                        <img src="images/image4.jpeg" class="card-img" alt="Semester Abroad" id="card-image-0" style="width: 100%; height: 100%; object-fit: cover;">
-                        <div class="card-img-overlay d-flex align-items-end p-0">
-                            <div class="w-100 gradient-overlay p-2" id="card-heading-0">
-                                <p class="card-text fw-semibold m-0" style="text-align: center;">Semester Abroad Program
-                                    <br>in 9+ countries
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card bg-dark text-white border-0 mb-3" id="img-bg">
-                        <img src="images/image5.jpeg" class="card-img" alt="Internships" id="card-image-0" style="width: 100%; height: 100%; object-fit: cover;">
-                        <div class="card-img-overlay d-flex align-items-end p-0">
-                            <div class="w-100 gradient-overlay p-2" id="card-heading-0">
-                                <p class="card-text fw-semibold m-0" style="text-align: center;">
-                                    International<br>Internships</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card bg-dark text-white border-0 mb-3" id="img-bg">
-                        <img src="images/image1.jpeg" class="card-img" alt="Innovation" id="card-image-0" style="width: 100%; height: 100%; object-fit: cover;">
-                        <div class="card-img-overlay d-flex align-items-end p-0">
-                            <div class="w-100 gradient-overlay p-2" id="card-heading-0">
-                                <p class="card-text fw-semibold m-0" style="text-align: center;">Support for
-                                    Innovation<br>& Start-ups</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card bg-dark text-white border-0" style="margin-bottom: 0 !important; overflow: hidden;" id="img-bg">
-                        <img src="images/image6.jpeg" class="card-img" alt="Hostel" id="card-image-0" style="width: 100%; height: 100%; object-fit: cover;">
-                        <div class="card-img-overlay d-flex align-items-end p-0">
-                            <div class="w-100 gradient-overlay p-2" id="card-heading-0" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
-                                <p class="card-text fw-semibold m-0" style="text-align: center;">Fully Equipped
-                                    <br>Facilities
-                                </p>
+                                <img src="images/tai.png" alt="Client 6 Logo">
                             </div>
                         </div>
                     </div>
@@ -661,56 +535,116 @@
         </div>
     </section>
 
-    <!--Circle-->
-    <section class="key-highlights py-5" style="background-color: white;padding-bottom: 40px !important">
+    <!-- Why SRM IST Ramapuram Section -->
+    <div class="collaborations-section" id="why-srm">
         <div class="container">
-
             <div class="row">
-                <div class="col-12">
+                <div class="col-md-6 text-center text-md-left" style="display: flex; flex-direction: column; justify-content: center;">
+                    <h3 class="why-srm-title">Why SRM IST Ramapuram</h3>
+                    <p class="why-srm-text">We focus on the enlightenment and enhancement of the students. We offer various facilities for the benefits of the students to make the learning environment a better place for them.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <img src="images/image2.jpeg" alt="Placement">
+                        <div class="card-caption">
+                            <p class="card-text">Placement in the Fortune<br>500 companies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <img src="images/image3.jpeg" alt="Chennai">
+                        <div class="card-caption">
+                            <p class="card-text">Safely located within<br>Chennai city</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <img src="images/image4.jpeg" alt="Semester Abroad">
+                        <div class="card-caption">
+                            <p class="card-text">Semester Abroad Program<br>in 9+ countries</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <img src="images/image5.jpeg" alt="International Internships">
+                        <div class="card-caption">
+                            <p class="card-text">International<br>Internships</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <img src="images/image1.jpeg" alt="Innovation and Startups">
+                        <div class="card-caption">
+                            <p class="card-text">Support for Innovation<br>& Start-ups</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <img src="images/image6.jpeg" alt="Facilities">
+                        <div class="card-caption">
+                            <p class="card-text">Fully Equipped<br>Facilities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SRM Stats Section -->
+    <section class="key-highlights py-5" style="background-color: #f9f9f9; padding: 80px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
                     <div class="circle-container">
-                        <div class="center-logo d-none d-lg-block">
+                        <!-- Center Logo -->
+                        <div class="center-logo">
                             <img src="images/logo.png" alt="SRM Logo">
                         </div>
-
+                        
+                        <!-- Stat Boxes -->
                         <div class="info-box top">
                             <h4>#1</h4>
                             <p>SRM IST Ranked India's No.1 University</p>
                         </div>
-
+                        
                         <div class="info-box top-right">
                             <h4>4</h4>
                             <p>Decades</p>
                         </div>
-
+                        
                         <div class="info-box right">
                             <h4>17</h4>
                             <p>Institutions</p>
                         </div>
-
+                        
                         <div class="info-box bottom-right">
                             <h4>40+</h4>
                             <p>Years of experience in education</p>
                         </div>
-
-                        <div class="center-logo1">
-                            <img src="images/logo.png" alt="SRM Logo">
-                        </div>
-
+                        
                         <div class="info-box bottom">
                             <h4>2nd</h4>
                             <p>in ARIIA</p>
                         </div>
-
+                        
                         <div class="info-box bottom-left">
                             <h4>A++</h4>
                             <p>NAAC Accreditation</p>
                         </div>
-
+                        
                         <div class="info-box left">
                             <h4>1985</h4>
                             <p>Established</p>
                         </div>
-
+                        
                         <div class="info-box top-left">
                             <h4>50,000+</h4>
                             <p>Students</p>
@@ -721,228 +655,64 @@
         </div>
     </section>
 
-    <!-- Enroll -->
-    <section class="bannlas d-flex align-items-center">
+    <!-- Call to Action Banner -->
+    <div class="cta-banner">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <div class="ban-text text-center text-md-start">
-                        <h1 style="color: #ffff; line-height: 1.4;">Join the Ranks of Tomorrow's <br
-                                class="d-none d-md-block">Leaders – Enroll Now at SRM</h1>
-                        <a href="#" class="btnew d-inline-block mt-3">Registration Open - 2025</a>
-                    </div>
+                <div class="col-md-8 cta-content">
+                    <h2 class="cta-title">Join the Ranks of Tomorrow's<br>Leaders – Enroll Now at SRM</h2>
+                    <a href="#" class="registration-btn-cta">Registration Open - 2025</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer with improved mobile layout -->
-    <section class="footer">
-        <div class="container pt-20">
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
-                    <img src="images/logo.svg" class="img-fluid" style="max-width: 250px;">
-                </div>
-                <div class="col-12" style="height: 75px;">
-                    <div class="add-pho pt-50 pb-3 text-md-center text-start" style="padding-top: 25px;">
-                        <!-- Phone Link -->
-                        <a href="tel:1800 102 1525"
-                            class="d-flex align-items-center justify-content-center gap-2 mb-2 contact-item">
-                            <img src="images/ion-call.svg" alt="Phone">
-                            <span>1800 102 1525</span>
+                <div class="col-md-12 text-center">
+                    <img src="images/logos.png" alt="SRM Ramapuram Logo" class="footer-logo">
+                    
+                    <div class="contact-info">
+                        <a href="tel:18001021525" class="contact-item">
+                            <i class="glyphicon glyphicon-earphone"></i> 1800 102 1525
                         </a>
-
-                        <!-- Separator (|) -->
-                        <span class="separator">|</span>
-
-                        <!-- Email Link -->
-                        <a href="mailto:helpdesk@srmrmp.edu.in"
-                            class="d-flex align-items-center justify-content-center gap-2 mb-2 contact-item">
-                            <img src="images/Symbol.svg" alt="Email">
-                            <span>helpdesk@srmrmp.edu.in</span>
+                        
+                        <span class="contact-divider">|</span>
+                        
+                        <a href="mailto:helpdesk@srmrmp.edu.in" class="contact-item">
+                            <i class="glyphicon glyphicon-envelope"></i> helpdesk@srmrmp.edu.in
                         </a>
-
-                        <!-- Separator (|) -->
-                        <span class="separator">|</span>
-
-                        <!-- Location Link -->
-                        <a href="https://maps.app.goo.gl/NyAxj1oZZUHSWmpC9"
-                            class="d-flex align-items-center justify-content-center gap-2 text-center contact-item">
-                            <img src="images/location.svg" alt="Location">
-                            <span>Bharathi Salai, Ramapuram, Chennai – 600 089. Tamil Nadu India</span>
+                        
+                        <span class="contact-divider">|</span>
+                        
+                        <a href="https://maps.app.goo.gl/NyAxj1oZZUHSWmpC9" target="_blank" class="contact-item">
+                            <i class="glyphicon glyphicon-map-marker"></i> Bharathi Salai, Ramapuram, Chennai – 600 089. Tamil Nadu India
                         </a>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
-        <div class="copyright py-3" style="padding-top:  5px !important;padding-bottom: 5px !important;">
-            <p class="text-center text-white mb-0">Copyright © 2025. All rights reserved.</p>
+    </div>
+
+    <!-- Copyright Bar -->
+    <div class="copyright-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    Copyright © 2025. All rights reserved.
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- OwlCarousel JS for logo carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <!-- <script>
-        function toggleDropdown(id) {
-            const content = document.getElementById(id);
-            if (content.classList.contains('hidden')) {
-                content.classList.remove('hidden');
-            } else {
-                content.classList.add('hidden');
-            }
-        }
-    </script> -->
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-          const navbarCollapse = document.getElementById("navbarSupportedContent");
-        
-          navLinks.forEach(link => {
-            link.addEventListener("click", () => {
-              const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
-              bsCollapse.hide();
-            });
-          });
-        });
-        </script>
-
-
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document.querySelectorAll('.accordion-button').forEach(button => {
-                const collapse = document.querySelector(button.getAttribute('data-bs-target'));
-                if (collapse && collapse.classList.contains('show')) {
-                    button.classList.add('gradient-bg');
-                }
-
-                if (collapse) {
-                    collapse.addEventListener('show.bs.collapse', () => {
-                        button.classList.add('gradient-bg');
-                    });
-
-                    collapse.addEventListener('hide.bs.collapse', () => {
-                        button.classList.remove('gradient-bg');
-                    });
-                }
-            });
-        });
-    </script>
-    <!-- Carousel Initialization -->
-    <script>
-        $(document).ready(function () {
-            $(".logo-carousel-four").owlCarousel({
-                loop: true,
-                margin: 16,
-                autoplay: true,
-                autoplayTimeout: 2000,
-                autoplayHoverPause: true,
-                smartSpeed: 1000,
-                responsiveClass: true,
-                nav: false,
-                dots: false,
-                mouseDrag: true,
-                touchDrag: true,
-                pullDrag: true,
-                responsive: {
-                    0: {
-                        items: 2,
-                        margin: 16,
-                        autoplayTimeout: 2000
-                    },
-                    480: {
-                        items: 2,
-                        margin: 16,
-                        autoplayTimeout: 2000
-                    },
-                    768: {
-                        items: 3,
-                        margin: 20,
-                        autoplayTimeout: 2000
-                    },
-                    992: {
-                        items: 4,
-                        margin: 25,
-                        autoplayTimeout: 2000
-                    },
-                    1200: {
-                        items: 5,
-                        margin: 30,
-                        autoplayTimeout: 2000
-                    }
-                }
-            });
-        });
-    </script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-  function scrollWithOffset(element, offset = 100) {
-    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-    window.scrollTo({
-      top: elementPosition - offset,
-      behavior: 'smooth'
-    });
-  }
-  const eligibilityLink = document.getElementById("eligibilityLink");
-  const eligibilitySection = document.getElementById("collapseEligibility");
-
-  if (eligibilityLink && eligibilitySection) {
-    const collapseEligibility = new bootstrap.Collapse(eligibilitySection, { toggle: false });
-
-    eligibilityLink.addEventListener("click", function (e) {
-      e.preventDefault();
-      collapseEligibility.show();
-      scrollWithOffset(eligibilitySection, 500);
-    });
-  }
-
-  const applyLink = document.getElementById("applyLink");
-  const applySection = document.getElementById("collapseApply");
-
-  if (applyLink && applySection) {
-    const collapseApply = new bootstrap.Collapse(applySection, { toggle: false });
-
-    applyLink.addEventListener("click", function (e) {
-      e.preventDefault();
-      collapseApply.show();
-      scrollWithOffset(applySection, 500); 
-    });
-  }
-});
-
-  </script>
-  
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggler = document.querySelector(".navbar-toggler");
-      const collapse = document.querySelector(".navbar-collapse");
-  
-      if (toggler && collapse) {
-        toggler.addEventListener("click", function () {
-          collapse.classList.toggle("show");
-        });
-  
-        // Auto-close navbar on link click (for mobile)
-        document.querySelectorAll(".nav-link").forEach(link => {
-          link.addEventListener("click", () => {
-            collapse.classList.remove("show");
-          });
-        });
-      }
-    });
-  </script>
-  </script> -->
-    
-    
-
+    <!-- Custom Scripts -->
+    <script src="index.js"></script>
 </body>
-
 </html>
