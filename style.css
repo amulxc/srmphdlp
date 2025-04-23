@@ -52,11 +52,11 @@ body {
     font-size: 120px;
     color: white;
     -webkit-text-stroke: 2px #ffc107;
-    font-weight: bold;
+        font-weight: bold;    
     margin-top: 100px;
 }
 .hero-image {
-    position: absolute;
+        position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
@@ -74,26 +74,27 @@ body {
     display: block;
 }
 .affiliation-box {
-    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1);
-    border: 1px solid #FBCA38;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: flex-start;
-    min-height: 120px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid #FBCA38 !important;
+    border-radius: 10px !important;
+    padding: 20px !important;
+    margin-bottom: 30px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    height: 200px !important;
 }
 .affiliation-logo {
-    max-width: 50px;
-    height: 50px;
-    vertical-align: middle;
-    margin-right: 20px;
-    object-fit: contain;
-    flex-shrink: 0;
+    max-width: 50px !important;
+    height: 50px !important;
+    vertical-align: middle !important;
+    margin-right: 20px !important;
+    object-fit: contain !important;
+    flex-shrink: 0 !important;
 }
 .affiliation-text {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
 }
 .premier-section {
     padding: 50px 0;
@@ -114,7 +115,7 @@ body {
     line-height: 1.6;
 }
 .video-container {
-    position: relative;
+        position: relative;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
@@ -208,13 +209,13 @@ body {
 .list-group-item{
     border: none !important;
 }
-
 /* For Panel/Accordion */
 .panel-default > .panel-heading {
     padding: 15px;
     background-color: #ffffff;
     border-color: #ddd;
     display: block;
+    margin-top: 0px;
     cursor: pointer;
 }
 
@@ -235,6 +236,7 @@ body {
 .panel-title {
     font-weight: 600;
     font-size: 16px;
+    color: #000;
 }
 
 .accordion-button:after {
@@ -462,13 +464,13 @@ body {
 }
 .registration-btn-cta:hover {
     background-color: #e6af06;
-    color: #000;
+        color: #000;
     text-decoration: none;
 }
 .contact-section {
     background-color: #f5f5f5;
-    padding: 40px 0;
-    text-align: center;
+        padding: 40px 0;
+        text-align: center;
 }
 .footer-logo {
     max-width: 240px;
@@ -573,22 +575,22 @@ body {
     }
 }
 /* Global Academic Collaborations Carousel */
-.section_title h1 {
+    .section_title h1 {
     font-size: 36px;
     font-weight: bold;
     color: #000;
     margin-bottom: 50px;
-}
+    }
 
-.carousel-single {
-    text-align: center;
+    .carousel-single {
+        text-align: center;
     padding: 20px;
 }
 
-.carousel-single img {
+    .carousel-single img {
     max-width: 100%;
     height: 80px;
-    object-fit: contain;
+           object-fit: contain;
 }
 
 @media (max-width: 768px) {
@@ -624,7 +626,7 @@ body {
     }
     .cta-content {
         text-align: left;
-        width: 100%;
+    width: 100%;
         padding: 0 15px;
         box-sizing: border-box;
     }
@@ -647,10 +649,33 @@ body {
 .btn, .navbar-nav .nav-link, .accordion-button { min-height: 44px !important; }
 .col-md-6 img {
   padding-left: 0 !important;
-  height: auto !important;
+            height: auto !important;
   max-width: 100% !important;
   margin: 20px auto !important;
-  display: block !important;
+        display: block !important;
+}
+
+/* Bootstrap3 affiliation section overrides for html classes */
+.afflilation {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  padding: 15px !important;
+}
+.afflilation img {
+  margin: 0 auto 10px !important;
+  max-width: 80px !important;
+  object-fit: contain !important;
+}
+.inn-aff {
+  padding-left: 0 !important;
+}
+.inn-aff p {
+  margin: 0 !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
 }
 
 
