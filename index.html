@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -46,7 +47,7 @@
             <div class="row">
                 <!-- Left Text Section -->
                 <div class="col-md-6 hero-section">
-                    <div class="registration-label" style="background: linear-gradient(to right, #f9b233, #f7931e); color: black; padding: 10px 20px; display: inline-block; font-weight: bold; border-radius: 4px;">
+                    <div class="registration-label" style="background: linear-gradient(to right, #f9b233, #f7931e); color: black; padding: 10px 20px; display: inline-block; border-radius: 4px;">
                         Registrations Open for 2025
                     </div>
                     <h1 id="phd-header-text">
@@ -57,7 +58,7 @@
                     </div>
                 </div>
                 <!-- Right Form Section -->
-                <div class="col-md-6">
+                <div class="col-md-6" style="z-index: 9999999 !important;">
                     <div class="mrf" style="width: 100vh;padding-left: 185px;">{{RegistrationForm}}</div>
                 </div>
                 <div class="hero-image">
@@ -166,10 +167,10 @@
             <h2 class="text-center" style="margin-bottom: 30px; font-weight: bold;">Prerequisites</h2>
             <div class="panel-group" id="prerequisitesAccordion">
                 <div class="panel panel-default">
-                    <div class="panel-heading" id="headingProgram">
+                    <div class="panel-heading prereq-heading" id="headingProgram">
                         <h4 class="panel-title">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#prerequisitesAccordion" href="#collapseProgram">
-                                <i class="glyphicon glyphicon-education"></i> Program Offered
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#prerequisitesAccordion" href="#collapseProgram">
+                                <i class="fas fa-graduation-cap" style="padding-right: 10px;"></i> Program Offered
                             </a>
                         </h4>
                     </div>
@@ -180,31 +181,31 @@
                                     <ul class="list-group">
                                         <li class="list-group-item" style="display: flex; justify-content: space-between; align-items: center;">
                                             <div>
-                                                <div style="font-weight: 600; color: #0066cc;">Engineering & Technology</div>
+                                                <div style="font-weight: 600; color: #0066cc; font-size: 18px;">Engineering & Technology</div>
                                                 <small class="text-muted">Duration: Part-time/Full-time</small>
                                             </div>
-                                            <i class="glyphicon glyphicon-arrow-right" style="color: #777;"></i>
+                                            <i class="fas fa-arrow-right" style="color: #000000; font-size: 20px; margin-left: 10px;"></i>
                                         </li>
                                         <li class="list-group-item" style="display: flex; justify-content: space-between; align-items: center;">
                                             <div>
-                                                <div style="font-weight: 600; color: #0066cc;">Science & Humanities</div>
+                                                <div style="font-weight: 600; color: #0066cc; font-size: 18px;">Science & Humanities</div>
                                                 <small class="text-muted">Duration: Part-time/Full-time</small>
                                             </div>
-                                            <i class="glyphicon glyphicon-arrow-right" style="color: #777;"></i>
+                                            <i class="fas fa-arrow-right" style="color: #000000; font-size: 20px; margin-left: 10px;"></i>
                                         </li>
                                         <li class="list-group-item" style="display: flex; justify-content: space-between; align-items: center;">
                                             <div>
-                                                <div style="font-weight: 600; color: #0066cc;">Management</div>
+                                                <div style="font-weight: 600; color: #0066cc; font-size: 18px;">Management</div>
                                                 <small class="text-muted">Duration: Part-time/Full-time</small>
                                             </div>
-                                            <i class="glyphicon glyphicon-arrow-right" style="color: #777;"></i>
+                                            <i class="fas fa-arrow-right" style="color: #000000; font-size: 20px; margin-left: 10px;"></i>
                                         </li>
                                         <li class="list-group-item" style="display: flex; justify-content: space-between; align-items: center;">
                                             <div>
-                                                <div style="font-weight: 600; color: #0066cc;">Medical & Health Science</div>
+                                                <div style="font-weight: 600; color: #0066cc; font-size: 18px;">Medical & Health Science</div>
                                                 <small class="text-muted">Duration: Part-time/Full-time</small>
                                             </div>
-                                            <i class="glyphicon glyphicon-arrow-right" style="color: #777;"></i>
+                                            <i class="fas fa-arrow-right" style="color: #000000; font-size: 20px; margin-left: 10px;"></i>
                                         </li>
                                     </ul>
                                 </div>
@@ -218,10 +219,10 @@
 
                 <!-- Important Dates -->
                 <div class="panel panel-default">
-                    <div class="panel-heading" id="headingDates">
+                    <div class="panel-heading prereq-heading" id="headingDates">
                         <h4 class="panel-title">
                             <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#prerequisitesAccordion" href="#collapseDates">
-                                <i class="glyphicon glyphicon-calendar"></i> Important Dates
+                                <i class="fas fa-calendar" style="padding-right: 10px;"></i> Important Dates
                             </a>
                         </h4>
                     </div>
@@ -267,10 +268,10 @@
 
                 <!-- Eligibility -->
                 <div class="panel panel-default">
-                    <div class="panel-heading" id="headingEligibility">
+                    <div class="panel-heading prereq-heading" id="headingEligibility">
                         <h4 class="panel-title">
                             <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#prerequisitesAccordion" href="#collapseEligibility">
-                                <i class="glyphicon glyphicon-user"></i> Eligibility
+                                <i class="fas fa-user" style="padding-right: 10px;"></i> Eligibility
                             </a>
                         </h4>
                     </div>
@@ -304,10 +305,10 @@
 
                 <!-- Fee Structure -->
                 <div class="panel panel-default">
-                    <div class="panel-heading" id="headingFee">
+                    <div class="panel-heading prereq-heading" id="headingFee">
                         <h4 class="panel-title">
                             <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#prerequisitesAccordion" href="#collapseFee">
-                                <i class="glyphicon glyphicon-usd"></i> Fee Structure
+                                <i class="fas fa-usd" style="padding-right: 10px;"></i> Fee Structure
                             </a>
                         </h4>
                     </div>
@@ -433,10 +434,10 @@
 
                 <!-- How to Apply -->
                 <div class="panel panel-default">
-                    <div class="panel-heading" id="headingApply">
+                    <div class="panel-heading prereq-heading" id="headingApply">
                         <h4 class="panel-title">
                             <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#prerequisitesAccordion" href="#collapseApply">
-                                <i class="glyphicon glyphicon-info-sign"></i> How to Apply
+                                <i class="fas fa-info-circle" style="padding-right: 10px;"></i> How to Apply
                             </a>
                         </h4>
                     </div>
@@ -475,10 +476,10 @@
 
                 <!-- Stipend -->
                 <div class="panel panel-default">
-                    <div class="panel-heading" id="headingStipend">
+                    <div class="panel-heading prereq-heading" id="headingStipend">
                         <h4 class="panel-title">
                             <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#prerequisitesAccordion" href="#collapseStipend">
-                                <i class="glyphicon glyphicon-credit-card"></i> Stipend
+                                <i class="fas fa-credit-card" style="padding-right: 10px;"></i> Stipend
                             </a>
                         </h4>
                     </div>
@@ -501,17 +502,17 @@
     </section>
 
     <!-- Global Academic Collaborations -->
-    <section style="padding-top: 90px; padding-bottom: 90px; background-image: image(/images/7.png);">
+    <section id="global-collaborations" style="padding-top: 90px; padding-bottom: 90px;">
         <div class="carousel-wrapper">
             <div class="section_title text-center">
                 <h1>Global Academic Collaborations</h1>
             </div>
 
-            <div class="container">
-                <div class="row">
+            <div class="container-fluid carousel-container">
+                <div class="row no-gutter">
                     <div class="col-md-12">
-                        <div class="logo-carousel-four owl-carousel" role="region" aria-label="Client Logos Carousel"style="background-image: url('/images/7.png');background-size: 50%;background-position: center;background-repeat: no-repeat;height: 225px;">
-
+                        <div class="logo-carousel-four owl-carousel" role="region" aria-label="Client Logos Carousel"
+                             style="background-image: url('/images/7.png'); background-size: 50%; background-position: center; background-repeat: no-repeat; height: 225px;">
                             <div class="carousel-single">
                                 <img src="/images/mass.jpg" alt="Client 1 Logo">
                             </div>
@@ -601,7 +602,7 @@
     </div>
 
     <!-- SRM Stats Section -->
-    <section class="key-highlights py-5" style="background-color: #f9f9f9; padding: 80px 0;">
+    <section class="key-highlights py-5" style="background-color: #fff; padding: 80px 0;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -678,19 +679,19 @@
                     
                     <div class="contact-info">
                         <a href="tel:18001021525" class="contact-item">
-                            <i class="glyphicon glyphicon-earphone"></i> 1800 102 1525
+                            <i class="fas fa-phone"></i> 1800 102 1525
                         </a>
                         
                         <span class="contact-divider">|</span>
                         
                         <a href="mailto:helpdesk@srmrmp.edu.in" class="contact-item">
-                            <i class="glyphicon glyphicon-envelope"></i> helpdesk@srmrmp.edu.in
+                            <i class="fas fa-envelope"></i> helpdesk@srmrmp.edu.in
                         </a>
                         
                         <span class="contact-divider">|</span>
                         
                         <a href="https://maps.app.goo.gl/NyAxj1oZZUHSWmpC9" target="_blank" class="contact-item">
-                            <i class="glyphicon glyphicon-map-marker"></i> Bharathi Salai, Ramapuram, Chennai – 600 089. Tamil Nadu India
+                            <i class="fas fa-map-marker"></i> Bharathi Salai, Ramapuram, Chennai – 600 089. Tamil Nadu India
                         </a>
                     </div>
                 </div>

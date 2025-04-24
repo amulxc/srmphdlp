@@ -39,18 +39,18 @@ $(document).ready(function() {
     }
 
     // Prerequisites Section Accordion Functionality
-    $('.panel-heading').on('click', function() {
+    $('.prereq-heading').on('click', function() {
         const panelBody = $(this).next('.panel-collapse');
         const isOpen = panelBody.hasClass('in');
         
         // Only allow closing if there's another panel open
-        if (isOpen && $('.panel-collapse.in').length > 1) {
+        if (isOpen && $('#prerequisites .panel-collapse.in').length > 1) {
             panelBody.removeClass('in');
             $(this).removeClass('active');
         } else if (!isOpen) {
             // Close all open panels
-            $('.panel-collapse.in').removeClass('in');
-            $('.panel-heading').removeClass('active');
+            $('#prerequisites .panel-collapse.in').removeClass('in');
+            $('.prereq-heading').removeClass('active');
             
             // Open this panel
             panelBody.addClass('in');
@@ -67,8 +67,8 @@ $(document).ready(function() {
             scrollTop: $('#prerequisites').offset().top - 70
         }, 800, function() {
             // Close all panels
-            $('.panel-collapse').removeClass('in');
-            $('.panel-heading').removeClass('active');
+            $('#prerequisites .panel-collapse').removeClass('in');
+            $('.prereq-heading').removeClass('active');
             
             // Open the eligibility panel
             $('#collapseEligibility').addClass('in');
@@ -85,8 +85,8 @@ $(document).ready(function() {
             scrollTop: $('#prerequisites').offset().top - 70
         }, 800, function() {
             // Close all panels
-            $('.panel-collapse').removeClass('in');
-            $('.panel-heading').removeClass('active');
+            $('#prerequisites .panel-collapse').removeClass('in');
+            $('.prereq-heading').removeClass('active');
             
             // Open the apply panel
             $('#collapseApply').addClass('in');
@@ -153,4 +153,15 @@ $(document).ready(function() {
             });
         });
     }
+
+    // Scroll to registration form when arrow icon clicked
+    $('.fa-arrow-right').on('click', function(e) {
+        e.preventDefault();
+        const target = $('.mrf');
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top - 70
+            }, 800);
+        }
+    });
 });

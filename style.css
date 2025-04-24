@@ -80,9 +80,9 @@ body {
     padding: 20px !important;
     margin-bottom: 30px !important;
     display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    height: 200px !important;
+    flex-direction: row !important;
+    height: 120px !important;
+    align-items: center !important;
 }
 .affiliation-logo {
     max-width: 50px !important;
@@ -116,7 +116,7 @@ body {
 }
 .video-container {
         position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 65.25%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
     margin-bottom: 30px;
@@ -132,7 +132,7 @@ body {
 }
 .stats-box {
     background-color: #FFEE8F;
-    height: 130px !important;
+    height: 145px !important;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
@@ -181,7 +181,7 @@ body {
 }
 
 .text-muted {
-    color: #777;
+    color: #000000;
 }
 
 .justify-content-between {
@@ -306,7 +306,7 @@ body {
     margin-bottom: 30px;
     overflow: hidden;
     border-radius: 4px;
-    height: 230px;
+    aspect-ratio: 2.5 / 3;
     background-color: #000;
 }
 .feature-card img {
@@ -348,7 +348,6 @@ body {
     border-radius: 50%;
     background: white;
     padding: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
     z-index: 10;
 }
 .center-logo img {
@@ -496,7 +495,7 @@ body {
     margin-right: 10px;
 }
 .contact-divider {
-    color: #999;
+    color: #000;
     margin: 0 5px;
 }
 .copyright-bar {
@@ -647,13 +646,14 @@ body {
 .table-responsive { overflow-x: auto !important; }
 .img-fluid { max-width: 100% !important; height: auto !important; }
 .btn, .navbar-nav .nav-link, .accordion-button { min-height: 44px !important; }
-.col-md-6 img {
+
+/* .col-md-6 img {
   padding-left: 0 !important;
             height: auto !important;
   max-width: 100% !important;
   margin: 20px auto !important;
         display: block !important;
-}
+} */
 
 /* Bootstrap3 affiliation section overrides for html classes */
 .afflilation {
@@ -676,6 +676,34 @@ body {
   margin: 0 !important;
   font-size: 16px !important;
   line-height: 1.5 !important;
+}
+.fa-graduation-cap:before {
+    color: black;
+}
+/* Toggle arrow for prerequisites accordion - corner of prereq-heading */
+.prerequisites-section .prereq-heading {
+    position: relative;
+    padding-right: 30px;
+}
+.prerequisites-section .prereq-heading:after {
+    font-family: FontAwesome;
+    content: "\f078"; /* fa-chevron-down */
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000;
+}
+.prerequisites-section .prereq-heading.active:after {
+    content: "\f077"; /* fa-chevron-up */
+}
+
+/* Fallback divider for prerequisites list items */
+.prerequisites-section .panel-body .list-group-item {
+    border-bottom: 2px solid #ddd !important;
+}
+.prerequisites-section .panel-body .list-group-item:last-child {
+    border-bottom: none !important;
 }
 
 
